@@ -1,0 +1,2015 @@
+Building co-authorship graph for ISERN members...
+This may take a while as we query DBLP for each member...
+Processing 1/58: Caspar Lassenius
+Processing 2/58: Eray Tüzün
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Carolyn Seaman
+  Found collaboration: Eray Tüzün <-> Hakan Erdogmus
+  Found collaboration: Eray Tüzün <-> Burak Turhan
+  Found collaboration: Eray Tüzün <-> Hakan Erdogmus
+  Found collaboration: Eray Tüzün <-> Hakan Erdogmus
+  Found collaboration: Eray Tüzün <-> Maria Teresa Baldassarre
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Robert Feldt
+  Found collaboration: Eray Tüzün <-> Burak Turhan
+  Found collaboration: Eray Tüzün <-> Dietmar Pfahl
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Marcela Genero
+  Found collaboration: Eray Tüzün <-> Marcos Kalinowski
+  Found collaboration: Eray Tüzün <-> Rafael Prikladnicki
+  Found collaboration: Eray Tüzün <-> Rogardt Heldal
+  Found collaboration: Eray Tüzün <-> Stefan Biffl
+  Found collaboration: Eray Tüzün <-> Hakan Erdogmus
+  Found collaboration: Eray Tüzün <-> Rogardt Heldal
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Rafael Prikladnicki
+  Found collaboration: Eray Tüzün <-> Dietmar Pfahl
+  Found collaboration: Eray Tüzün <-> Dietmar Pfahl
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Marcela Genero
+  Found collaboration: Eray Tüzün <-> Marcos Kalinowski
+  Found collaboration: Eray Tüzün <-> Rafael Prikladnicki
+  Found collaboration: Eray Tüzün <-> Rogardt Heldal
+  Found collaboration: Eray Tüzün <-> Stefan Biffl
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Burak Turhan
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Rogardt Heldal
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+  Found collaboration: Eray Tüzün <-> Rafael Prikladnicki
+  Found collaboration: Eray Tüzün <-> Dietmar Pfahl
+  Found collaboration: Eray Tüzün <-> Hakan Erdogmus
+  Found collaboration: Eray Tüzün <-> Hakan Erdogmus
+  Found collaboration: Eray Tüzün <-> Michael Felderer
+Processing 3/58: Nauman bin Ali
+  Found collaboration: Nauman bin Ali <-> Dietmar Pfahl
+  Found collaboration: Nauman bin Ali <-> Paris Avgeriou
+  Found collaboration: Nauman bin Ali <-> Marcos Kalinowski
+  Found collaboration: Nauman bin Ali <-> Paris Avgeriou
+  Found collaboration: Nauman bin Ali <-> Marcos Kalinowski
+  Found collaboration: Nauman bin Ali <-> Paris Avgeriou
+  Found collaboration: Nauman bin Ali <-> Marcos Kalinowski
+  Found collaboration: Nauman bin Ali <-> Paris Avgeriou
+  Found collaboration: Nauman bin Ali <-> Marcos Kalinowski
+  Found collaboration: Nauman bin Ali <-> Dietmar Pfahl
+  Found collaboration: Nauman bin Ali <-> Paris Avgeriou
+  Found collaboration: Nauman bin Ali <-> Marcos Kalinowski
+  Found collaboration: Nauman bin Ali <-> Paris Avgeriou
+  Found collaboration: Nauman bin Ali <-> Marcos Kalinowski
+  Found collaboration: Nauman bin Ali <-> Maria Teresa Baldassarre
+Processing 4/58: Hakan Erdogmus
+  Found collaboration: Hakan Erdogmus <-> Eray Tüzün
+  Found collaboration: Hakan Erdogmus <-> Eray Tüzün
+  Found collaboration: Hakan Erdogmus <-> Eray Tüzün
+  Found collaboration: Hakan Erdogmus <-> Maria Teresa Baldassarre
+  Found collaboration: Hakan Erdogmus <-> Michael Felderer
+  Found collaboration: Hakan Erdogmus <-> Robert Feldt
+  Found collaboration: Hakan Erdogmus <-> Burak Turhan
+  Found collaboration: Hakan Erdogmus <-> Eray Tüzün
+  Found collaboration: Hakan Erdogmus <-> Eray Tüzün
+  Found collaboration: Hakan Erdogmus <-> Eray Tüzün
+  Found collaboration: Hakan Erdogmus <-> Magne Jørgensen
+  Found collaboration: Hakan Erdogmus <-> Sira Vegas
+  Found collaboration: Hakan Erdogmus <-> Burak Turhan
+  Found collaboration: Hakan Erdogmus <-> Markku Oivo
+  Found collaboration: Hakan Erdogmus <-> Burak Turhan
+  Found collaboration: Hakan Erdogmus <-> Markku Oivo
+  Found collaboration: Hakan Erdogmus <-> Burak Turhan
+  Found collaboration: Hakan Erdogmus <-> Markku Oivo
+  Found collaboration: Hakan Erdogmus <-> Burak Turhan
+  Found collaboration: Hakan Erdogmus <-> Burak Turhan
+  Found collaboration: Hakan Erdogmus <-> Magne Jørgensen
+  Found collaboration: Hakan Erdogmus <-> Stefan Biffl
+  Found collaboration: Hakan Erdogmus <-> Maurizio Morisio
+Processing 5/58: Robert Feldt
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Carolyn Seaman
+  Found collaboration: Robert Feldt <-> Per Runeson
+  Found collaboration: Robert Feldt <-> Per Runeson
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Eray Tüzün
+  Found collaboration: Robert Feldt <-> Hakan Erdogmus
+  Found collaboration: Robert Feldt <-> Maria Teresa Baldassarre
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Burak Turhan
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Burak Turhan
+  Found collaboration: Robert Feldt <-> Sira Vegas
+  Found collaboration: Robert Feldt <-> Andreas Jedlitschka
+  Found collaboration: Robert Feldt <-> Markku Oivo
+  Found collaboration: Robert Feldt <-> Per Runeson
+  Found collaboration: Robert Feldt <-> Burak Turhan
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Michael Felderer
+  Found collaboration: Robert Feldt <-> Per Runeson
+  Found collaboration: Robert Feldt <-> Per Runeson
+Processing 6/58: Guilherme Travassos
+  Found collaboration: Guilherme Travassos <-> Xavier Franch
+  Found collaboration: Guilherme Travassos <-> Xavier Franch
+  Found collaboration: Guilherme Travassos <-> Rogardt Heldal
+  Found collaboration: Guilherme Travassos <-> Michael Felderer
+  Found collaboration: Guilherme Travassos <-> Michael Felderer
+  Found collaboration: Guilherme Travassos <-> Xavier Franch
+  Found collaboration: Guilherme Travassos <-> Rogardt Heldal
+  Found collaboration: Guilherme Travassos <-> Michael Felderer
+  Found collaboration: Guilherme Travassos <-> Xavier Franch
+  Found collaboration: Guilherme Travassos <-> Rogardt Heldal
+  Found collaboration: Guilherme Travassos <-> Xavier Franch
+  Found collaboration: Guilherme Travassos <-> Rogardt Heldal
+  Found collaboration: Guilherme Travassos <-> Rafael Prikladnicki
+  Found collaboration: Guilherme Travassos <-> Xavier Franch
+  Found collaboration: Guilherme Travassos <-> Per Runeson
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Danilo Caivano
+  Found collaboration: Guilherme Travassos <-> Maria Teresa Baldassarre
+  Found collaboration: Guilherme Travassos <-> Marcela Genero
+  Found collaboration: Guilherme Travassos <-> Per Runeson
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcus Ciolkowski
+  Found collaboration: Guilherme Travassos <-> Dietmar Pfahl
+  Found collaboration: Guilherme Travassos <-> Sandro Morasca
+  Found collaboration: Guilherme Travassos <-> Sira Vegas
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Marcos Kalinowski
+  Found collaboration: Guilherme Travassos <-> Maurizio Morisio
+Processing 7/58: Michael Felderer
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Xavier Franch
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Xavier Franch
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Clemente Izurieta
+  Found collaboration: Michael Felderer <-> Carolyn Seaman
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Hakan Erdogmus
+  Found collaboration: Michael Felderer <-> Maria Teresa Baldassarre
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Burak Turhan
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Marcela Genero
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Rogardt Heldal
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Xavier Franch
+  Found collaboration: Michael Felderer <-> Per Runeson
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Desmond Greer
+  Found collaboration: Michael Felderer <-> Tomi Männistö
+  Found collaboration: Michael Felderer <-> Markku Oivo
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Rogardt Heldal
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Per Runeson
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Marcela Genero
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Rogardt Heldal
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Clemente Izurieta
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Burak Turhan
+  Found collaboration: Michael Felderer <-> Sira Vegas
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Desmond Greer
+  Found collaboration: Michael Felderer <-> Tomi Männistö
+  Found collaboration: Michael Felderer <-> Markku Oivo
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Xavier Franch
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Rogardt Heldal
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Xavier Franch
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Barbara Russo
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Robert Feldt
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Desmond Greer
+  Found collaboration: Michael Felderer <-> Tomi Männistö
+  Found collaboration: Michael Felderer <-> Markku Oivo
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Eray Tüzün
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Tomi Männistö
+  Found collaboration: Michael Felderer <-> Markku Oivo
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Stefan Biffl
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Burak Turhan
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Markku Oivo
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Andreas Jedlitschka
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Tomi Männistö
+  Found collaboration: Michael Felderer <-> Markku Oivo
+  Found collaboration: Michael Felderer <-> Dietmar Pfahl
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Rafael Prikladnicki
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+  Found collaboration: Michael Felderer <-> Marcos Kalinowski
+Processing 8/58: Markku Oivo
+  Found collaboration: Markku Oivo <-> Michael Felderer
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Michael Felderer
+  Found collaboration: Markku Oivo <-> Marcos Kalinowski
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Desmond Greer
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Rafael Prikladnicki
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Michael Felderer
+  Found collaboration: Markku Oivo <-> Marcos Kalinowski
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Desmond Greer
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Rafael Prikladnicki
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Robert Feldt
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Per Runeson
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Rafael Prikladnicki
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Audris Mockus
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Michael Felderer
+  Found collaboration: Markku Oivo <-> Marcos Kalinowski
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Desmond Greer
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Rafael Prikladnicki
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Marcos Kalinowski
+  Found collaboration: Markku Oivo <-> Michael Felderer
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Rafael Prikladnicki
+  Found collaboration: Markku Oivo <-> Sira Vegas
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Hakan Erdogmus
+  Found collaboration: Markku Oivo <-> Hakan Erdogmus
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Xavier Franch
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Marcos Kalinowski
+  Found collaboration: Markku Oivo <-> Michael Felderer
+  Found collaboration: Markku Oivo <-> Tomi Männistö
+  Found collaboration: Markku Oivo <-> Dietmar Pfahl
+  Found collaboration: Markku Oivo <-> Rafael Prikladnicki
+  Found collaboration: Markku Oivo <-> Hakan Erdogmus
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Barbara Russo
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Andreas Jedlitschka
+  Found collaboration: Markku Oivo <-> Maria Teresa Baldassarre
+  Found collaboration: Markku Oivo <-> Danilo Caivano
+  Found collaboration: Markku Oivo <-> Maria Teresa Baldassarre
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Burak Turhan
+  Found collaboration: Markku Oivo <-> Maurizio Morisio
+Processing 9/58: Fabio Q.B. da Silva
+  Found collaboration: Fabio Q.B. da Silva <-> Maria Teresa Baldassarre
+  Found collaboration: Fabio Q.B. da Silva <-> Maria Teresa Baldassarre
+  Found collaboration: Fabio Q.B. da Silva <-> Maria Teresa Baldassarre
+  Found collaboration: Fabio Q.B. da Silva <-> Marcela Genero
+  Found collaboration: Fabio Q.B. da Silva <-> Carolyn Seaman
+  Found collaboration: Fabio Q.B. da Silva <-> Carolyn Seaman
+  Found collaboration: Fabio Q.B. da Silva <-> Marcus Ciolkowski
+  Found collaboration: Fabio Q.B. da Silva <-> Maria Teresa Baldassarre
+  Found collaboration: Fabio Q.B. da Silva <-> Maria Teresa Baldassarre
+  Found collaboration: Fabio Q.B. da Silva <-> Rafael Prikladnicki
+  Found collaboration: Fabio Q.B. da Silva <-> Rafael Prikladnicki
+  Found collaboration: Fabio Q.B. da Silva <-> Rafael Prikladnicki
+Processing 10/58: Daniel Mendez Fernandez
+  Found collaboration: Daniel Mendez Fernandez <-> Maya Daneva
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Robert Feldt
+  Found collaboration: Daniel Mendez Fernandez <-> Burak Turhan
+  Found collaboration: Daniel Mendez Fernandez <-> Sira Vegas
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Rahul Mohanani
+  Found collaboration: Daniel Mendez Fernandez <-> Paris Avgeriou
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Nauman bin Ali
+  Found collaboration: Daniel Mendez Fernandez <-> Paris Avgeriou
+  Found collaboration: Daniel Mendez Fernandez <-> Nauman bin Ali
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Teresa Baldassarre
+  Found collaboration: Daniel Mendez Fernandez <-> Paris Avgeriou
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Nauman bin Ali
+  Found collaboration: Daniel Mendez Fernandez <-> Paris Avgeriou
+  Found collaboration: Daniel Mendez Fernandez <-> Nauman bin Ali
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Paris Avgeriou
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Nauman bin Ali
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Paris Avgeriou
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Nauman bin Ali
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Teresa Baldassarre
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Teresa Baldassarre
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Rahul Mohanani
+  Found collaboration: Daniel Mendez Fernandez <-> Nils Brede Moe
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Teresa Baldassarre
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Teresa Baldassarre
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Teresa Baldassarre
+  Found collaboration: Daniel Mendez Fernandez <-> Maria Paasivaara
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Rogardt Heldal
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Nils Brede Moe
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Dietmar Pfahl
+  Found collaboration: Daniel Mendez Fernandez <-> Desmond Greer
+  Found collaboration: Daniel Mendez Fernandez <-> Tomi Männistö
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Rogardt Heldal
+  Found collaboration: Daniel Mendez Fernandez <-> Robert Feldt
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Dietmar Pfahl
+  Found collaboration: Daniel Mendez Fernandez <-> Desmond Greer
+  Found collaboration: Daniel Mendez Fernandez <-> Tomi Männistö
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Audris Mockus
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Andreas Jedlitschka
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Dietmar Pfahl
+  Found collaboration: Daniel Mendez Fernandez <-> Desmond Greer
+  Found collaboration: Daniel Mendez Fernandez <-> Tomi Männistö
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Tomi Männistö
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Dietmar Pfahl
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Maya Daneva
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Rogardt Heldal
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Burak Turhan
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Maya Daneva
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Rogardt Heldal
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Tomi Männistö
+  Found collaboration: Daniel Mendez Fernandez <-> Markku Oivo
+  Found collaboration: Daniel Mendez Fernandez <-> Dietmar Pfahl
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Maya Daneva
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Michael Felderer
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Xavier Franch
+  Found collaboration: Daniel Mendez Fernandez <-> Stefan Biffl
+  Found collaboration: Daniel Mendez Fernandez <-> Maya Daneva
+  Found collaboration: Daniel Mendez Fernandez <-> Marcos Kalinowski
+  Found collaboration: Daniel Mendez Fernandez <-> Rafael Prikladnicki
+  Found collaboration: Daniel Mendez Fernandez <-> Maya Daneva
+Processing 11/58: Andreas Jedlitschka
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Maurizio Morisio
+  Found collaboration: Andreas Jedlitschka <-> Maurizio Morisio
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Burak Turhan
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Robert Feldt
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Per Runeson
+  Found collaboration: Andreas Jedlitschka <-> Burak Turhan
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> He Zhang
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Xavier Franch
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Michael Felderer
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Tomi Männistö
+  Found collaboration: Andreas Jedlitschka <-> Markku Oivo
+  Found collaboration: Andreas Jedlitschka <-> Maria Teresa Baldassarre
+  Found collaboration: Andreas Jedlitschka <-> Sira Vegas
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Dietmar Pfahl
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Dietmar Pfahl
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Dietmar Pfahl
+  Found collaboration: Andreas Jedlitschka <-> Dietmar Pfahl
+  Found collaboration: Andreas Jedlitschka <-> Marcus Ciolkowski
+  Found collaboration: Andreas Jedlitschka <-> Dietmar Pfahl
+  Found collaboration: Andreas Jedlitschka <-> Dietmar Pfahl
+Processing 12/58: Barbara Russo
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Michael Felderer
+  Found collaboration: Barbara Russo <-> Markku Oivo
+Processing 13/58: Qing Wang
+Processing 14/58: Per Runeson
+  Found collaboration: Per Runeson <-> Robert Feldt
+  Found collaboration: Per Runeson <-> Robert Feldt
+  Found collaboration: Per Runeson <-> Michael Felderer
+  Found collaboration: Per Runeson <-> Maria Teresa Baldassarre
+  Found collaboration: Per Runeson <-> Michael Felderer
+  Found collaboration: Per Runeson <-> Maria Teresa Baldassarre
+  Found collaboration: Per Runeson <-> Maria Teresa Baldassarre
+  Found collaboration: Per Runeson <-> Robert Feldt
+  Found collaboration: Per Runeson <-> Andreas Jedlitschka
+  Found collaboration: Per Runeson <-> Markku Oivo
+  Found collaboration: Per Runeson <-> Burak Turhan
+  Found collaboration: Per Runeson <-> Robert Feldt
+  Found collaboration: Per Runeson <-> Dietmar Pfahl
+  Found collaboration: Per Runeson <-> Dietmar Pfahl
+  Found collaboration: Per Runeson <-> Danilo Caivano
+  Found collaboration: Per Runeson <-> Maria Teresa Baldassarre
+  Found collaboration: Per Runeson <-> Marcela Genero
+  Found collaboration: Per Runeson <-> Dietmar Pfahl
+  Found collaboration: Per Runeson <-> Robert Feldt
+Processing 15/58: Maria Paasivaara
+  Found collaboration: Maria Paasivaara <-> Nils Brede Moe
+Processing 16/58: Clemente Izurieta
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Michael Felderer
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Carolyn Seaman
+  Found collaboration: Clemente Izurieta <-> Michael Felderer
+  Found collaboration: Clemente Izurieta <-> Paris Avgeriou
+  Found collaboration: Clemente Izurieta <-> Paris Avgeriou
+Processing 17/58: He Zhang
+  Found collaboration: He Zhang <-> Qing Wang
+  Found collaboration: He Zhang <-> Qing Wang
+  Found collaboration: He Zhang <-> Qing Wang
+  Found collaboration: He Zhang <-> Qing Wang
+  Found collaboration: He Zhang <-> Qing Wang
+Processing 18/58: Kenichi Matsumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+  Found collaboration: Kenichi Matsumoto <-> Shinji Kusumoto
+Processing 19/58: Jingyu Li
+  Found collaboration: Jingyu Li <-> Xavier Franch
+  Found collaboration: Jingyu Li <-> Xavier Franch
+  Found collaboration: Jingyu Li <-> Nils Brede Moe
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Xavier Franch
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Xavier Franch
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+  Found collaboration: Jingyu Li <-> Maurizio Morisio
+Processing 20/58: Laurie Williams
+  Found collaboration: Laurie Williams <-> Michael Felderer
+  Found collaboration: Laurie Williams <-> Markku Oivo
+  Found collaboration: Laurie Williams <-> Hakan Erdogmus
+Processing 21/58: Takeshi Hayama
+Processing 22/58: Shinji Kusumoto
+Processing 23/58: Minghui Zhou
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Marcos Kalinowski
+  Found collaboration: Minghui Zhou <-> Burak Turhan
+  Found collaboration: Minghui Zhou <-> Marcos Kalinowski
+  Found collaboration: Minghui Zhou <-> Burak Turhan
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+  Found collaboration: Minghui Zhou <-> Audris Mockus
+Processing 24/58: Marcos Kalinowski
+  Found collaboration: Marcos Kalinowski <-> Paris Avgeriou
+  Found collaboration: Marcos Kalinowski <-> Nauman bin Ali
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Paris Avgeriou
+  Found collaboration: Marcos Kalinowski <-> Nauman bin Ali
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Paris Avgeriou
+  Found collaboration: Marcos Kalinowski <-> Nauman bin Ali
+  Found collaboration: Marcos Kalinowski <-> Paris Avgeriou
+  Found collaboration: Marcos Kalinowski <-> Nauman bin Ali
+  Found collaboration: Marcos Kalinowski <-> Paris Avgeriou
+  Found collaboration: Marcos Kalinowski <-> Nauman bin Ali
+  Found collaboration: Marcos Kalinowski <-> Paris Avgeriou
+  Found collaboration: Marcos Kalinowski <-> Nauman bin Ali
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Eray Tüzün
+  Found collaboration: Marcos Kalinowski <-> Marcela Genero
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Rogardt Heldal
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Desmond Greer
+  Found collaboration: Marcos Kalinowski <-> Tomi Männistö
+  Found collaboration: Marcos Kalinowski <-> Markku Oivo
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Marcela Genero
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Eray Tüzün
+  Found collaboration: Marcos Kalinowski <-> Marcela Genero
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Rogardt Heldal
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Burak Turhan
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Maria Teresa Baldassarre
+  Found collaboration: Marcos Kalinowski <-> Burak Turhan
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Desmond Greer
+  Found collaboration: Marcos Kalinowski <-> Tomi Männistö
+  Found collaboration: Marcos Kalinowski <-> Markku Oivo
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Xavier Franch
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Xavier Franch
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Marcela Genero
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Desmond Greer
+  Found collaboration: Marcos Kalinowski <-> Tomi Männistö
+  Found collaboration: Marcos Kalinowski <-> Markku Oivo
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Tomi Männistö
+  Found collaboration: Marcos Kalinowski <-> Markku Oivo
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Burak Turhan
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Tomi Männistö
+  Found collaboration: Marcos Kalinowski <-> Markku Oivo
+  Found collaboration: Marcos Kalinowski <-> Dietmar Pfahl
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Michael Felderer
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Stefan Biffl
+  Found collaboration: Marcos Kalinowski <-> Rafael Prikladnicki
+Processing 25/58: Rafael Prikladnicki
+  Found collaboration: Rafael Prikladnicki <-> Paris Avgeriou
+  Found collaboration: Rafael Prikladnicki <-> Nils Brede Moe
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Eray Tüzün
+  Found collaboration: Rafael Prikladnicki <-> Marcela Genero
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Rogardt Heldal
+  Found collaboration: Rafael Prikladnicki <-> Stefan Biffl
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Desmond Greer
+  Found collaboration: Rafael Prikladnicki <-> Tomi Männistö
+  Found collaboration: Rafael Prikladnicki <-> Markku Oivo
+  Found collaboration: Rafael Prikladnicki <-> Marcela Genero
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Rogardt Heldal
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Eray Tüzün
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Eray Tüzün
+  Found collaboration: Rafael Prikladnicki <-> Marcela Genero
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Rogardt Heldal
+  Found collaboration: Rafael Prikladnicki <-> Stefan Biffl
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Desmond Greer
+  Found collaboration: Rafael Prikladnicki <-> Tomi Männistö
+  Found collaboration: Rafael Prikladnicki <-> Markku Oivo
+  Found collaboration: Rafael Prikladnicki <-> Rogardt Heldal
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Eray Tüzün
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Markku Oivo
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Desmond Greer
+  Found collaboration: Rafael Prikladnicki <-> Tomi Männistö
+  Found collaboration: Rafael Prikladnicki <-> Markku Oivo
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Tomi Männistö
+  Found collaboration: Rafael Prikladnicki <-> Markku Oivo
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Tomi Männistö
+  Found collaboration: Rafael Prikladnicki <-> Markku Oivo
+  Found collaboration: Rafael Prikladnicki <-> Dietmar Pfahl
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Michael Felderer
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+  Found collaboration: Rafael Prikladnicki <-> Marcos Kalinowski
+Processing 26/58: Marcus Ciolkowski
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Paris Avgeriou
+  Found collaboration: Marcus Ciolkowski <-> Paris Avgeriou
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Dietmar Pfahl
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Dietmar Pfahl
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Dietmar Pfahl
+  Found collaboration: Marcus Ciolkowski <-> Sandro Morasca
+  Found collaboration: Marcus Ciolkowski <-> Sira Vegas
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Giovanni Cantone
+  Found collaboration: Marcus Ciolkowski <-> Andreas Jedlitschka
+  Found collaboration: Marcus Ciolkowski <-> Stefan Biffl
+  Found collaboration: Marcus Ciolkowski <-> Sira Vegas
+  Found collaboration: Marcus Ciolkowski <-> Stefan Biffl
+Processing 27/58: Desmond Greer
+  Found collaboration: Desmond Greer <-> Michael Felderer
+  Found collaboration: Desmond Greer <-> Marcos Kalinowski
+  Found collaboration: Desmond Greer <-> Dietmar Pfahl
+  Found collaboration: Desmond Greer <-> Tomi Männistö
+  Found collaboration: Desmond Greer <-> Markku Oivo
+  Found collaboration: Desmond Greer <-> Rafael Prikladnicki
+  Found collaboration: Desmond Greer <-> Michael Felderer
+  Found collaboration: Desmond Greer <-> Marcos Kalinowski
+  Found collaboration: Desmond Greer <-> Dietmar Pfahl
+  Found collaboration: Desmond Greer <-> Tomi Männistö
+  Found collaboration: Desmond Greer <-> Markku Oivo
+  Found collaboration: Desmond Greer <-> Rafael Prikladnicki
+  Found collaboration: Desmond Greer <-> Michael Felderer
+  Found collaboration: Desmond Greer <-> Marcos Kalinowski
+  Found collaboration: Desmond Greer <-> Dietmar Pfahl
+  Found collaboration: Desmond Greer <-> Tomi Männistö
+  Found collaboration: Desmond Greer <-> Markku Oivo
+  Found collaboration: Desmond Greer <-> Rafael Prikladnicki
+  Found collaboration: Desmond Greer <-> Marcos Kalinowski
+  Found collaboration: Desmond Greer <-> Michael Felderer
+  Found collaboration: Desmond Greer <-> Tomi Männistö
+  Found collaboration: Desmond Greer <-> Markku Oivo
+  Found collaboration: Desmond Greer <-> Dietmar Pfahl
+  Found collaboration: Desmond Greer <-> Rafael Prikladnicki
+  Found collaboration: Desmond Greer <-> Marcos Kalinowski
+  Found collaboration: Desmond Greer <-> Michael Felderer
+  Found collaboration: Desmond Greer <-> Tomi Männistö
+  Found collaboration: Desmond Greer <-> Markku Oivo
+  Found collaboration: Desmond Greer <-> Dietmar Pfahl
+  Found collaboration: Desmond Greer <-> Rafael Prikladnicki
+Processing 28/58: Ayşe Başar
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Maria Teresa Baldassarre
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Andreas Jedlitschka
+  Found collaboration: Ayşe Başar <-> Andreas Jedlitschka
+  Found collaboration: Ayşe Başar <-> He Zhang
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Stefan Biffl
+  Found collaboration: Ayşe Başar <-> Audris Mockus
+  Found collaboration: Ayşe Başar <-> Michael Felderer
+  Found collaboration: Ayşe Başar <-> Markku Oivo
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Maurizio Morisio
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Markku Oivo
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+  Found collaboration: Ayşe Başar <-> Burak Turhan
+Processing 29/58: Magne Jørgensen
+  Found collaboration: Magne Jørgensen <-> Hakan Erdogmus
+  Found collaboration: Magne Jørgensen <-> Hakan Erdogmus
+Processing 30/58: Nils Brede Moe
+  Found collaboration: Nils Brede Moe <-> Paris Avgeriou
+  Found collaboration: Nils Brede Moe <-> Rafael Prikladnicki
+  Found collaboration: Nils Brede Moe <-> Maria Paasivaara
+Processing 31/58: Danilo Caivano
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Burak Turhan
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Burak Turhan
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Burak Turhan
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Markku Oivo
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Per Runeson
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Marcela Genero
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+  Found collaboration: Danilo Caivano <-> Maria Teresa Baldassarre
+Processing 32/58: Xavier Franch
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Michael Felderer
+  Found collaboration: Xavier Franch <-> Tomi Männistö
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Burak Turhan
+  Found collaboration: Xavier Franch <-> Rogardt Heldal
+  Found collaboration: Xavier Franch <-> Michael Felderer
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Stefan Biffl
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Tomi Männistö
+  Found collaboration: Xavier Franch <-> Burak Turhan
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Rogardt Heldal
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Michael Felderer
+  Found collaboration: Xavier Franch <-> Marcos Kalinowski
+  Found collaboration: Xavier Franch <-> Tomi Männistö
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Michael Felderer
+  Found collaboration: Xavier Franch <-> Marcos Kalinowski
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Tomi Männistö
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Tomi Männistö
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Rogardt Heldal
+  Found collaboration: Xavier Franch <-> Andreas Jedlitschka
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Rogardt Heldal
+  Found collaboration: Xavier Franch <-> Markku Oivo
+  Found collaboration: Xavier Franch <-> Paris Avgeriou
+  Found collaboration: Xavier Franch <-> Michael Felderer
+  Found collaboration: Xavier Franch <-> Stefan Biffl
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Paris Avgeriou
+  Found collaboration: Xavier Franch <-> Paris Avgeriou
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Maya Daneva
+  Found collaboration: Xavier Franch <-> Paris Avgeriou
+  Found collaboration: Xavier Franch <-> Paris Avgeriou
+  Found collaboration: Xavier Franch <-> Paris Avgeriou
+Processing 33/58: Ali Babar
+  Found collaboration: Ali Babar <-> Stefan Biffl
+  Found collaboration: Ali Babar <-> Xavier Franch
+  Found collaboration: Ali Babar <-> Giovanni Cantone
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Xavier Franch
+  Found collaboration: Ali Babar <-> Tomi Männistö
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Giovanni Cantone
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Paris Avgeriou
+  Found collaboration: Ali Babar <-> Markku Oivo
+  Found collaboration: Ali Babar <-> Markku Oivo
+  Found collaboration: Ali Babar <-> Stefan Biffl
+  Found collaboration: Ali Babar <-> Stefan Biffl
+  Found collaboration: Ali Babar <-> Stefan Biffl
+  Found collaboration: Ali Babar <-> Stefan Biffl
+Processing 34/58: Paris Avgeriou
+  Found collaboration: Paris Avgeriou <-> Marcos Kalinowski
+  Found collaboration: Paris Avgeriou <-> Nauman bin Ali
+  Found collaboration: Paris Avgeriou <-> Nauman bin Ali
+  Found collaboration: Paris Avgeriou <-> Marcos Kalinowski
+  Found collaboration: Paris Avgeriou <-> Nils Brede Moe
+  Found collaboration: Paris Avgeriou <-> Rafael Prikladnicki
+  Found collaboration: Paris Avgeriou <-> Marcos Kalinowski
+  Found collaboration: Paris Avgeriou <-> Nauman bin Ali
+  Found collaboration: Paris Avgeriou <-> Nauman bin Ali
+  Found collaboration: Paris Avgeriou <-> Marcos Kalinowski
+  Found collaboration: Paris Avgeriou <-> Marcos Kalinowski
+  Found collaboration: Paris Avgeriou <-> Nauman bin Ali
+  Found collaboration: Paris Avgeriou <-> Marcos Kalinowski
+  Found collaboration: Paris Avgeriou <-> Nauman bin Ali
+  Found collaboration: Paris Avgeriou <-> Marcus Ciolkowski
+  Found collaboration: Paris Avgeriou <-> Marcus Ciolkowski
+  Found collaboration: Paris Avgeriou <-> Rogardt Heldal
+  Found collaboration: Paris Avgeriou <-> Clemente Izurieta
+  Found collaboration: Paris Avgeriou <-> Rogardt Heldal
+  Found collaboration: Paris Avgeriou <-> Xavier Franch
+  Found collaboration: Paris Avgeriou <-> Clemente Izurieta
+  Found collaboration: Paris Avgeriou <-> Tomi Männistö
+  Found collaboration: Paris Avgeriou <-> Xavier Franch
+  Found collaboration: Paris Avgeriou <-> Tomi Männistö
+  Found collaboration: Paris Avgeriou <-> Xavier Franch
+  Found collaboration: Paris Avgeriou <-> Xavier Franch
+  Found collaboration: Paris Avgeriou <-> Xavier Franch
+  Found collaboration: Paris Avgeriou <-> Xavier Franch
+  Found collaboration: Paris Avgeriou <-> Tomi Männistö
+  Found collaboration: Paris Avgeriou <-> Tomi Männistö
+Processing 35/58: Sira Vegas
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Dietmar Pfahl
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Dietmar Pfahl
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Michael Felderer
+  Found collaboration: Sira Vegas <-> Robert Feldt
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Dietmar Pfahl
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Burak Turhan
+  Found collaboration: Sira Vegas <-> Hakan Erdogmus
+  Found collaboration: Sira Vegas <-> Markku Oivo
+  Found collaboration: Sira Vegas <-> Maria Teresa Baldassarre
+  Found collaboration: Sira Vegas <-> Andreas Jedlitschka
+  Found collaboration: Sira Vegas <-> Marcus Ciolkowski
+  Found collaboration: Sira Vegas <-> Dietmar Pfahl
+  Found collaboration: Sira Vegas <-> Sandro Morasca
+  Found collaboration: Sira Vegas <-> Marcus Ciolkowski
+  Found collaboration: Sira Vegas <-> Stefan Biffl
+Processing 36/58: Oscar Pastor
+  Found collaboration: Oscar Pastor <-> Sira Vegas
+  Found collaboration: Oscar Pastor <-> Maya Daneva
+  Found collaboration: Oscar Pastor <-> Maya Daneva
+  Found collaboration: Oscar Pastor <-> Xavier Franch
+  Found collaboration: Oscar Pastor <-> Marcela Genero
+  Found collaboration: Oscar Pastor <-> Maya Daneva
+  Found collaboration: Oscar Pastor <-> Xavier Franch
+  Found collaboration: Oscar Pastor <-> Marcos Kalinowski
+  Found collaboration: Oscar Pastor <-> Maya Daneva
+  Found collaboration: Oscar Pastor <-> Xavier Franch
+  Found collaboration: Oscar Pastor <-> Maya Daneva
+  Found collaboration: Oscar Pastor <-> Xavier Franch
+  Found collaboration: Oscar Pastor <-> Xavier Franch
+  Found collaboration: Oscar Pastor <-> Maya Daneva
+Processing 37/58: Sandro Morasca
+  Found collaboration: Sandro Morasca <-> Marcela Genero
+  Found collaboration: Sandro Morasca <-> Marcela Genero
+  Found collaboration: Sandro Morasca <-> Marcela Genero
+  Found collaboration: Sandro Morasca <-> Marcus Ciolkowski
+  Found collaboration: Sandro Morasca <-> Dietmar Pfahl
+  Found collaboration: Sandro Morasca <-> Sira Vegas
+Processing 38/58: Jeffrey Carver
+  Found collaboration: Jeffrey Carver <-> Xavier Franch
+  Found collaboration: Jeffrey Carver <-> Rogardt Heldal
+  Found collaboration: Jeffrey Carver <-> Rafael Prikladnicki
+  Found collaboration: Jeffrey Carver <-> Rafael Prikladnicki
+  Found collaboration: Jeffrey Carver <-> Xavier Franch
+  Found collaboration: Jeffrey Carver <-> Rogardt Heldal
+  Found collaboration: Jeffrey Carver <-> Rafael Prikladnicki
+  Found collaboration: Jeffrey Carver <-> Rafael Prikladnicki
+  Found collaboration: Jeffrey Carver <-> Rafael Prikladnicki
+  Found collaboration: Jeffrey Carver <-> Michael Felderer
+  Found collaboration: Jeffrey Carver <-> Xavier Franch
+  Found collaboration: Jeffrey Carver <-> Rogardt Heldal
+  Found collaboration: Jeffrey Carver <-> Xavier Franch
+  Found collaboration: Jeffrey Carver <-> Rogardt Heldal
+  Found collaboration: Jeffrey Carver <-> Maria Paasivaara
+  Found collaboration: Jeffrey Carver <-> Rafael Prikladnicki
+  Found collaboration: Jeffrey Carver <-> Sira Vegas
+  Found collaboration: Jeffrey Carver <-> Michael Felderer
+  Found collaboration: Jeffrey Carver <-> Markku Oivo
+  Found collaboration: Jeffrey Carver <-> Maria Teresa Baldassarre
+  Found collaboration: Jeffrey Carver <-> Sira Vegas
+  Found collaboration: Jeffrey Carver <-> Maria Teresa Baldassarre
+  Found collaboration: Jeffrey Carver <-> Dietmar Pfahl
+  Found collaboration: Jeffrey Carver <-> Sandro Morasca
+  Found collaboration: Jeffrey Carver <-> Sira Vegas
+  Found collaboration: Jeffrey Carver <-> Sandro Morasca
+  Found collaboration: Jeffrey Carver <-> Sandro Morasca
+  Found collaboration: Jeffrey Carver <-> Guilherme Travassos
+Processing 39/58: Maria Teresa Baldassarre
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Nauman bin Ali
+  Found collaboration: Maria Teresa Baldassarre <-> Marcela Genero
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcela Genero
+  Found collaboration: Maria Teresa Baldassarre <-> Per Runeson
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Stefan Biffl
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Stefan Biffl
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Stefan Biffl
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Stefan Biffl
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Stefan Biffl
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Stefan Biffl
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Eray Tüzün
+  Found collaboration: Maria Teresa Baldassarre <-> Hakan Erdogmus
+  Found collaboration: Maria Teresa Baldassarre <-> Michael Felderer
+  Found collaboration: Maria Teresa Baldassarre <-> Robert Feldt
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Per Runeson
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Per Runeson
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Marcos Kalinowski
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Per Runeson
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Burak Turhan
+  Found collaboration: Maria Teresa Baldassarre <-> Marcela Genero
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Sira Vegas
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Markku Oivo
+  Found collaboration: Maria Teresa Baldassarre <-> Andreas Jedlitschka
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Markku Oivo
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+  Found collaboration: Maria Teresa Baldassarre <-> Danilo Caivano
+Processing 40/58: Marcela Genero
+  Found collaboration: Marcela Genero <-> Dietmar Pfahl
+  Found collaboration: Marcela Genero <-> Michael Felderer
+  Found collaboration: Marcela Genero <-> Eray Tüzün
+  Found collaboration: Marcela Genero <-> Marcos Kalinowski
+  Found collaboration: Marcela Genero <-> Rafael Prikladnicki
+  Found collaboration: Marcela Genero <-> Rogardt Heldal
+  Found collaboration: Marcela Genero <-> Stefan Biffl
+  Found collaboration: Marcela Genero <-> Rafael Prikladnicki
+  Found collaboration: Marcela Genero <-> Marcos Kalinowski
+  Found collaboration: Marcela Genero <-> Rogardt Heldal
+  Found collaboration: Marcela Genero <-> Michael Felderer
+  Found collaboration: Marcela Genero <-> Rafael Prikladnicki
+  Found collaboration: Marcela Genero <-> Eray Tüzün
+  Found collaboration: Marcela Genero <-> Dietmar Pfahl
+  Found collaboration: Marcela Genero <-> Dietmar Pfahl
+  Found collaboration: Marcela Genero <-> Michael Felderer
+  Found collaboration: Marcela Genero <-> Eray Tüzün
+  Found collaboration: Marcela Genero <-> Marcos Kalinowski
+  Found collaboration: Marcela Genero <-> Rafael Prikladnicki
+  Found collaboration: Marcela Genero <-> Rogardt Heldal
+  Found collaboration: Marcela Genero <-> Stefan Biffl
+  Found collaboration: Marcela Genero <-> Rogardt Heldal
+  Found collaboration: Marcela Genero <-> Michael Felderer
+  Found collaboration: Marcela Genero <-> Rafael Prikladnicki
+  Found collaboration: Marcela Genero <-> Eray Tüzün
+  Found collaboration: Marcela Genero <-> Dietmar Pfahl
+  Found collaboration: Marcela Genero <-> Maria Teresa Baldassarre
+  Found collaboration: Marcela Genero <-> Marcos Kalinowski
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Maria Teresa Baldassarre
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Maria Teresa Baldassarre
+  Found collaboration: Marcela Genero <-> Per Runeson
+  Found collaboration: Marcela Genero <-> Sandro Morasca
+  Found collaboration: Marcela Genero <-> Sandro Morasca
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Danilo Caivano
+  Found collaboration: Marcela Genero <-> Sandro Morasca
+  Found collaboration: Marcela Genero <-> Giovanni Cantone
+Processing 41/58: Dan Port
+  Found collaboration: Dan Port <-> Dietmar Pfahl
+  Found collaboration: Dan Port <-> Xavier Franch
+Processing 42/58: Tomi Männistö
+  Found collaboration: Tomi Männistö <-> Xavier Franch
+  Found collaboration: Tomi Männistö <-> Michael Felderer
+  Found collaboration: Tomi Männistö <-> Marcos Kalinowski
+  Found collaboration: Tomi Männistö <-> Dietmar Pfahl
+  Found collaboration: Tomi Männistö <-> Desmond Greer
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Rafael Prikladnicki
+  Found collaboration: Tomi Männistö <-> Xavier Franch
+  Found collaboration: Tomi Männistö <-> Michael Felderer
+  Found collaboration: Tomi Männistö <-> Marcos Kalinowski
+  Found collaboration: Tomi Männistö <-> Dietmar Pfahl
+  Found collaboration: Tomi Männistö <-> Desmond Greer
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Rafael Prikladnicki
+  Found collaboration: Tomi Männistö <-> Xavier Franch
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Xavier Franch
+  Found collaboration: Tomi Männistö <-> Michael Felderer
+  Found collaboration: Tomi Männistö <-> Marcos Kalinowski
+  Found collaboration: Tomi Männistö <-> Dietmar Pfahl
+  Found collaboration: Tomi Männistö <-> Desmond Greer
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Rafael Prikladnicki
+  Found collaboration: Tomi Männistö <-> Xavier Franch
+  Found collaboration: Tomi Männistö <-> Marcos Kalinowski
+  Found collaboration: Tomi Männistö <-> Michael Felderer
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Dietmar Pfahl
+  Found collaboration: Tomi Männistö <-> Rafael Prikladnicki
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Marcos Kalinowski
+  Found collaboration: Tomi Männistö <-> Michael Felderer
+  Found collaboration: Tomi Männistö <-> Markku Oivo
+  Found collaboration: Tomi Männistö <-> Dietmar Pfahl
+  Found collaboration: Tomi Männistö <-> Rafael Prikladnicki
+  Found collaboration: Tomi Männistö <-> Paris Avgeriou
+  Found collaboration: Tomi Männistö <-> Paris Avgeriou
+  Found collaboration: Tomi Männistö <-> Andreas Jedlitschka
+  Found collaboration: Tomi Männistö <-> Paris Avgeriou
+  Found collaboration: Tomi Männistö <-> Paris Avgeriou
+Processing 43/58: Rahul Mohanani
+  Found collaboration: Rahul Mohanani <-> Burak Turhan
+  Found collaboration: Rahul Mohanani <-> Burak Turhan
+  Found collaboration: Rahul Mohanani <-> Burak Turhan
+  Found collaboration: Rahul Mohanani <-> Burak Turhan
+  Found collaboration: Rahul Mohanani <-> Burak Turhan
+  Found collaboration: Rahul Mohanani <-> Burak Turhan
+Processing 44/58: Carolyn Seaman
+  Found collaboration: Carolyn Seaman <-> Robert Feldt
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Eray Tüzün
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Michael Felderer
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Paris Avgeriou
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Paris Avgeriou
+  Found collaboration: Carolyn Seaman <-> Paris Avgeriou
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Clemente Izurieta
+  Found collaboration: Carolyn Seaman <-> Rafael Prikladnicki
+  Found collaboration: Carolyn Seaman <-> Hakan Erdogmus
+  Found collaboration: Carolyn Seaman <-> Maurizio Morisio
+  Found collaboration: Carolyn Seaman <-> Maurizio Morisio
+Processing 45/58: Dag Sjøberg
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Nils Brede Moe
+  Found collaboration: Dag Sjøberg <-> Robert Feldt
+  Found collaboration: Dag Sjøberg <-> Andreas Jedlitschka
+  Found collaboration: Dag Sjøberg <-> Markku Oivo
+  Found collaboration: Dag Sjøberg <-> Per Runeson
+  Found collaboration: Dag Sjøberg <-> Burak Turhan
+  Found collaboration: Dag Sjøberg <-> Nils Brede Moe
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Per Runeson
+  Found collaboration: Dag Sjøberg <-> Audris Mockus
+  Found collaboration: Dag Sjøberg <-> Dietmar Pfahl
+  Found collaboration: Dag Sjøberg <-> Per Runeson
+  Found collaboration: Dag Sjøberg <-> Audris Mockus
+  Found collaboration: Dag Sjøberg <-> Dietmar Pfahl
+  Found collaboration: Dag Sjøberg <-> Per Runeson
+  Found collaboration: Dag Sjøberg <-> Audris Mockus
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+  Found collaboration: Dag Sjøberg <-> Magne Jørgensen
+Processing 46/58: Burak Turhan
+  Found collaboration: Burak Turhan <-> Eray Tüzün
+  Found collaboration: Burak Turhan <-> Eray Tüzün
+  Found collaboration: Burak Turhan <-> Hakan Erdogmus
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Michael Felderer
+  Found collaboration: Burak Turhan <-> Robert Feldt
+  Found collaboration: Burak Turhan <-> Xavier Franch
+  Found collaboration: Burak Turhan <-> Rahul Mohanani
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Dietmar Pfahl
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Danilo Caivano
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Rahul Mohanani
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Danilo Caivano
+  Found collaboration: Burak Turhan <-> Xavier Franch
+  Found collaboration: Burak Turhan <-> Marcos Kalinowski
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Rahul Mohanani
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Marcos Kalinowski
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Michael Felderer
+  Found collaboration: Burak Turhan <-> Robert Feldt
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Eray Tüzün
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Dietmar Pfahl
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Rahul Mohanani
+  Found collaboration: Burak Turhan <-> Andreas Jedlitschka
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Robert Feldt
+  Found collaboration: Burak Turhan <-> Andreas Jedlitschka
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Per Runeson
+  Found collaboration: Burak Turhan <-> Maria Teresa Baldassarre
+  Found collaboration: Burak Turhan <-> Danilo Caivano
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Sira Vegas
+  Found collaboration: Burak Turhan <-> Hakan Erdogmus
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Hakan Erdogmus
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Rahul Mohanani
+  Found collaboration: Burak Turhan <-> Stefan Biffl
+  Found collaboration: Burak Turhan <-> Michael Felderer
+  Found collaboration: Burak Turhan <-> Marcos Kalinowski
+  Found collaboration: Burak Turhan <-> Rahul Mohanani
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Hakan Erdogmus
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Hakan Erdogmus
+  Found collaboration: Burak Turhan <-> Hakan Erdogmus
+  Found collaboration: Burak Turhan <-> Markku Oivo
+  Found collaboration: Burak Turhan <-> Markku Oivo
+Processing 47/58: Stefan Wagner
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Stefan Biffl
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Stefan Biffl
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Wagner <-> Stefan Biffl
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Stefan Biffl
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Stefan Biffl
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Stefan Biffl
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Xavier Franch
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Dietmar Pfahl
+  Found collaboration: Stefan Wagner <-> Desmond Greer
+  Found collaboration: Stefan Wagner <-> Tomi Männistö
+  Found collaboration: Stefan Wagner <-> Markku Oivo
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Xavier Franch
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Robert Feldt
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Dietmar Pfahl
+  Found collaboration: Stefan Wagner <-> Desmond Greer
+  Found collaboration: Stefan Wagner <-> Tomi Männistö
+  Found collaboration: Stefan Wagner <-> Markku Oivo
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Xavier Franch
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Xavier Franch
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Dietmar Pfahl
+  Found collaboration: Stefan Wagner <-> Desmond Greer
+  Found collaboration: Stefan Wagner <-> Tomi Männistö
+  Found collaboration: Stefan Wagner <-> Markku Oivo
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Tomi Männistö
+  Found collaboration: Stefan Wagner <-> Markku Oivo
+  Found collaboration: Stefan Wagner <-> Dietmar Pfahl
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Maya Daneva
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Tomi Männistö
+  Found collaboration: Stefan Wagner <-> Markku Oivo
+  Found collaboration: Stefan Wagner <-> Dietmar Pfahl
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Michael Felderer
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Marcos Kalinowski
+  Found collaboration: Stefan Wagner <-> Rafael Prikladnicki
+  Found collaboration: Stefan Wagner <-> Maya Daneva
+  Found collaboration: Stefan Wagner <-> Burak Turhan
+Processing 48/58: Dietmar Pfahl
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Eray Tüzün
+  Found collaboration: Dietmar Pfahl <-> Marcela Genero
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Rogardt Heldal
+  Found collaboration: Dietmar Pfahl <-> Stefan Biffl
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Desmond Greer
+  Found collaboration: Dietmar Pfahl <-> Tomi Männistö
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Eray Tüzün
+  Found collaboration: Dietmar Pfahl <-> Marcela Genero
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Rogardt Heldal
+  Found collaboration: Dietmar Pfahl <-> Stefan Biffl
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Desmond Greer
+  Found collaboration: Dietmar Pfahl <-> Tomi Männistö
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Desmond Greer
+  Found collaboration: Dietmar Pfahl <-> Tomi Männistö
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Nauman bin Ali
+  Found collaboration: Dietmar Pfahl <-> Nauman bin Ali
+  Found collaboration: Dietmar Pfahl <-> Sira Vegas
+  Found collaboration: Dietmar Pfahl <-> Burak Turhan
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Sira Vegas
+  Found collaboration: Dietmar Pfahl <-> Rogardt Heldal
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Eray Tüzün
+  Found collaboration: Dietmar Pfahl <-> Sira Vegas
+  Found collaboration: Dietmar Pfahl <-> Burak Turhan
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Rogardt Heldal
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Eray Tüzün
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Marcus Ciolkowski
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Tomi Männistö
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Rogardt Heldal
+  Found collaboration: Dietmar Pfahl <-> Marcos Kalinowski
+  Found collaboration: Dietmar Pfahl <-> Michael Felderer
+  Found collaboration: Dietmar Pfahl <-> Tomi Männistö
+  Found collaboration: Dietmar Pfahl <-> Markku Oivo
+  Found collaboration: Dietmar Pfahl <-> Rafael Prikladnicki
+  Found collaboration: Dietmar Pfahl <-> Per Runeson
+  Found collaboration: Dietmar Pfahl <-> Per Runeson
+  Found collaboration: Dietmar Pfahl <-> Per Runeson
+  Found collaboration: Dietmar Pfahl <-> Andreas Jedlitschka
+  Found collaboration: Dietmar Pfahl <-> Marcus Ciolkowski
+  Found collaboration: Dietmar Pfahl <-> Andreas Jedlitschka
+  Found collaboration: Dietmar Pfahl <-> Marcus Ciolkowski
+  Found collaboration: Dietmar Pfahl <-> Sandro Morasca
+  Found collaboration: Dietmar Pfahl <-> Sira Vegas
+  Found collaboration: Dietmar Pfahl <-> Andreas Jedlitschka
+  Found collaboration: Dietmar Pfahl <-> Andreas Jedlitschka
+  Found collaboration: Dietmar Pfahl <-> Andreas Jedlitschka
+  Found collaboration: Dietmar Pfahl <-> Andreas Jedlitschka
+Processing 49/58: Audris Mockus
+  Found collaboration: Audris Mockus <-> Markku Oivo
+Processing 50/58: Maya Daneva
+  Found collaboration: Maya Daneva <-> Xavier Franch
+  Found collaboration: Maya Daneva <-> Xavier Franch
+  Found collaboration: Maya Daneva <-> Xavier Franch
+  Found collaboration: Maya Daneva <-> Xavier Franch
+  Found collaboration: Maya Daneva <-> Xavier Franch
+  Found collaboration: Maya Daneva <-> Stefan Biffl
+  Found collaboration: Maya Daneva <-> Xavier Franch
+  Found collaboration: Maya Daneva <-> Xavier Franch
+Processing 51/58: Martin Solari
+  Found collaboration: Martin Solari <-> Rafael Prikladnicki
+  Found collaboration: Martin Solari <-> Marcela Genero
+  Found collaboration: Martin Solari <-> Marcos Kalinowski
+  Found collaboration: Martin Solari <-> Sira Vegas
+  Found collaboration: Martin Solari <-> Marcos Kalinowski
+  Found collaboration: Martin Solari <-> Sira Vegas
+  Found collaboration: Martin Solari <-> Marcos Kalinowski
+  Found collaboration: Martin Solari <-> Sira Vegas
+  Found collaboration: Martin Solari <-> Sira Vegas
+  Found collaboration: Martin Solari <-> Sira Vegas
+  Found collaboration: Martin Solari <-> Sira Vegas
+  Found collaboration: Martin Solari <-> Sira Vegas
+Processing 52/58: Maurizio Morisio
+  Found collaboration: Maurizio Morisio <-> Andreas Jedlitschka
+  Found collaboration: Maurizio Morisio <-> Andreas Jedlitschka
+  Found collaboration: Maurizio Morisio <-> Hakan Erdogmus
+  Found collaboration: Maurizio Morisio <-> Markku Oivo
+  Found collaboration: Maurizio Morisio <-> Guilherme Travassos
+Processing 53/58: Stefan Biffl
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Maria Teresa Baldassarre
+  Found collaboration: Stefan Biffl <-> Dietmar Pfahl
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Eray Tüzün
+  Found collaboration: Stefan Biffl <-> Marcela Genero
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Rafael Prikladnicki
+  Found collaboration: Stefan Biffl <-> Rogardt Heldal
+  Found collaboration: Stefan Biffl <-> Dietmar Pfahl
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Eray Tüzün
+  Found collaboration: Stefan Biffl <-> Marcela Genero
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Rafael Prikladnicki
+  Found collaboration: Stefan Biffl <-> Rogardt Heldal
+  Found collaboration: Stefan Biffl <-> Xavier Franch
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Michael Felderer
+  Found collaboration: Stefan Biffl <-> Burak Turhan
+  Found collaboration: Stefan Biffl <-> Xavier Franch
+  Found collaboration: Stefan Biffl <-> Maya Daneva
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Marcos Kalinowski
+  Found collaboration: Stefan Biffl <-> Hakan Erdogmus
+  Found collaboration: Stefan Biffl <-> Marcus Ciolkowski
+  Found collaboration: Stefan Biffl <-> Marcus Ciolkowski
+  Found collaboration: Stefan Biffl <-> Sira Vegas
+Processing 54/58: Rogardt Heldal
+  Found collaboration: Rogardt Heldal <-> Xavier Franch
+  Found collaboration: Rogardt Heldal <-> Dietmar Pfahl
+  Found collaboration: Rogardt Heldal <-> Michael Felderer
+  Found collaboration: Rogardt Heldal <-> Eray Tüzün
+  Found collaboration: Rogardt Heldal <-> Marcela Genero
+  Found collaboration: Rogardt Heldal <-> Marcos Kalinowski
+  Found collaboration: Rogardt Heldal <-> Rafael Prikladnicki
+  Found collaboration: Rogardt Heldal <-> Stefan Biffl
+  Found collaboration: Rogardt Heldal <-> Michael Felderer
+  Found collaboration: Rogardt Heldal <-> Rafael Prikladnicki
+  Found collaboration: Rogardt Heldal <-> Eray Tüzün
+  Found collaboration: Rogardt Heldal <-> Dietmar Pfahl
+  Found collaboration: Rogardt Heldal <-> Dietmar Pfahl
+  Found collaboration: Rogardt Heldal <-> Michael Felderer
+  Found collaboration: Rogardt Heldal <-> Eray Tüzün
+  Found collaboration: Rogardt Heldal <-> Marcela Genero
+  Found collaboration: Rogardt Heldal <-> Marcos Kalinowski
+  Found collaboration: Rogardt Heldal <-> Rafael Prikladnicki
+  Found collaboration: Rogardt Heldal <-> Stefan Biffl
+  Found collaboration: Rogardt Heldal <-> Xavier Franch
+  Found collaboration: Rogardt Heldal <-> Michael Felderer
+  Found collaboration: Rogardt Heldal <-> Rafael Prikladnicki
+  Found collaboration: Rogardt Heldal <-> Eray Tüzün
+  Found collaboration: Rogardt Heldal <-> Dietmar Pfahl
+  Found collaboration: Rogardt Heldal <-> Paris Avgeriou
+  Found collaboration: Rogardt Heldal <-> Paris Avgeriou
+  Found collaboration: Rogardt Heldal <-> Dietmar Pfahl
+  Found collaboration: Rogardt Heldal <-> Xavier Franch
+  Found collaboration: Rogardt Heldal <-> Xavier Franch
+Processing 55/58: Victor Basili
+  Found collaboration: Victor Basili <-> Markku Oivo
+  Found collaboration: Victor Basili <-> Markku Oivo
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Giovanni Cantone
+  Found collaboration: Victor Basili <-> Giovanni Cantone
+  Found collaboration: Victor Basili <-> Giovanni Cantone
+  Found collaboration: Victor Basili <-> Giovanni Cantone
+  Found collaboration: Victor Basili <-> Dietmar Pfahl
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Sira Vegas
+  Found collaboration: Victor Basili <-> Maurizio Morisio
+  Found collaboration: Victor Basili <-> Sandro Morasca
+  Found collaboration: Victor Basili <-> Maurizio Morisio
+  Found collaboration: Victor Basili <-> Sandro Morasca
+  Found collaboration: Victor Basili <-> Guilherme Travassos
+  Found collaboration: Victor Basili <-> Guilherme Travassos
+  Found collaboration: Victor Basili <-> Sandro Morasca
+  Found collaboration: Victor Basili <-> Sandro Morasca
+  Found collaboration: Victor Basili <-> Sandro Morasca
+  Found collaboration: Victor Basili <-> Sandro Morasca
+  Found collaboration: Victor Basili <-> Giovanni Cantone
+  Found collaboration: Victor Basili <-> Markku Oivo
+Processing 56/58: Giovanni Cantone
+  Found collaboration: Giovanni Cantone <-> Marcus Ciolkowski
+  Found collaboration: Giovanni Cantone <-> Marcela Genero
+Processing 57/58: Dieter Rombach
+  Found collaboration: Dieter Rombach <-> Andreas Jedlitschka
+  Found collaboration: Dieter Rombach <-> Andreas Jedlitschka
+  Found collaboration: Dieter Rombach <-> Andreas Jedlitschka
+  Found collaboration: Dieter Rombach <-> Andreas Jedlitschka
+  Found collaboration: Dieter Rombach <-> Marcus Ciolkowski
+  Found collaboration: Dieter Rombach <-> Dietmar Pfahl
+  Found collaboration: Dieter Rombach <-> Marcus Ciolkowski
+  Found collaboration: Dieter Rombach <-> Giovanni Cantone
+  Found collaboration: Dieter Rombach <-> Marcus Ciolkowski
+  Found collaboration: Dieter Rombach <-> Marcus Ciolkowski
+  Found collaboration: Dieter Rombach <-> Markku Oivo
+Processing 58/58: Ross Jeffery
+  Found collaboration: Ross Jeffery <-> Marcus Ciolkowski
+  Found collaboration: Ross Jeffery <-> Dietmar Pfahl
+
+Graph Statistics:
+Number of nodes: 58
+Number of edges: 274
+Number of connected components: 4
+
+Co-authorship edges between ISERN members:
+('Eray Tüzün', 'Michael Felderer')
+
+Graph saved as GraphML: isern_coauthorship_graph_20250624_070411.graphml
+Graph saved as JSON: isern_coauthorship_graph_20250624_070411.json
+Graph saved as edge list: isern_coauthorship_edgelist_20250624_070411.txt
+Traceback (most recent call last):
+  File "/Users/danport/Documents/GitHub/ISERN-Graph/isern-graph-dlbp.py", line 191, in <module>
+    create_interactive_website(G, timestamp)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_interactive_website' is not defined
