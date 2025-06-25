@@ -86,6 +86,70 @@ isern_members = [
 def normalize(name):
     return name.lower().replace("ö", "o").replace("ü", "u").replace("ç", "c").replace("å", "a").replace("ø", "o")
 
+def names_match(name1, name2):
+    """Check if two names likely refer to the same person, handling common variations"""
+    if name1 == name2:
+        return True
+    
+    # Normalize both names
+    norm1 = normalize(name1)
+    norm2 = normalize(name2)
+    
+    if norm1 == norm2:
+        return True
+    
+    # Split into parts for more flexible matching
+    parts1 = norm1.split()
+    parts2 = norm2.split()
+    
+    if len(parts1) < 2 or len(parts2) < 2:
+        return False
+    
+    # Get first and last names
+    first1, last1 = parts1[0], parts1[-1]
+    first2, last2 = parts2[0], parts2[-1]
+    
+    # Last names must match
+    if last1 != last2:
+        return False
+    
+    # Check first name variations
+    # Full match (Daniel = Daniel)
+    if first1 == first2:
+        return True
+    
+    # Initial match (D. = Daniel or Dan)
+    if (len(first1) == 2 and first1.endswith('.') and first1[0] == first2[0]) or \
+       (len(first2) == 2 and first2.endswith('.') and first2[0] == first1[0]):
+        return True
+    
+    # Common nickname variations
+    nickname_map = {
+        'daniel': ['dan', 'danny'],
+        'dan': ['daniel', 'danny'],
+        'william': ['bill', 'will'],
+        'bill': ['william'],
+        'robert': ['bob', 'rob'],
+        'bob': ['robert'],
+        'richard': ['rick', 'dick'],
+        'rick': ['richard'],
+        'michael': ['mike'],
+        'mike': ['michael'],
+        'christopher': ['chris'],
+        'chris': ['christopher'],
+        'anthony': ['tony'],
+        'tony': ['anthony'],
+        'victor': ['vic'],
+        'vic': ['victor']
+    }
+    
+    if first1 in nickname_map and first2 in nickname_map[first1]:
+        return True
+    if first2 in nickname_map and first1 in nickname_map[first2]:
+        return True
+    
+    return False
+
 def search_dblp_author(author_name):
     """Search for an author in DBLP and return their publications"""
     try:
@@ -185,10 +249,9 @@ def build_collaboration_graph():
                 coauthors = get_coauthors_from_publication(pub)
                 
                 for coauthor in coauthors:
-                    coauthor_norm = normalize(coauthor)
-                    # Check if this coauthor is also an ISERN member
+                    # Check if this coauthor is also an ISERN member using improved matching
                     for other_member in isern_members:
-                        if normalize(other_member) == coauthor_norm and other_member != member:
+                        if names_match(coauthor, other_member) and other_member != member:
                             G.add_edge(member, other_member)
                             break
             
@@ -289,7 +352,7 @@ def main():
     pos, levels = create_layered_visualization(G, isern_numbers)
     
     # Save data
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now().strftime("%Y%m%d")
     
     # Save ISERN numbers as JSON
     isern_data = {

@@ -76,12 +76,143 @@ isern_members = [
 def normalize(name):
     return name.lower().replace("ö", "o").replace("ü", "u").replace("ç", "c")  # expand as needed
 
+def names_match(name1, name2):
+    """Check if two names likely refer to the same person, handling common variations"""
+    if name1 == name2:
+        return True
+    
+    # Normalize both names
+    norm1 = normalize(name1)
+    norm2 = normalize(name2)
+    
+    if norm1 == norm2:
+        return True
+    
+    # Split into parts for more flexible matching
+    parts1 = norm1.split()
+    parts2 = norm2.split()
+    
+    if len(parts1) < 2 or len(parts2) < 2:
+        return False
+    
+    # Get first and last names
+    first1, last1 = parts1[0], parts1[-1]
+    first2, last2 = parts2[0], parts2[-1]
+    
+    # Last names must match
+    if last1 != last2:
+        return False
+    
+    # Check first name variations
+    # Full match (Daniel = Daniel)
+    if first1 == first2:
+        return True
+    
+    # Initial match (D. = Daniel or Dan)
+    if (len(first1) == 2 and first1.endswith('.') and first1[0] == first2[0]) or \
+       (len(first2) == 2 and first2.endswith('.') and first2[0] == first1[0]):
+        return True
+    
+    # Common nickname variations
+    nickname_map = {
+        'daniel': ['dan', 'danny'],
+        'dan': ['daniel', 'danny'],
+        'william': ['bill', 'will'],
+        'bill': ['william'],
+        'robert': ['bob', 'rob'],
+        'bob': ['robert'],
+        'richard': ['rick', 'dick'],
+        'rick': ['richard'],
+        'michael': ['mike'],
+        'mike': ['michael'],
+        'christopher': ['chris'],
+        'chris': ['christopher'],
+        'anthony': ['tony'],
+        'tony': ['anthony'],
+        'victor': ['vic'],
+        'vic': ['victor']
+    }
+    
+    if first1 in nickname_map and first2 in nickname_map[first1]:
+        return True
+    if first2 in nickname_map and first1 in nickname_map[first2]:
+        return True
+    
+    return False
+
 def search_dblp_author(author_name):
-    """Search for an author in DBLP and return their publications"""
+    """Search for an author in DBLP using both author search and publication search"""
     try:
-        # URL encode the author name
+        print(f"Searching for {author_name}...")
+        
+        # First, try to find the author using DBLP's author search API
+        author_variations = get_dblp_author_variations(author_name)
+        
+        # If we found author variations, use them; otherwise fall back to manual variations
+        if author_variations:
+            print(f"  Found {len(author_variations)} author variations from DBLP")
+            variations = author_variations
+        else:
+            print(f"  No author found in DBLP author search, using manual variations")
+            variations = generate_manual_variations(author_name)
+        
+        best_publications = []
+        best_variation = ""
+        
+        for variation in variations:
+            try:
+                print(f"  Trying variation: {variation}")
+                
+                # URL encode the author name
+                encoded_name = quote(variation)
+                url = f"https://dblp.org/search/publ/api?q=author:{encoded_name}&format=xml&h=1000"
+                
+                response = requests.get(url)
+                response.raise_for_status()
+                
+                # Parse XML response
+                data = xmltodict.parse(response.content)
+                
+                publications = []
+                if 'result' in data and 'hits' in data['result'] and 'hit' in data['result']['hits']:
+                    hits = data['result']['hits']['hit']
+                    # Handle both single hit and multiple hits
+                    if isinstance(hits, list):
+                        for hit in hits:
+                            if 'info' in hit:
+                                publications.append(hit['info'])
+                    else:
+                        if 'info' in hits:
+                            publications.append(hits['info'])
+                
+                if len(publications) > len(best_publications):
+                    best_publications = publications
+                    best_variation = variation
+                    print(f"    Found {len(publications)} publications (NEW BEST)")
+                    if len(publications) > 50:  # Good enough, stop trying
+                        break
+                else:
+                    print(f"    Found {len(publications)} publications")
+                
+                time.sleep(0.5)  # Be nice to DBLP servers
+                
+            except Exception as e:
+                print(f"    Error with variation '{variation}': {e}")
+                continue
+        
+        print(f"  Best result: {len(best_publications)} publications using '{best_variation}'")
+        return best_publications
+        
+    except Exception as e:
+        print(f"Error searching for {author_name}: {e}")
+        return []
+
+def get_dblp_author_variations(author_name):
+    """Get author name variations directly from DBLP's author search API"""
+    try:
+        # Search for the author using DBLP's author search
         encoded_name = quote(author_name)
-        url = f"https://dblp.org/search/publ/api?q=author:{encoded_name}&format=xml&h=1000"
+        url = f"https://dblp.org/search/author/api?q={encoded_name}&format=xml&h=10"
         
         response = requests.get(url)
         response.raise_for_status()
@@ -89,22 +220,69 @@ def search_dblp_author(author_name):
         # Parse XML response
         data = xmltodict.parse(response.content)
         
-        publications = []
+        variations = []
+        # The structure is: data['result']['hits']['hit'] (xmltodict wraps the root <r> as 'result')
         if 'result' in data and 'hits' in data['result'] and 'hit' in data['result']['hits']:
             hits = data['result']['hits']['hit']
-            # Handle both single hit and multiple hits
-            if isinstance(hits, list):
-                for hit in hits:
-                    if 'info' in hit:
-                        publications.append(hit['info'])
-            else:
-                if 'info' in hits:
-                    publications.append(hits['info'])
+            
+            if not isinstance(hits, list):
+                hits = [hits]
+            
+            for hit in hits:
+                if 'info' in hit and 'author' in hit['info']:
+                    # Add the main author name
+                    main_author = hit['info']['author']
+                    if names_match(author_name, main_author):
+                        variations.append(main_author)
+                    
+                    # Add aliases if they exist
+                    if 'aliases' in hit['info'] and 'alias' in hit['info']['aliases']:
+                        aliases = hit['info']['aliases']['alias']
+                        if not isinstance(aliases, list):
+                            aliases = [aliases]
+                        
+                        for alias in aliases:
+                            if names_match(author_name, alias):
+                                variations.append(alias)
         
-        return publications
+        # Remove duplicates
+        unique_variations = list(dict.fromkeys(variations))  # Preserves order
+        
+        return unique_variations
+        
     except Exception as e:
-        print(f"Error searching for {author_name}: {e}")
+        print(f"    Error in DBLP author search: {e}")
         return []
+        print(f"    Error in DBLP author search: {e}")
+        return []
+
+def generate_manual_variations(author_name):
+    """Generate manual name variations as fallback"""
+    variations = [author_name]
+    
+    # Add common variations
+    name_parts = author_name.split()
+    if len(name_parts) >= 2:
+        # Try First Last format
+        variations.append(f"{name_parts[0]} {name_parts[-1]}")
+        # Try Last, First format
+        variations.append(f"{name_parts[-1]}, {name_parts[0]}")
+        # Try F. Last format
+        variations.append(f"{name_parts[0][0]}. {name_parts[-1]}")
+    
+    # Special cases for known ISERN members
+    if "Dan Port" in author_name:
+        variations.extend(["Daniel Port", "D. Port"])
+    elif "Victor Basili" in author_name:
+        variations.extend(["Victor R. Basili", "V.R. Basili", "V. Basili"])
+    elif "Guilherme Travassos" in author_name:
+        variations.extend(["Guilherme H. Travassos", "G. H. Travassos"])
+    elif "Fabio Q.B. da Silva" in author_name:
+        variations.extend(["Fábio Q. B. da Silva", "Fabio Queda Bueno da Silva"])
+    elif "Daniel Mendez Fernandez" in author_name:
+        variations.extend(["Daniel Méndez", "Daniel Mendez", "D. Méndez"])
+    
+    return variations
 
 def get_coauthors_from_publication(pub):
     """Extract coauthor names from a publication"""
@@ -149,11 +327,32 @@ def load_isern_numbers():
         print(f"Error loading ISERN numbers: {e}")
         return None
 
+def clean_data_for_json(data):
+    """Clean data to ensure it's JSON serializable without NaN or Infinity values"""
+    import math
+    if isinstance(data, dict):
+        return {k: clean_data_for_json(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [clean_data_for_json(item) for item in data]
+    elif isinstance(data, float):
+        if math.isnan(data) or math.isinf(data):
+            return 0  # Replace NaN/Inf with 0
+        return data
+    else:
+        return data
+
 def create_interactive_website(G, timestamp):
     """Create an interactive website with draggable nodes using vis.js"""
     
     # Load ISERN numbers for coloring
     isern_numbers = load_isern_numbers()
+     # Calculate top collaborators
+    degree_centrality = nx.degree_centrality(G)
+    sorted_centrality = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)
+    top_collaborators = sorted_centrality[:10]
+    
+    # Calculate degree centrality for circular positioning
+    max_centrality = max(degree_centrality.values()) if degree_centrality else 1
     
     # Prepare data for vis.js
     nodes_data = []
@@ -172,13 +371,27 @@ def create_interactive_website(G, timestamp):
         float('inf'): {'background': '#404040', 'font': '#FFFFFF'}  # Dark gray background, white text
     }
     
-    # Create nodes with styling based on ISERN numbers
+    # Calculate positions using the same spring layout as the PNG
+    pos = nx.spring_layout(G, k=3, iterations=50, seed=42)
+    
+    # Scale positions for vis.js (multiply by a factor to make the layout larger)
+    scale_factor = 800
+    for node in pos:
+        pos[node] = (pos[node][0] * scale_factor, pos[node][1] * scale_factor)
+    
+    # Create nodes with styling based on ISERN numbers and spring layout positioning
     for node in G.nodes():
         degree = G.degree(node)
+        
+        # Get position from spring layout
+        x, y = pos[node]
         
         # Determine ISERN number and color
         if isern_numbers and node in isern_numbers:
             isern_number = isern_numbers[node]
+            # Convert infinite values to a large finite number for vis.js
+            level_for_layout = 999 if isern_number == float('inf') else int(isern_number)
+            
             if isern_number in level_colors:
                 color_config = level_colors[isern_number]
                 background_color = color_config['background']
@@ -198,12 +411,19 @@ def create_interactive_website(G, timestamp):
             font_color = '#FFFFFF'  # White text
             title = f"{node}<br>Collaborations: {degree}"
             label = node  # No ISERN number available
+            level_for_layout = 999  # Put unknown nodes at bottom level
+        
+        # Ensure positions are finite numbers
+        x = float(x) if not (isinstance(x, float) and (x != x or x == float('inf') or x == float('-inf'))) else 0.0
+        y = float(y) if not (isinstance(y, float) and (y != y or y == float('inf') or y == float('-inf'))) else 0.0
             
         nodes_data.append({
             "id": node,
             "label": label,
             "title": title,
-            "level": isern_number if isern_numbers and node in isern_numbers else float('inf'),  # Add level for hierarchical layout
+            "level": level_for_layout,  # Use finite number for hierarchical layout
+            "x": x,  # Initial x position for circular layout
+            "y": y,  # Initial y position for circular layout
             "shape": "ellipse",  # Oval shape that expands to fit text
             "color": {
                 "background": background_color,
@@ -252,6 +472,12 @@ def create_interactive_website(G, timestamp):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISERN Co-authorship Network - Colored by ISERN Number</title>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script>
+        // Fallback if vis is not loaded
+        if (typeof vis === 'undefined') {{
+            document.write('<script src="https://cdn.jsdelivr.net/npm/vis-network@latest/standalone/umd/vis-network.min.js"><\/script>');
+        }}
+    </script>
     <style>
         body {{
             font-family: Arial, sans-serif;
@@ -379,6 +605,48 @@ def create_interactive_website(G, timestamp):
             vertical-align: middle;
         }}
         
+        .collaborators-table {{
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #eee;
+        }}
+        
+        .collaborators-table h3 {{
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }}
+        
+        .collaborators-table table {{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        
+        .collaborators-table th,
+        .collaborators-table td {{
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }}
+        
+        .collaborators-table th {{
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }}
+        
+        .collaborators-table tr:hover {{
+            background-color: #f5f5f5;
+        }}
+        
+        .isern-number-cell {{
+            text-align: center;
+            font-weight: bold;
+        }}
+        
         .info-panel {{
             position: fixed;
             top: 20px;
@@ -403,6 +671,7 @@ def create_interactive_website(G, timestamp):
         <div class="header">
             <h1>ISERN Co-authorship Network</h1>
             <p>Interactive visualization of research collaborations within the International Software Engineering Research Network</p>
+            <p><strong>Spring Layout</strong> - Same layout as the static PNG visualization for consistency</p>
             <p><strong>Nodes colored by ISERN Number</strong> - Distance from founding members (Koji Torii, Dieter Rombach, Victor Basili, Ross Jeffery, Giovanni Cantone, Markku Oivo)</p>
             <p>Generated on {datetime.now().strftime('%B %d, %Y at %H:%M')}</p>
         </div>
@@ -430,8 +699,8 @@ def create_interactive_website(G, timestamp):
             <h3>Controls</h3>
             <div class="control-group">
                 <label>Layout:</label>
+                <button onclick="setLayout('spring')">Spring Layout</button>
                 <button onclick="setLayout('physics')">Physics</button>
-                <button onclick="setLayout('hierarchical')">Hierarchical</button>
                 <button onclick="setLayout('random')">Random</button>
             </div>
             <div class="control-group">
@@ -467,6 +736,43 @@ def create_interactive_website(G, timestamp):
                 Disconnected (∞)
             </div>
         </div>
+        
+        <div class="collaborators-table">
+            <h3>Top 10 Collaborators</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Researcher</th>
+                        <th>ISERN Number</th>
+                        <th>Collaborations</th>
+                        <th>Centrality</th>
+                    </tr>
+                </thead>
+                <tbody>"""
+    
+    # Add table rows for top collaborators
+    for i, (researcher, centrality) in enumerate(top_collaborators, 1):
+        degree = G.degree(researcher)
+        if isern_numbers and researcher in isern_numbers:
+            isern_number = isern_numbers[researcher]
+            isern_display = "∞" if isern_number == float('inf') else str(int(isern_number))
+        else:
+            isern_display = "N/A"
+        
+        html_content += f"""
+                    <tr>
+                        <td>{i}</td>
+                        <td><strong>{researcher}</strong></td>
+                        <td class="isern-number-cell">{isern_display}</td>
+                        <td>{degree}</td>
+                        <td>{centrality:.4f}</td>
+                    </tr>"""
+    
+    html_content += """
+                </tbody>
+            </table>
+        </div>
     </div>
     
     <div id="info-panel" class="info-panel">
@@ -475,84 +781,102 @@ def create_interactive_website(G, timestamp):
     </div>
 
     <script type="text/javascript">
-        // Network data
-        var nodes = new vis.DataSet({json.dumps(nodes_data, indent=2)});
-        var edges = new vis.DataSet({json.dumps(edges_data, indent=2)});
+        // Check if vis.js is loaded
+        if (typeof vis === 'undefined') {
+            document.getElementById('network').innerHTML = '<p style="color: red; padding: 20px; text-align: center;">Error: vis.js library failed to load. Please check your internet connection or try refreshing the page.</p>';
+        } else {
+            console.log('vis.js loaded successfully');
+        }
         
-        // Network options
-        var options = {{
-            layout: {{
-                hierarchical: {{
-                    enabled: true,
-                    direction: 'UD',        // Up-Down layout
-                    sortMethod: 'directed', // Sort by level
-                    levelSeparation: 150,   // Distance between levels
-                    nodeSpacing: 120,       // Spacing between nodes on same level
-                    treeSpacing: 200,       // Extra spacing for tree structure
-                    blockShifting: true,    // Allow shifting to reduce edge crossings
-                    edgeMinimization: true, // Minimize edge crossings
-                    parentCentralization: true, // Center parent nodes
-                    shakeTowards: 'roots'   // Shake towards the root nodes
-                }}
-            }},
-            nodes: {{
+        // Network data"""
+    
+    # Add the JavaScript data separately to avoid f-string complexity
+    nodes_json = json.dumps(clean_data_for_json(nodes_data), indent=2)
+    edges_json = json.dumps(clean_data_for_json(edges_data), indent=2)
+    
+    html_content += f"""
+        var nodes = new vis.DataSet({nodes_json});
+        var edges = new vis.DataSet({edges_json});
+        
+        // Network options"""
+    
+    html_content += """
+        var options = {
+            physics: {
+                enabled: false  // Start with fixed positions for circular layout
+            },
+            nodes: {
                 borderWidth: 2,
                 shadow: true,
-                chosen: {{
-                    node: function(values, id, selected, hovering) {{
+                chosen: {
+                    node: function(values, id, selected, hovering) {
                         // Highlight the node but keep original font color
-                        if (values.color && typeof values.color === 'object') {{
+                        if (values.color && typeof values.color === 'object') {
                             values.color.background = '#ff6b6b';
                             values.color.border = '#ff0000';
-                        }} else {{
+                        } else {
                             values.color = '#ff6b6b';
-                        }}
+                        }
                         values.size = values.size * 1.2;
-                    }}
-                }}
-            }},
-            edges: {{
-                color: {{
+                    }
+                }
+            },
+            edges: {
+                color: {
                     color: '#999999',
                     highlight: '#ff6b6b'
-                }},
+                },
                 width: 1,
-                smooth: {{
+                smooth: {
                     enabled: true,
                     type: 'continuous'
-                }}
-            }},
-            physics: {{
-                enabled: false,  // Disable physics for hierarchical layout
-                hierarchicalRepulsion: {{
-                    centralGravity: 0.0,
-                    springLength: 100,
-                    springConstant: 0.01,
-                    nodeDistance: 120,
-                    damping: 0.09
-                }}
-            }},
-            interaction: {{
+                }
+            },
+            physics: {
+                enabled: true,
+                stabilization: {
+                    enabled: true,
+                    iterations: 1000
+                }
+            },
+            interaction: {
                 dragNodes: true,
                 dragView: true,
                 zoomView: true,
                 selectConnectedEdges: true,
                 hover: true,
                 tooltipDelay: 300
-            }}
-        }};
+            }
+        };
         
         // Create network
         var container = document.getElementById('network');
-        var data = {{
+        var data = {
             nodes: nodes,
             edges: edges
-        }};
-        var network = new vis.Network(container, data, options);
+        };
+        
+        console.log('Creating network with', nodes.length, 'nodes and', edges.length, 'edges');
+        console.log('Container element:', container);
+        
+        try {
+            var network = new vis.Network(container, data, options);
+            console.log('Network created successfully');
+            
+            // Set spring layout after creation
+            setTimeout(function() {
+                console.log('Setting spring layout');
+                setLayout('spring');
+            }, 1000);
+            
+        } catch (error) {
+            console.error('Error creating network:', error);
+            document.getElementById('network').innerHTML = '<p style="color: red; padding: 20px;">Error creating network: ' + error.message + '</p>';
+        }
         
         // Event handlers
-        network.on('click', function(params) {{
-            if (params.nodes.length > 0) {{
+        network.on('click', function(params) {
+            if (params.nodes.length > 0) {
                 var nodeId = params.nodes[0];
                 var node = nodes.get(nodeId);
                 var connectedEdges = network.getConnectedEdges(nodeId);
@@ -563,78 +887,97 @@ def create_interactive_website(G, timestamp):
                     'Click and drag to move this node<br>' +
                     'Double-click to focus on this researcher';
                 document.getElementById('info-panel').style.display = 'block';
-            }} else {{
+            } else {
                 document.getElementById('info-panel').style.display = 'none';
-            }}
-        }});
+            }
+        });
         
-        network.on('doubleClick', function(params) {{
-            if (params.nodes.length > 0) {{
-                network.focus(params.nodes[0], {{
+        network.on('doubleClick', function(params) {
+            if (params.nodes.length > 0) {
+                network.focus(params.nodes[0], {
                     scale: 1.5,
                     animation: true
-                }});
-            }}
-        }});
+                });
+            }
+        });
         
         // Control functions
-        function setLayout(type) {{
-            var updateOptions = {{}};
+        function setLayout(type) {
+            var updateOptions = {};
             
-            switch(type) {{
-                case 'physics':
-                    updateOptions = {{
-                        physics: {{ enabled: true }},
-                        layout: {{ randomSeed: 2 }}
-                    }};
+            switch(type) {
+                case 'spring':
+                    // Reset to original spring layout positions and disable physics
+                    updateOptions = {
+                        physics: { 
+                            enabled: false,
+                            stabilization: { enabled: false }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false }
+                        }
+                    };
+                    // Reset node positions to original spring layout
+                    nodes.forEach(function(node) {
+                        network.moveNode(node.id, node.x, node.y);
+                    });
                     break;
-                case 'hierarchical':
-                    updateOptions = {{
-                        physics: {{ enabled: false }},
-                        layout: {{
-                            hierarchical: {{
-                                direction: 'UD',
-                                sortMethod: 'directed',
-                                nodeSpacing: 100,
-                                levelSeparation: 150
-                            }}
-                        }}
-                    }};
+                case 'physics':
+                    updateOptions = {
+                        physics: { 
+                            enabled: true,
+                            stabilization: { enabled: true }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false },
+                            randomSeed: 2 
+                        }
+                    };
                     break;
                 case 'random':
-                    updateOptions = {{
-                        physics: {{ enabled: false }},
-                        layout: {{ randomSeed: Math.floor(Math.random() * 1000) }}
-                    }};
+                    updateOptions = {
+                        physics: { 
+                            enabled: false,
+                            stabilization: { enabled: false }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false },
+                            randomSeed: Math.floor(Math.random() * 1000) 
+                        }
+                    };
                     break;
-            }}
+            }
             
             network.setOptions(updateOptions);
-        }}
+            // Fit the network after layout change
+            setTimeout(function() {
+                network.fit();
+            }, 100);
+        }
         
-        function fitNetwork() {{
+        function fitNetwork() {
             network.fit();
-        }}
+        }
         
-        function togglePhysics() {{
+        function togglePhysics() {
             var currentPhysics = network.physics.physicsEnabled;
-            network.setOptions({{ physics: {{ enabled: !currentPhysics }} }});
-        }}
+            network.setOptions({ physics: { enabled: !currentPhysics } });
+        }
         
-        function resetZoom() {{
-            network.moveTo({{
-                position: {{x: 0, y: 0}},
+        function resetZoom() {
+            network.moveTo({
+                position: {x: 0, y: 0},
                 scale: 1,
                 animation: true
-            }});
-        }}
+            });
+        }
         
         // Hide info panel when clicking outside
-        document.addEventListener('click', function(event) {{
-            if (!event.target.closest('#info-panel') && !event.target.closest('#network')) {{
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('#info-panel') && !event.target.closest('#network')) {
                 document.getElementById('info-panel').style.display = 'none';
-            }}
-        }});
+            }
+        });
     </script>
 </body>
 </html>"""
@@ -681,12 +1024,11 @@ else:
                 coauthors = get_coauthors_from_publication(pub)
                 
                 for coauthor in coauthors:
-                    coauthor_norm = normalize(coauthor)
-                    # Check if this coauthor is also an ISERN member
+                    # Check if this coauthor is also an ISERN member using improved matching
                     for other_member in isern_members:
-                        if normalize(other_member) == coauthor_norm and other_member != member:
+                        if names_match(coauthor, other_member) and other_member != member:
                             G.add_edge(member, other_member)
-                            print(f"  Found collaboration: {member} <-> {other_member}")
+                            print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
                             break
             
             # Be respectful to DBLP API
@@ -711,7 +1053,7 @@ for edge in G.edges():
     print(edge)
 
 # Save graph data to files
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+timestamp = datetime.now().strftime("%Y%m%d")
 
 # Save as GraphML (preserves node/edge attributes and can be read by many tools)
 graphml_filename = f"isern_coauthorship_graph_{timestamp}.graphml"
