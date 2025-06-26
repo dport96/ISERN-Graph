@@ -1,0 +1,28 @@
+# Core data science and analysis packages
+pandas>=1.5.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Graph and network analysis
+networkx>=2.8.0
+plotly>=5.0.0
+
+# Web scraping and HTTP requests
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# Excel file handling
+openpyxl>=3.0.0
+xlrd>=2.0.0
+
+# Scientific computing
+scipy>=1.9.0
+
+# Progress bars and utilities
+tqdm>=4.64.0
+
+# Jupyter notebook support (if needed)
+jupyter>=1.0.0
+ipykernel>=6.15.0

@@ -9,68 +9,50 @@ import glob
 from datetime import datetime
 from urllib.parse import quote
 
-# Full ISERN member list from the official page [1][3]
-isern_members = [
-    "Caspar Lassenius",
-    "Eray Tüzün",
-    "Nauman bin Ali",
-    "Hakan Erdogmus",
-    "Robert Feldt",
-    "Guilherme Travassos",
-    "Michael Felderer",
-    "Markku Oivo",
-    "Fabio Q.B. da Silva",
-    "Daniel Mendez Fernandez",
-    "Andreas Jedlitschka",
-    "Barbara Russo",
-    "Qing Wang",
-    "Per Runeson",
-    "Maria Paasivaara",
-    "Clemente Izurieta",
-    "He Zhang",
-    "Kenichi Matsumoto",
-    "Jingyu Li",
-    "Laurie Williams",
-    "Takeshi Hayama",
-    "Shinji Kusumoto",
-    "Minghui Zhou",
-    "Marcos Kalinowski",
-    "Rafael Prikladnicki",
-    "Marcus Ciolkowski",
-    "Desmond Greer",
-    "Ayşe Başar",
-    "Magne Jørgensen",
-    "Nils Brede Moe",
-    "Danilo Caivano",
-    "Xavier Franch",
-    "Ali Babar",
-    "Paris Avgeriou",
-    "Sira Vegas",
-    "Oscar Pastor",
-    "Sandro Morasca",
-    "Jeffrey Carver",
-    "Maria Teresa Baldassarre",
-    "Marcela Genero",
-    "Dan Port",
-    "Tomi Männistö",
-    "Rahul Mohanani",
-    "Carolyn Seaman",
-    "Dag Sjøberg",
-    "Burak Turhan",
-    "Stefan Wagner",
-    "Dietmar Pfahl",
-    "Audris Mockus",
-    "Maya Daneva",
-    "Martin Solari",
-    "Maurizio Morisio",
-    "Stefan Biffl",
-    "Rogardt Heldal",
-    "Victor Basili",
-    "Giovanni Cantone",
-    "Dieter Rombach",
-    "Ross Jeffery"
-    # Add or adjust names as needed for completeness
-]
+def load_isern_members():
+    """Load ISERN members from JSON file"""
+    try:
+        with open('isern_members.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        members = data['isern_members']
+        print(f"Loaded {len(members)} ISERN members from isern_members.json")
+        
+        if 'metadata' in data:
+            metadata = data['metadata']
+            print(f"Last updated: {metadata.get('last_updated', 'Unknown')}")
+            print(f"Total members in file: {metadata.get('total_members', len(members))}")
+        
+        return members
+    
+    except FileNotFoundError:
+        print("Error: isern_members.json file not found!")
+        print("Please ensure the file exists in the current directory.")
+        return []
+    except json.JSONDecodeError as e:
+        print(f"Error parsing isern_members.json: {e}")
+        return []
+    except Exception as e:
+        print(f"Error loading ISERN members: {e}")
+        return []
+
+def ask_regenerate_file(filename, description):
+    """Ask user if they want to regenerate an existing file"""
+    while True:
+        response = input(f"{description} file '{filename}' already exists. Regenerate? (y/n): ").lower().strip()
+        if response in ['y', 'yes']:
+            return True
+        elif response in ['n', 'no']:
+            return False
+        else:
+            print("Please enter 'y' for yes or 'n' for no.")
+
+# Load ISERN member list from JSON file
+isern_members = load_isern_members()
+
+if not isern_members:
+    print("No ISERN members loaded. Exiting.")
+    exit(1)
 
 # Normalize names for matching (e.g., lowercase, strip accents if needed)
 def normalize(name):
@@ -299,19 +281,12 @@ def get_coauthors_from_publication(pub):
     return coauthors
 
 def load_isern_numbers():
-    """Load ISERN numbers from the most recent JSON file"""
+    """Load ISERN numbers from the JSON file"""
     try:
-        # Find the most recent ISERN numbers file
-        json_files = glob.glob("isern_numbers_*.json")
-        if not json_files:
-            print("Warning: No ISERN numbers file found. Using degree-based coloring.")
-            return None
+        filename = "isern_numbers.json"
+        print(f"Loading ISERN numbers from: {filename}")
         
-        # Get the most recent file
-        latest_file = max(json_files, key=os.path.getctime)
-        print(f"Loading ISERN numbers from: {latest_file}")
-        
-        with open(latest_file, 'r') as f:
+        with open(filename, 'r') as f:
             data = json.load(f)
         
         # Convert infinity strings back to float('inf')
@@ -341,7 +316,7 @@ def clean_data_for_json(data):
     else:
         return data
 
-def create_interactive_website(G, timestamp):
+def create_interactive_website(G):
     """Create an interactive website with draggable nodes using vis.js"""
     
     # Load ISERN numbers for coloring
@@ -983,7 +958,14 @@ def create_interactive_website(G, timestamp):
 </html>"""
 
     # Save the HTML file
-    html_filename = f"isern_network_interactive_{timestamp}.html"
+    html_filename = "isern_network_interactive.html"
+    
+    # Check if file exists and ask for confirmation
+    if os.path.exists(html_filename):
+        if not ask_regenerate_file(html_filename, "Interactive HTML"):
+            print(f"Skipping generation of {html_filename}")
+            return
+    
     with open(html_filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
     
@@ -997,18 +979,19 @@ def create_interactive_website(G, timestamp):
     print(f"  - Use control buttons to change layouts")
 
 # Build co-authorship graph
-today = datetime.now().strftime("%Y%m%d")
-cache_filename = f"isern_collaboration_cache_{today}.graphml"
+cache_filename = "isern_collaboration_cache.graphml"
 
-# Check if cache exists for today
+# Check if cache exists and ask for confirmation
+rebuild_cache = True
 if os.path.exists(cache_filename):
-    print(f"Loading collaboration graph from cache: {cache_filename}")
-    G = nx.read_graphml(cache_filename)
-    # Convert node labels back to strings (GraphML may store them differently)
-    G = nx.relabel_nodes(G, {n: str(n) for n in G.nodes()})
-    print(f"Loaded {G.number_of_nodes()} nodes and {G.number_of_edges()} edges from cache")
-else:
-    print("No cache found for today. Building new collaboration graph...")
+    rebuild_cache = ask_regenerate_file(cache_filename, "Collaboration cache")
+
+if rebuild_cache:
+    if os.path.exists(cache_filename):
+        print(f"Regenerating collaboration graph...")
+    else:
+        print("Building new collaboration graph...")
+    
     G = nx.Graph()
     G.add_nodes_from(isern_members)
 
@@ -1040,6 +1023,12 @@ else:
     # Save to cache
     print(f"Saving collaboration graph to cache: {cache_filename}")
     nx.write_graphml(G, cache_filename)
+else:
+    print(f"Loading collaboration graph from cache: {cache_filename}")
+    G = nx.read_graphml(cache_filename)
+    # Convert node labels back to strings (GraphML may store them differently)
+    G = nx.relabel_nodes(G, {n: str(n) for n in G.nodes()})
+    print(f"Loaded {G.number_of_nodes()} nodes and {G.number_of_edges()} edges from cache")
 
 # Now G is your co-authorship graph
 print(f"\nGraph Statistics:")
@@ -1053,37 +1042,61 @@ for edge in G.edges():
     print(edge)
 
 # Save graph data to files
-timestamp = datetime.now().strftime("%Y%m%d")
+graphml_filename = "isern_coauthorship_graph.graphml"
+json_filename = "isern_coauthorship_graph.json"
+edgelist_filename = "isern_coauthorship_edgelist.txt"
+plot_filename = "isern_coauthorship_graph.png"
 
-# Save as GraphML (preserves node/edge attributes and can be read by many tools)
-graphml_filename = f"isern_coauthorship_graph_{timestamp}.graphml"
-nx.write_graphml(G, graphml_filename)
-print(f"\nGraph saved as GraphML: {graphml_filename}")
+# Check each output file and ask for confirmation
+save_graphml = True
+save_json = True
+save_edgelist = True
+save_plot = True
+generate_interactive = True
 
-# Save as JSON (more readable, can be used in web visualizations)
-graph_data = {
-    "nodes": [{"id": node, "label": node} for node in G.nodes()],
-    "edges": [{"source": edge[0], "target": edge[1]} for edge in G.edges()],
-    "metadata": {
-        "timestamp": timestamp,
-        "num_nodes": G.number_of_nodes(),
-        "num_edges": G.number_of_edges(),
-        "connected_components": nx.number_connected_components(G)
+if os.path.exists(graphml_filename):
+    save_graphml = ask_regenerate_file(graphml_filename, "GraphML")
+
+if os.path.exists(json_filename):
+    save_json = ask_regenerate_file(json_filename, "JSON")
+
+if os.path.exists(edgelist_filename):
+    save_edgelist = ask_regenerate_file(edgelist_filename, "Edge list")
+
+if os.path.exists(plot_filename):
+    save_plot = ask_regenerate_file(plot_filename, "PNG plot")
+
+if os.path.exists("isern_network_interactive.html"):
+    generate_interactive = ask_regenerate_file("isern_network_interactive.html", "Interactive HTML")
+
+# Save files based on user choices
+if save_graphml:
+    nx.write_graphml(G, graphml_filename)
+    print(f"Graph saved as GraphML: {graphml_filename}")
+
+if save_json:
+    graph_data = {
+        "nodes": [{"id": node, "label": node} for node in G.nodes()],
+        "edges": [{"source": edge[0], "target": edge[1]} for edge in G.edges()],
+        "metadata": {
+            "generated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "num_nodes": G.number_of_nodes(),
+            "num_edges": G.number_of_edges(),
+            "connected_components": nx.number_connected_components(G)
+        }
     }
-}
+    
+    with open(json_filename, 'w') as f:
+        json.dump(graph_data, f, indent=2)
+    print(f"Graph saved as JSON: {json_filename}")
 
-json_filename = f"isern_coauthorship_graph_{timestamp}.json"
-with open(json_filename, 'w') as f:
-    json.dump(graph_data, f, indent=2)
-print(f"Graph saved as JSON: {json_filename}")
-
-# Save edge list (simple format)
-edgelist_filename = f"isern_coauthorship_edgelist_{timestamp}.txt"
-nx.write_edgelist(G, edgelist_filename)
-print(f"Graph saved as edge list: {edgelist_filename}")
+if save_edgelist:
+    nx.write_edgelist(G, edgelist_filename)
+    print(f"Graph saved as edge list: {edgelist_filename}")
 
 # Create interactive web visualization
-create_interactive_website(G, timestamp)
+if generate_interactive:
+    create_interactive_website(G)
 
 # Create visualization with oval nodes that expand to fit names
 from matplotlib.patches import Ellipse
@@ -1187,10 +1200,11 @@ plt.axis('off')
 plt.tight_layout()
 
 # Save the plot
-plot_filename = f"isern_coauthorship_graph_{timestamp}.png"
-plt.savefig(plot_filename, dpi=300, bbox_inches='tight', 
-           facecolor='white', edgecolor='none')
-print(f"Graph visualization saved: {plot_filename}")
+plot_filename = "isern_coauthorship_graph.png"
+if save_plot:
+    plt.savefig(plot_filename, dpi=300, bbox_inches='tight', 
+               facecolor='white', edgecolor='none')
+    print(f"Graph visualization saved: {plot_filename}")
 
 # Show the plot
 plt.show()
@@ -1214,6 +1228,67 @@ if G.number_of_edges() > 0:
     print(f"\nLargest connected component has {len(largest_cc)} members:")
     for member in sorted(largest_cc):
         print(f"  - {member}")
+else:
+    print("\nNo collaborations found in the data.")
+    print("This might be due to:")
+    print("- Name variations in DBLP (different spellings, initials, etc.)")
+    print("- Limited API results")
+    print("- Authors publishing under different name formats")
+
+# Show the plot
+plt.show()
+
+# Print some network analysis
+if G.number_of_edges() > 0:
+    print("\nNetwork Analysis:")
+    print(f"Graph density: {nx.density(G):.4f}")
+    
+    # Find most connected researchers
+    degree_centrality = nx.degree_centrality(G)
+    sorted_centrality = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)
+    
+    print("\nTop 10 most connected researchers:")
+    for i, (researcher, centrality) in enumerate(sorted_centrality[:10], 1):
+        degree = G.degree(researcher)
+        print(f"{i:2d}. {researcher}: {degree} collaborations (centrality: {centrality:.4f})")
+    
+    # Find largest connected component
+    largest_cc = max(nx.connected_components(G), key=len)
+    print(f"\nLargest connected component has {len(largest_cc)} members:")
+    for member in sorted(largest_cc):
+        print(f"  - {member}")
+else:
+    print("\nNo collaborations found in the data.")
+    print("This might be due to:")
+    print("- Name variations in DBLP (different spellings, initials, etc.)")
+    print("- Limited API results")
+    print("- Authors publishing under different name formats")
+
+# Print some network analysis
+if G.number_of_edges() > 0:
+    print("\nNetwork Analysis:")
+    print(f"Graph density: {nx.density(G):.4f}")
+    
+    # Find most connected researchers
+    degree_centrality = nx.degree_centrality(G)
+    sorted_centrality = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)
+    
+    print("\nTop 10 most connected researchers:")
+    for i, (researcher, centrality) in enumerate(sorted_centrality[:10], 1):
+        degree = G.degree(researcher)
+        print(f"{i:2d}. {researcher}: {degree} collaborations (centrality: {centrality:.4f})")
+    
+    # Find largest connected component
+    largest_cc = max(nx.connected_components(G), key=len)
+    print(f"\nLargest connected component has {len(largest_cc)} members:")
+    for member in sorted(largest_cc):
+        print(f"  - {member}")
+else:
+    print("\nNo collaborations found in the data.")
+    print("This might be due to:")
+    print("- Name variations in DBLP (different spellings, initials, etc.)")
+    print("- Limited API results")
+    print("- Authors publishing under different name formats")
 else:
     print("\nNo collaborations found in the data.")
     print("This might be due to:")

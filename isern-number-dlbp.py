@@ -20,7 +20,7 @@ founding_isern_members = [
 
 # Full ISERN member list from the official page [1][3]
 isern_members = [
-    "Caspar Lassenius",
+    "Casper Lassenius",
     "Eray Tüzün",
     "Nauman bin Ali",
     "Hakan Erdogmus",

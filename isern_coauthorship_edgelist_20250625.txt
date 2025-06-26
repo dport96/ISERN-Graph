@@ -1,0 +1,306 @@
+Casper Lassenius Maria Paasivaara {}
+Casper Lassenius Magne Jørgensen {}
+Casper Lassenius Tomi Männistö {}
+Casper Lassenius Nils Brede Moe {}
+Casper Lassenius Michael Felderer {}
+Casper Lassenius Marcos Kalinowski {}
+Casper Lassenius Dietmar Pfahl {}
+Casper Lassenius Desmond Greer {}
+Casper Lassenius Markku Oivo {}
+Casper Lassenius Rafael Prikladnicki {}
+Casper Lassenius Jeffrey Carver {}
+Casper Lassenius Daniel Mendez Fernandez {}
+Casper Lassenius Stefan Wagner {}
+Eray Tüzün Michael Felderer {}
+Eray Tüzün Carolyn Seaman {}
+Eray Tüzün Hakan Erdogmus {}
+Eray Tüzün Burak Turhan {}
+Eray Tüzün Maria Teresa Baldassarre {}
+Eray Tüzün Robert Feldt {}
+Eray Tüzün Dietmar Pfahl {}
+Eray Tüzün Marcela Genero {}
+Eray Tüzün Marcos Kalinowski {}
+Eray Tüzün Rafael Prikladnicki {}
+Eray Tüzün Rogardt Heldal {}
+Eray Tüzün Stefan Biffl {}
+Nauman bin Ali Dietmar Pfahl {}
+Nauman bin Ali Paris Avgeriou {}
+Nauman bin Ali Marcos Kalinowski {}
+Nauman bin Ali Maria Teresa Baldassarre {}
+Nauman bin Ali Daniel Mendez Fernandez {}
+Hakan Erdogmus Maria Teresa Baldassarre {}
+Hakan Erdogmus Michael Felderer {}
+Hakan Erdogmus Robert Feldt {}
+Hakan Erdogmus Burak Turhan {}
+Hakan Erdogmus Magne Jørgensen {}
+Hakan Erdogmus Sira Vegas {}
+Hakan Erdogmus Markku Oivo {}
+Hakan Erdogmus Carolyn Seaman {}
+Hakan Erdogmus Laurie Williams {}
+Hakan Erdogmus Stefan Biffl {}
+Hakan Erdogmus Maurizio Morisio {}
+Robert Feldt Michael Felderer {}
+Robert Feldt Carolyn Seaman {}
+Robert Feldt Per Runeson {}
+Robert Feldt Maria Teresa Baldassarre {}
+Robert Feldt Burak Turhan {}
+Robert Feldt Sira Vegas {}
+Robert Feldt Andreas Jedlitschka {}
+Robert Feldt Markku Oivo {}
+Robert Feldt Dag Sjøberg {}
+Robert Feldt Daniel Mendez Fernandez {}
+Robert Feldt Stefan Wagner {}
+Guilherme Travassos Xavier Franch {}
+Guilherme Travassos Rogardt Heldal {}
+Guilherme Travassos Jeffrey Carver {}
+Guilherme Travassos Michael Felderer {}
+Guilherme Travassos Rafael Prikladnicki {}
+Guilherme Travassos Per Runeson {}
+Guilherme Travassos Marcos Kalinowski {}
+Guilherme Travassos Fabio Q.B. da Silva {}
+Guilherme Travassos Danilo Caivano {}
+Guilherme Travassos Maria Teresa Baldassarre {}
+Guilherme Travassos Marcela Genero {}
+Guilherme Travassos Victor Basili {}
+Guilherme Travassos Marcus Ciolkowski {}
+Guilherme Travassos Dietmar Pfahl {}
+Guilherme Travassos Sandro Morasca {}
+Guilherme Travassos Sira Vegas {}
+Guilherme Travassos Maurizio Morisio {}
+Guilherme Travassos Daniel Mendez Fernandez {}
+Guilherme Travassos Martin Solari {}
+Michael Felderer Marcos Kalinowski {}
+Michael Felderer Xavier Franch {}
+Michael Felderer Stefan Biffl {}
+Michael Felderer Maria Teresa Baldassarre {}
+Michael Felderer Barbara Russo {}
+Michael Felderer Clemente Izurieta {}
+Michael Felderer Carolyn Seaman {}
+Michael Felderer Burak Turhan {}
+Michael Felderer Dietmar Pfahl {}
+Michael Felderer Marcela Genero {}
+Michael Felderer Rafael Prikladnicki {}
+Michael Felderer Rogardt Heldal {}
+Michael Felderer Per Runeson {}
+Michael Felderer Desmond Greer {}
+Michael Felderer Tomi Männistö {}
+Michael Felderer Markku Oivo {}
+Michael Felderer Sira Vegas {}
+Michael Felderer Jeffrey Carver {}
+Michael Felderer Laurie Williams {}
+Michael Felderer Andreas Jedlitschka {}
+Michael Felderer Daniel Mendez Fernandez {}
+Michael Felderer Ayşe Başar {}
+Michael Felderer Stefan Wagner {}
+Markku Oivo Jeffrey Carver {}
+Markku Oivo Laurie Williams {}
+Markku Oivo Victor Basili {}
+Markku Oivo Xavier Franch {}
+Markku Oivo Sira Vegas {}
+Markku Oivo Burak Turhan {}
+Markku Oivo Dietmar Pfahl {}
+Markku Oivo Marcos Kalinowski {}
+Markku Oivo Desmond Greer {}
+Markku Oivo Tomi Männistö {}
+Markku Oivo Rafael Prikladnicki {}
+Markku Oivo Andreas Jedlitschka {}
+Markku Oivo Per Runeson {}
+Markku Oivo Dag Sjøberg {}
+Markku Oivo Audris Mockus {}
+Markku Oivo Barbara Russo {}
+Markku Oivo Maria Teresa Baldassarre {}
+Markku Oivo Danilo Caivano {}
+Markku Oivo Maurizio Morisio {}
+Markku Oivo Daniel Mendez Fernandez {}
+Markku Oivo Ayşe Başar {}
+Markku Oivo Ali Babar {}
+Markku Oivo Stefan Wagner {}
+Markku Oivo Dieter Rombach {}
+Fabio Q.B. da Silva Maria Teresa Baldassarre {}
+Fabio Q.B. da Silva Marcela Genero {}
+Fabio Q.B. da Silva Carolyn Seaman {}
+Fabio Q.B. da Silva Marcus Ciolkowski {}
+Fabio Q.B. da Silva Rafael Prikladnicki {}
+Fabio Q.B. da Silva Andreas Jedlitschka {}
+Fabio Q.B. da Silva Ayşe Başar {}
+Fabio Q.B. da Silva Dan Port {}
+Daniel Mendez Fernandez Maya Daneva {}
+Daniel Mendez Fernandez Xavier Franch {}
+Daniel Mendez Fernandez Stefan Biffl {}
+Daniel Mendez Fernandez Marcos Kalinowski {}
+Daniel Mendez Fernandez Burak Turhan {}
+Daniel Mendez Fernandez Sira Vegas {}
+Daniel Mendez Fernandez Rahul Mohanani {}
+Daniel Mendez Fernandez Paris Avgeriou {}
+Daniel Mendez Fernandez Maria Teresa Baldassarre {}
+Daniel Mendez Fernandez Nils Brede Moe {}
+Daniel Mendez Fernandez Maria Paasivaara {}
+Daniel Mendez Fernandez Rogardt Heldal {}
+Daniel Mendez Fernandez Jeffrey Carver {}
+Daniel Mendez Fernandez Dietmar Pfahl {}
+Daniel Mendez Fernandez Desmond Greer {}
+Daniel Mendez Fernandez Tomi Männistö {}
+Daniel Mendez Fernandez Rafael Prikladnicki {}
+Daniel Mendez Fernandez Audris Mockus {}
+Daniel Mendez Fernandez Andreas Jedlitschka {}
+Andreas Jedlitschka Marcus Ciolkowski {}
+Andreas Jedlitschka Xavier Franch {}
+Andreas Jedlitschka Maurizio Morisio {}
+Andreas Jedlitschka Burak Turhan {}
+Andreas Jedlitschka Per Runeson {}
+Andreas Jedlitschka Dag Sjøberg {}
+Andreas Jedlitschka He Zhang {}
+Andreas Jedlitschka Tomi Männistö {}
+Andreas Jedlitschka Maria Teresa Baldassarre {}
+Andreas Jedlitschka Sira Vegas {}
+Andreas Jedlitschka Dietmar Pfahl {}
+Andreas Jedlitschka Ayşe Başar {}
+Andreas Jedlitschka Dieter Rombach {}
+Qing Wang Laurie Williams {}
+Per Runeson Maria Teresa Baldassarre {}
+Per Runeson Dag Sjøberg {}
+Per Runeson Burak Turhan {}
+Per Runeson Dietmar Pfahl {}
+Per Runeson Danilo Caivano {}
+Per Runeson Marcela Genero {}
+Maria Paasivaara Nils Brede Moe {}
+Maria Paasivaara Jeffrey Carver {}
+Clemente Izurieta Carolyn Seaman {}
+Clemente Izurieta Paris Avgeriou {}
+He Zhang Paris Avgeriou {}
+He Zhang Dietmar Pfahl {}
+He Zhang Minghui Zhou {}
+He Zhang Ayşe Başar {}
+He Zhang Ali Babar {}
+Kenichi Matsumoto Shinji Kusumoto {}
+Jingyu Li Xavier Franch {}
+Jingyu Li Nils Brede Moe {}
+Jingyu Li Maurizio Morisio {}
+Laurie Williams Jeffrey Carver {}
+Laurie Williams Carolyn Seaman {}
+Laurie Williams Victor Basili {}
+Laurie Williams Ayşe Başar {}
+Minghui Zhou Audris Mockus {}
+Minghui Zhou Marcos Kalinowski {}
+Minghui Zhou Burak Turhan {}
+Marcos Kalinowski Maria Teresa Baldassarre {}
+Marcos Kalinowski Paris Avgeriou {}
+Marcos Kalinowski Stefan Biffl {}
+Marcos Kalinowski Dietmar Pfahl {}
+Marcos Kalinowski Marcela Genero {}
+Marcos Kalinowski Rafael Prikladnicki {}
+Marcos Kalinowski Rogardt Heldal {}
+Marcos Kalinowski Desmond Greer {}
+Marcos Kalinowski Tomi Männistö {}
+Marcos Kalinowski Burak Turhan {}
+Marcos Kalinowski Xavier Franch {}
+Marcos Kalinowski Stefan Wagner {}
+Marcos Kalinowski Martin Solari {}
+Rafael Prikladnicki Paris Avgeriou {}
+Rafael Prikladnicki Nils Brede Moe {}
+Rafael Prikladnicki Dietmar Pfahl {}
+Rafael Prikladnicki Marcela Genero {}
+Rafael Prikladnicki Rogardt Heldal {}
+Rafael Prikladnicki Stefan Biffl {}
+Rafael Prikladnicki Jeffrey Carver {}
+Rafael Prikladnicki Desmond Greer {}
+Rafael Prikladnicki Tomi Männistö {}
+Rafael Prikladnicki Carolyn Seaman {}
+Rafael Prikladnicki Stefan Wagner {}
+Rafael Prikladnicki Martin Solari {}
+Marcus Ciolkowski Paris Avgeriou {}
+Marcus Ciolkowski Dietmar Pfahl {}
+Marcus Ciolkowski Sandro Morasca {}
+Marcus Ciolkowski Sira Vegas {}
+Marcus Ciolkowski Giovanni Cantone {}
+Marcus Ciolkowski Stefan Biffl {}
+Marcus Ciolkowski Dieter Rombach {}
+Marcus Ciolkowski Ross Jeffery {}
+Desmond Greer Dietmar Pfahl {}
+Desmond Greer Tomi Männistö {}
+Desmond Greer Stefan Wagner {}
+Ayşe Başar Burak Turhan {}
+Ayşe Başar Maria Teresa Baldassarre {}
+Ayşe Başar Stefan Biffl {}
+Ayşe Başar Audris Mockus {}
+Ayşe Başar Jeffrey Carver {}
+Ayşe Başar Maurizio Morisio {}
+Magne Jørgensen Dag Sjøberg {}
+Nils Brede Moe Paris Avgeriou {}
+Nils Brede Moe Dag Sjøberg {}
+Danilo Caivano Maria Teresa Baldassarre {}
+Danilo Caivano Burak Turhan {}
+Danilo Caivano Marcela Genero {}
+Xavier Franch Maya Daneva {}
+Xavier Franch Tomi Männistö {}
+Xavier Franch Burak Turhan {}
+Xavier Franch Rogardt Heldal {}
+Xavier Franch Jeffrey Carver {}
+Xavier Franch Stefan Biffl {}
+Xavier Franch Paris Avgeriou {}
+Xavier Franch Dan Port {}
+Xavier Franch Ali Babar {}
+Xavier Franch Stefan Wagner {}
+Ali Babar Stefan Biffl {}
+Ali Babar Giovanni Cantone {}
+Ali Babar Paris Avgeriou {}
+Ali Babar Tomi Männistö {}
+Paris Avgeriou Rogardt Heldal {}
+Paris Avgeriou Carolyn Seaman {}
+Paris Avgeriou Tomi Männistö {}
+Sira Vegas Burak Turhan {}
+Sira Vegas Dietmar Pfahl {}
+Sira Vegas Jeffrey Carver {}
+Sira Vegas Maria Teresa Baldassarre {}
+Sira Vegas Victor Basili {}
+Sira Vegas Sandro Morasca {}
+Sira Vegas Stefan Biffl {}
+Sira Vegas Martin Solari {}
+Sandro Morasca Jeffrey Carver {}
+Sandro Morasca Marcela Genero {}
+Sandro Morasca Dietmar Pfahl {}
+Sandro Morasca Victor Basili {}
+Jeffrey Carver Victor Basili {}
+Jeffrey Carver Rogardt Heldal {}
+Jeffrey Carver Maria Teresa Baldassarre {}
+Jeffrey Carver Dietmar Pfahl {}
+Maria Teresa Baldassarre Marcela Genero {}
+Maria Teresa Baldassarre Stefan Biffl {}
+Maria Teresa Baldassarre Burak Turhan {}
+Maria Teresa Baldassarre Stefan Wagner {}
+Marcela Genero Dietmar Pfahl {}
+Marcela Genero Rogardt Heldal {}
+Marcela Genero Stefan Biffl {}
+Marcela Genero Giovanni Cantone {}
+Marcela Genero Martin Solari {}
+Dan Port Carolyn Seaman {}
+Dan Port Dietmar Pfahl {}
+Dan Port Victor Basili {}
+Tomi Männistö Dietmar Pfahl {}
+Tomi Männistö Stefan Wagner {}
+Rahul Mohanani Burak Turhan {}
+Carolyn Seaman Victor Basili {}
+Carolyn Seaman Maurizio Morisio {}
+Carolyn Seaman Dieter Rombach {}
+Dag Sjøberg Burak Turhan {}
+Dag Sjøberg Audris Mockus {}
+Dag Sjøberg Dietmar Pfahl {}
+Dag Sjøberg Victor Basili {}
+Burak Turhan Dietmar Pfahl {}
+Burak Turhan Stefan Biffl {}
+Burak Turhan Stefan Wagner {}
+Stefan Wagner Dietmar Pfahl {}
+Stefan Wagner Stefan Biffl {}
+Stefan Wagner Maya Daneva {}
+Dietmar Pfahl Rogardt Heldal {}
+Dietmar Pfahl Stefan Biffl {}
+Dietmar Pfahl Victor Basili {}
+Dietmar Pfahl Dieter Rombach {}
+Dietmar Pfahl Ross Jeffery {}
+Maya Daneva Stefan Biffl {}
+Maurizio Morisio Victor Basili {}
+Stefan Biffl Rogardt Heldal {}
+Victor Basili Giovanni Cantone {}
+Victor Basili Dieter Rombach {}
+Victor Basili Ross Jeffery {}
+Giovanni Cantone Dieter Rombach {}
