@@ -906,61 +906,126 @@ def create_interactive_website(G):
     print(f"  - Double-click nodes to focus")
     print(f"  - Use control buttons to change layouts")
 
-# Build co-authorship graph
-cache_filename = "isern_collaboration_cache.graphml"
+def load_collaboration_network():
+    """Load the collaboration network from the full discovery results"""
+    try:
+        with open('isern_full_collaboration_network.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data
+    except FileNotFoundError:
+        return None
 
-# Check if cache exists and ask for confirmation
-rebuild_cache = True
-if os.path.exists(cache_filename):
-    rebuild_cache = ask_regenerate_file(cache_filename, "Collaboration cache")
-
-if rebuild_cache:
-    if os.path.exists(cache_filename):
-        print(f"Regenerating collaboration graph...")
-    else:
-        print("Building new collaboration graph...")
+def create_graph_from_precomputed_data(collab_data):
+    """Create NetworkX graph from pre-computed collaboration data"""
+    print("🎨 Creating graph from pre-computed collaboration data...")
     
     G = nx.Graph()
-    G.add_nodes_from(isern_members)
-
-    print("Building co-authorship graph for ISERN members...")
-    print("This may take a while as we query DBLP for each member...")
-
-    for i, member in enumerate(isern_members, 1):
-        print(f"Processing {i}/{len(isern_members)}: {member}")
-        try:
-            publications = search_dblp_author(member)
-            
-            for pub in publications:
-                coauthors = get_coauthors_from_publication(pub)
-                
-                for coauthor in coauthors:
-                    # Check if this coauthor is also an ISERN member using enhanced matching
-                    if is_isern_member(coauthor):
-                        # Find the best matching ISERN member name
-                        matches = name_matcher.find_best_matches(coauthor, isern_members, top_k=1)
-                        if matches:
-                            other_member = matches[0][0]
-                            if other_member != member:
-                                G.add_edge(member, other_member)
-                                print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
-                                break
-            
-            # Be respectful to DBLP API
-            time.sleep(0.5)
-            
-        except Exception as e:
-            print(f"Error processing {member}: {e}")
     
-    # Save to cache
-    print(f"Saving collaboration graph to cache: {cache_filename}")
-    nx.write_graphml(G, cache_filename)
+    # Add nodes with attributes
+    members = collab_data['members']
+    for member, data in members.items():
+        G.add_node(member, 
+                  collaboration_count=data['collaboration_count'],
+                  degree_centrality=data['degree_centrality'],
+                  betweenness_centrality=data['betweenness_centrality'])
+    
+    # Add edges
+    for member, data in members.items():
+        for collaborator in data['collaborators']:
+            if not G.has_edge(member, collaborator):
+                G.add_edge(member, collaborator)
+    
+    print(f"✅ Graph created from pre-computed data:")
+    print(f"   Nodes: {G.number_of_nodes()}")
+    print(f"   Edges: {G.number_of_edges()}")
+    print(f"   Density: {nx.density(G):.3f}")
+    
+    return G
+
+def create_graph_from_dblp():
+    """Create graph by querying DBLP (legacy method)"""
+    cache_filename = "isern_collaboration_cache.graphml"
+    
+    # Check if cache exists and ask for confirmation
+    rebuild_cache = True
+    if os.path.exists(cache_filename):
+        rebuild_cache = ask_regenerate_file(cache_filename, "Collaboration cache")
+
+    if rebuild_cache:
+        if os.path.exists(cache_filename):
+            print(f"Regenerating collaboration graph...")
+        else:
+            print("Building new collaboration graph...")
+        
+        G = nx.Graph()
+        G.add_nodes_from(isern_members)
+
+        print("Building co-authorship graph for ISERN members...")
+        print("This may take a while as we query DBLP for each member...")
+
+        for i, member in enumerate(isern_members, 1):
+            print(f"Processing {i}/{len(isern_members)}: {member}")
+            try:
+                publications = search_dblp_author(member)
+                
+                for pub in publications:
+                    coauthors = get_coauthors_from_publication(pub)
+                    
+                    for coauthor in coauthors:
+                        # Check if this coauthor is also an ISERN member using enhanced matching
+                        if is_isern_member(coauthor):
+                            # Find the best matching ISERN member name
+                            matches = name_matcher.find_best_matches(coauthor, isern_members, top_k=1)
+                            if matches:
+                                other_member = matches[0][0]
+                                if other_member != member:
+                                    G.add_edge(member, other_member)
+                                    print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
+                                    break
+                
+                # Be respectful to DBLP API
+                time.sleep(0.5)
+                
+            except Exception as e:
+                print(f"Error processing {member}: {e}")
+        
+        # Save to cache
+        print(f"Saving collaboration graph to cache: {cache_filename}")
+        nx.write_graphml(G, cache_filename)
+    else:
+        print(f"Loading collaboration graph from cache: {cache_filename}")
+        G = nx.read_graphml(cache_filename)
+        # Convert node labels back to strings (GraphML may store them differently)
+        G = nx.relabel_nodes(G, {n: str(n) for n in G.nodes()})
+        print(f"Loaded {G.number_of_nodes()} nodes and {G.number_of_edges()} edges from cache")
+    
+    return G
+
+# Build co-authorship graph - try pre-computed data first
+print("🚀 ISERN COLLABORATION GRAPH GENERATION")
+print("=" * 45)
+
+collab_data = load_collaboration_network()
+
+if collab_data:
+    print("✅ Found pre-computed collaboration data from full_isern_collaboration_discovery.py")
+    G = create_graph_from_precomputed_data(collab_data)
 else:
-    print(f"Loading collaboration graph from cache: {cache_filename}")
-    G = nx.read_graphml(cache_filename)
-    # Convert node labels back to strings (GraphML may store them differently)
-    G = nx.relabel_nodes(G, {n: str(n) for n in G.nodes()})
-    print(f"Loaded {G.number_of_nodes()} nodes and {G.number_of_edges()} edges from cache")
+    print("❌ Pre-computed collaboration data not found.")
+    print("   File: isern_full_collaboration_network.json")
+    print("\n💡 Recommendation:")
+    print("   Run 'python full_isern_collaboration_discovery.py' first for:")
+    print("   - More comprehensive collaboration discovery")
+    print("   - Faster processing (uses pre-computed data)")
+    print("   - Better accuracy (member-to-member approach)")
+    
+    response = input("\nDo you want to continue with legacy DBLP querying? (y/n): ").lower().strip()
+    if response not in ['y', 'yes']:
+        print("Exiting. Please run 'python full_isern_collaboration_discovery.py' first.")
+        exit(0)
+    
+    print("\n⚠️  Using legacy DBLP querying method...")
+    G = create_graph_from_dblp()
 
 # Now G is your co-authorship graph
 print(f"\nGraph Statistics:")
