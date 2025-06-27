@@ -1,242 +1,63 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="node" attr.name="level" attr.type="long"/>
-<key id="d0" for="node" attr.name="isern_number" attr.type="long"/>
-<graph edgedefault="undirected"><node id="Casper Lassenius">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Eray Tüzün">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Nauman bin Ali">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Hakan Erdogmus">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Robert Feldt">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Guilherme Travassos">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Michael Felderer">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Markku Oivo">
-  <data key="d0">0</data>
-  <data key="d1">0</data>
-</node>
-<node id="Fabio Q.B. da Silva">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Daniel Mendez Fernandez">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Andreas Jedlitschka">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Barbara Russo">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Qing Wang">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Per Runeson">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Maria Paasivaara">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Clemente Izurieta">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="He Zhang">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Kenichi Matsumoto">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Jingyu Li">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Laurie Williams">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Takeshi Hayama">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Shinji Kusumoto">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Minghui Zhou">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Marcos Kalinowski">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Rafael Prikladnicki">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Marcus Ciolkowski">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Desmond Greer">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Ayşe Başar">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Magne Jørgensen">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Nils Brede Moe">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Danilo Caivano">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Xavier Franch">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Ali Babar">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Paris Avgeriou">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Sira Vegas">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Oscar Pastor">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Sandro Morasca">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Jeffrey Carver">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Maria Teresa Baldassarre">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Marcela Genero">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Dan Port">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Tomi Männistö">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Rahul Mohanani">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Carolyn Seaman">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Dag Sjøberg">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Burak Turhan">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Stefan Wagner">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Dietmar Pfahl">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Audris Mockus">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Maya Daneva">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Martin Solari">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Maurizio Morisio">
-  <data key="d0">1</data>
-  <data key="d1">1</data>
-</node>
-<node id="Stefan Biffl">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Rogardt Heldal">
-  <data key="d0">2</data>
-  <data key="d1">2</data>
-</node>
-<node id="Victor Basili">
-  <data key="d0">0</data>
-  <data key="d1">0</data>
-</node>
-<node id="Giovanni Cantone">
-  <data key="d0">0</data>
-  <data key="d1">0</data>
-</node>
-<node id="Dieter Rombach">
-  <data key="d0">0</data>
-  <data key="d1">0</data>
-</node>
-<node id="Ross Jeffery">
-  <data key="d0">0</data>
-  <data key="d1">0</data>
-</node>
-<node id="Koji Torii">
-  <data key="d0">0</data>
-  <data key="d1">0</data>
-</node>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><graph edgedefault="undirected"><node id="Casper Lassenius"/>
+<node id="Eray Tüzün"/>
+<node id="Nauman bin Ali"/>
+<node id="Hakan Erdogmus"/>
+<node id="Robert Feldt"/>
+<node id="Guilherme Travassos"/>
+<node id="Michael Felderer"/>
+<node id="Markku Oivo"/>
+<node id="Fabio Q.B. da Silva"/>
+<node id="Daniel Mendez Fernandez"/>
+<node id="Andreas Jedlitschka"/>
+<node id="Barbara Russo"/>
+<node id="Qing Wang"/>
+<node id="Per Runeson"/>
+<node id="Maria Paasivaara"/>
+<node id="Clemente Izurieta"/>
+<node id="He Zhang"/>
+<node id="Kenichi Matsumoto"/>
+<node id="Jingyu Li"/>
+<node id="Laurie Williams"/>
+<node id="Takeshi Hayama"/>
+<node id="Shinji Kusumoto"/>
+<node id="Minghui Zhou"/>
+<node id="Marcos Kalinowski"/>
+<node id="Rafael Prikladnicki"/>
+<node id="Marcus Ciolkowski"/>
+<node id="Desmond Greer"/>
+<node id="Ayşe Başar"/>
+<node id="Magne Jørgensen"/>
+<node id="Nils Brede Moe"/>
+<node id="Danilo Caivano"/>
+<node id="Xavier Franch"/>
+<node id="Ali Babar"/>
+<node id="Paris Avgeriou"/>
+<node id="Sira Vegas"/>
+<node id="Oscar Pastor"/>
+<node id="Sandro Morasca"/>
+<node id="Jeffrey Carver"/>
+<node id="Maria Teresa Baldassarre"/>
+<node id="Marcela Genero"/>
+<node id="Dan Port"/>
+<node id="Tomi Männistö"/>
+<node id="Rahul Mohanani"/>
+<node id="Carolyn Seaman"/>
+<node id="Dag Sjøberg"/>
+<node id="Burak Turhan"/>
+<node id="Stefan Wagner"/>
+<node id="Dietmar Pfahl"/>
+<node id="Audris Mockus"/>
+<node id="Maya Daneva"/>
+<node id="Martin Solari"/>
+<node id="Maurizio Morisio"/>
+<node id="Stefan Biffl"/>
+<node id="Rogardt Heldal"/>
+<node id="Victor Basili"/>
+<node id="Giovanni Cantone"/>
+<node id="Dieter Rombach"/>
+<node id="Ross Jeffery"/>
+<node id="Koji Torii"/>
 <edge source="Casper Lassenius" target="Maria Paasivaara"/>
 <edge source="Casper Lassenius" target="Magne Jørgensen"/>
 <edge source="Casper Lassenius" target="Tomi Männistö"/>

@@ -1203,8 +1203,8 @@ if save_plot:
                facecolor='white', edgecolor='none')
     print(f"Graph visualization saved: {plot_filename}")
 
-# Show the plot
-plt.show()
+# Close the plot to free memory (removed plt.show() to avoid hanging)
+plt.close()
 
 # Print some network analysis
 if G.number_of_edges() > 0:
