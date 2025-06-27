@@ -1,0 +1,30 @@
+ISERN Collaboration Network Summary
+===================================
+
+Total Members: 59
+Total Collaborations: 366
+Network Density: 0.214
+Connected Members: 58
+Isolated Members: 1
+
+Top Collaborators:
+  Dietmar Pfahl: 29 collaborations
+  Markku Oivo: 28 collaborations
+  Michael Felderer: 27 collaborations
+  Daniel Mendez Fernandez: 26 collaborations
+  Marcos Kalinowski: 22 collaborations
+  Maria Teresa Baldassarre: 22 collaborations
+  Rafael Prikladnicki: 21 collaborations
+  Burak Turhan: 21 collaborations
+  Guilherme Travassos: 19 collaborations
+  Qing Wang: 19 collaborations
+  He Zhang: 19 collaborations
+  Andreas Jedlitschka: 18 collaborations
+  Sira Vegas: 17 collaborations
+  Stefan Wagner: 17 collaborations
+  Stefan Biffl: 17 collaborations
+  Jeffrey Carver: 16 collaborations
+  Marcela Genero: 16 collaborations
+  Victor Basili: 16 collaborations
+  Fabio Q.B. da Silva: 15 collaborations
+  Nils Brede Moe: 15 collaborations

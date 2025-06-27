@@ -8,33 +8,11 @@ import os
 import glob
 from datetime import datetime
 from urllib.parse import quote
+from enhanced_name_utils import EnhancedNameMatcher
+from isern_utils import load_isern_members
 
-def load_isern_members():
-    """Load ISERN members from JSON file"""
-    try:
-        with open('isern_members.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        members = data['isern_members']
-        print(f"Loaded {len(members)} ISERN members from isern_members.json")
-        
-        if 'metadata' in data:
-            metadata = data['metadata']
-            print(f"Last updated: {metadata.get('last_updated', 'Unknown')}")
-            print(f"Total members in file: {metadata.get('total_members', len(members))}")
-        
-        return members
-    
-    except FileNotFoundError:
-        print("Error: isern_members.json file not found!")
-        print("Please ensure the file exists in the current directory.")
-        return []
-    except json.JSONDecodeError as e:
-        print(f"Error parsing isern_members.json: {e}")
-        return []
-    except Exception as e:
-        print(f"Error loading ISERN members: {e}")
-        return []
+# Initialize enhanced name matcher
+name_matcher = EnhancedNameMatcher(similarity_threshold=0.85)
 
 def ask_regenerate_file(filename, description):
     """Ask user if they want to regenerate an existing file"""
@@ -48,77 +26,27 @@ def ask_regenerate_file(filename, description):
             print("Please enter 'y' for yes or 'n' for no.")
 
 # Load ISERN member list from JSON file
-isern_members = load_isern_members()
+isern_members = load_isern_members('isern_members_enhanced.json')
 
 if not isern_members:
     print("No ISERN members loaded. Exiting.")
     exit(1)
 
-# Normalize names for matching (e.g., lowercase, strip accents if needed)
-def normalize(name):
-    return name.lower().replace("ö", "o").replace("ü", "u").replace("ç", "c")  # expand as needed
-
-def names_match(name1, name2):
-    """Check if two names likely refer to the same person, handling common variations"""
-    if name1 == name2:
-        return True
-    
-    # Normalize both names
-    norm1 = normalize(name1)
-    norm2 = normalize(name2)
-    
-    if norm1 == norm2:
-        return True
-    
-    # Split into parts for more flexible matching
-    parts1 = norm1.split()
-    parts2 = norm2.split()
-    
-    if len(parts1) < 2 or len(parts2) < 2:
+def is_isern_member(author_name):
+    """Check if an author is an ISERN member using enhanced name matching"""
+    if not author_name:
         return False
     
-    # Get first and last names
-    first1, last1 = parts1[0], parts1[-1]
-    first2, last2 = parts2[0], parts2[-1]
+    # Use enhanced name matching to find potential ISERN members
+    matches = name_matcher.find_best_matches(author_name, isern_members, top_k=1)
     
-    # Last names must match
-    if last1 != last2:
-        return False
-    
-    # Check first name variations
-    # Full match (Daniel = Daniel)
-    if first1 == first2:
+    if matches and matches[0][1] >= name_matcher.similarity_threshold:
+        matched_name = matches[0][0]
+        score = matches[0][1]
+        print(f"    ISERN member match: {author_name} -> {matched_name} (score: {score:.3f})")
         return True
     
-    # Initial match (D. = Daniel or Dan)
-    if (len(first1) == 2 and first1.endswith('.') and first1[0] == first2[0]) or \
-       (len(first2) == 2 and first2.endswith('.') and first2[0] == first1[0]):
-        return True
-    
-    # Common nickname variations
-    nickname_map = {
-        'daniel': ['dan', 'danny'],
-        'dan': ['daniel', 'danny'],
-        'william': ['bill', 'will'],
-        'bill': ['william'],
-        'robert': ['bob', 'rob'],
-        'bob': ['robert'],
-        'richard': ['rick', 'dick'],
-        'rick': ['richard'],
-        'michael': ['mike'],
-        'mike': ['michael'],
-        'christopher': ['chris'],
-        'chris': ['christopher'],
-        'anthony': ['tony'],
-        'tony': ['anthony'],
-        'victor': ['vic'],
-        'vic': ['victor']
-    }
-    
-    if first1 in nickname_map and first2 in nickname_map[first1]:
-        return True
-    if first2 in nickname_map and first1 in nickname_map[first2]:
-        return True
+    return False
     
     return False
 
@@ -214,7 +142,7 @@ def get_dblp_author_variations(author_name):
                 if 'info' in hit and 'author' in hit['info']:
                     # Add the main author name
                     main_author = hit['info']['author']
-                    if names_match(author_name, main_author):
+                    if name_matcher.is_likely_same_person(author_name, main_author):
                         variations.append(main_author)
                     
                     # Add aliases if they exist
@@ -224,7 +152,7 @@ def get_dblp_author_variations(author_name):
                             aliases = [aliases]
                         
                         for alias in aliases:
-                            if names_match(author_name, alias):
+                            if name_matcher.is_likely_same_person(author_name, alias):
                                 variations.append(alias)
         
         # Remove duplicates
@@ -1007,12 +935,16 @@ if rebuild_cache:
                 coauthors = get_coauthors_from_publication(pub)
                 
                 for coauthor in coauthors:
-                    # Check if this coauthor is also an ISERN member using improved matching
-                    for other_member in isern_members:
-                        if names_match(coauthor, other_member) and other_member != member:
-                            G.add_edge(member, other_member)
-                            print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
-                            break
+                    # Check if this coauthor is also an ISERN member using enhanced matching
+                    if is_isern_member(coauthor):
+                        # Find the best matching ISERN member name
+                        matches = name_matcher.find_best_matches(coauthor, isern_members, top_k=1)
+                        if matches:
+                            other_member = matches[0][0]
+                            if other_member != member:
+                                G.add_edge(member, other_member)
+                                print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
+                                break
             
             # Be respectful to DBLP API
             time.sleep(0.5)
@@ -1283,12 +1215,6 @@ if G.number_of_edges() > 0:
     print(f"\nLargest connected component has {len(largest_cc)} members:")
     for member in sorted(largest_cc):
         print(f"  - {member}")
-else:
-    print("\nNo collaborations found in the data.")
-    print("This might be due to:")
-    print("- Name variations in DBLP (different spellings, initials, etc.)")
-    print("- Limited API results")
-    print("- Authors publishing under different name formats")
 else:
     print("\nNo collaborations found in the data.")
     print("This might be due to:")

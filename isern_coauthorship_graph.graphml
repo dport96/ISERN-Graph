@@ -62,316 +62,306 @@
 <edge source="Casper Lassenius" target="Magne Jørgensen"/>
 <edge source="Casper Lassenius" target="Tomi Männistö"/>
 <edge source="Casper Lassenius" target="Nils Brede Moe"/>
-<edge source="Casper Lassenius" target="Michael Felderer"/>
-<edge source="Casper Lassenius" target="Marcos Kalinowski"/>
-<edge source="Casper Lassenius" target="Dietmar Pfahl"/>
-<edge source="Casper Lassenius" target="Desmond Greer"/>
-<edge source="Casper Lassenius" target="Markku Oivo"/>
-<edge source="Casper Lassenius" target="Rafael Prikladnicki"/>
-<edge source="Casper Lassenius" target="Jeffrey Carver"/>
-<edge source="Casper Lassenius" target="Daniel Mendez Fernandez"/>
 <edge source="Casper Lassenius" target="Stefan Wagner"/>
+<edge source="Casper Lassenius" target="Rafael Prikladnicki"/>
+<edge source="Casper Lassenius" target="Markku Oivo"/>
+<edge source="Casper Lassenius" target="Daniel Mendez Fernandez"/>
 <edge source="Eray Tüzün" target="Michael Felderer"/>
 <edge source="Eray Tüzün" target="Carolyn Seaman"/>
 <edge source="Eray Tüzün" target="Hakan Erdogmus"/>
-<edge source="Eray Tüzün" target="Burak Turhan"/>
-<edge source="Eray Tüzün" target="Maria Teresa Baldassarre"/>
-<edge source="Eray Tüzün" target="Robert Feldt"/>
+<edge source="Eray Tüzün" target="Qing Wang"/>
 <edge source="Eray Tüzün" target="Dietmar Pfahl"/>
-<edge source="Eray Tüzün" target="Marcela Genero"/>
-<edge source="Eray Tüzün" target="Marcos Kalinowski"/>
-<edge source="Eray Tüzün" target="Rafael Prikladnicki"/>
 <edge source="Eray Tüzün" target="Rogardt Heldal"/>
-<edge source="Eray Tüzün" target="Stefan Biffl"/>
+<edge source="Eray Tüzün" target="Robert Feldt"/>
+<edge source="Eray Tüzün" target="Maria Teresa Baldassarre"/>
+<edge source="Eray Tüzün" target="Burak Turhan"/>
+<edge source="Nauman bin Ali" target="Fabio Q.B. da Silva"/>
 <edge source="Nauman bin Ali" target="Dietmar Pfahl"/>
 <edge source="Nauman bin Ali" target="Paris Avgeriou"/>
-<edge source="Nauman bin Ali" target="Marcos Kalinowski"/>
 <edge source="Nauman bin Ali" target="Maria Teresa Baldassarre"/>
-<edge source="Nauman bin Ali" target="Daniel Mendez Fernandez"/>
-<edge source="Hakan Erdogmus" target="Maria Teresa Baldassarre"/>
-<edge source="Hakan Erdogmus" target="Michael Felderer"/>
-<edge source="Hakan Erdogmus" target="Robert Feldt"/>
-<edge source="Hakan Erdogmus" target="Burak Turhan"/>
+<edge source="Hakan Erdogmus" target="He Zhang"/>
 <edge source="Hakan Erdogmus" target="Magne Jørgensen"/>
 <edge source="Hakan Erdogmus" target="Sira Vegas"/>
-<edge source="Hakan Erdogmus" target="Markku Oivo"/>
+<edge source="Hakan Erdogmus" target="Burak Turhan"/>
 <edge source="Hakan Erdogmus" target="Carolyn Seaman"/>
 <edge source="Hakan Erdogmus" target="Laurie Williams"/>
 <edge source="Hakan Erdogmus" target="Stefan Biffl"/>
 <edge source="Hakan Erdogmus" target="Maurizio Morisio"/>
+<edge source="Hakan Erdogmus" target="Markku Oivo"/>
 <edge source="Robert Feldt" target="Michael Felderer"/>
+<edge source="Robert Feldt" target="Qing Wang"/>
 <edge source="Robert Feldt" target="Carolyn Seaman"/>
 <edge source="Robert Feldt" target="Per Runeson"/>
-<edge source="Robert Feldt" target="Maria Teresa Baldassarre"/>
-<edge source="Robert Feldt" target="Burak Turhan"/>
-<edge source="Robert Feldt" target="Sira Vegas"/>
+<edge source="Robert Feldt" target="Stefan Wagner"/>
+<edge source="Robert Feldt" target="Daniel Mendez Fernandez"/>
 <edge source="Robert Feldt" target="Andreas Jedlitschka"/>
 <edge source="Robert Feldt" target="Markku Oivo"/>
 <edge source="Robert Feldt" target="Dag Sjøberg"/>
-<edge source="Robert Feldt" target="Daniel Mendez Fernandez"/>
-<edge source="Robert Feldt" target="Stefan Wagner"/>
-<edge source="Guilherme Travassos" target="Xavier Franch"/>
-<edge source="Guilherme Travassos" target="Rogardt Heldal"/>
-<edge source="Guilherme Travassos" target="Jeffrey Carver"/>
-<edge source="Guilherme Travassos" target="Michael Felderer"/>
-<edge source="Guilherme Travassos" target="Rafael Prikladnicki"/>
-<edge source="Guilherme Travassos" target="Per Runeson"/>
-<edge source="Guilherme Travassos" target="Marcos Kalinowski"/>
-<edge source="Guilherme Travassos" target="Fabio Q.B. da Silva"/>
-<edge source="Guilherme Travassos" target="Danilo Caivano"/>
-<edge source="Guilherme Travassos" target="Maria Teresa Baldassarre"/>
-<edge source="Guilherme Travassos" target="Marcela Genero"/>
-<edge source="Guilherme Travassos" target="Victor Basili"/>
-<edge source="Guilherme Travassos" target="Marcus Ciolkowski"/>
-<edge source="Guilherme Travassos" target="Dietmar Pfahl"/>
-<edge source="Guilherme Travassos" target="Sandro Morasca"/>
-<edge source="Guilherme Travassos" target="Sira Vegas"/>
-<edge source="Guilherme Travassos" target="Maurizio Morisio"/>
-<edge source="Guilherme Travassos" target="Daniel Mendez Fernandez"/>
-<edge source="Guilherme Travassos" target="Oscar Pastor"/>
+<edge source="Robert Feldt" target="Burak Turhan"/>
 <edge source="Guilherme Travassos" target="Martin Solari"/>
-<edge source="Michael Felderer" target="Marcos Kalinowski"/>
+<edge source="Guilherme Travassos" target="Xavier Franch"/>
+<edge source="Guilherme Travassos" target="Nils Brede Moe"/>
+<edge source="Guilherme Travassos" target="Fabio Q.B. da Silva"/>
+<edge source="Guilherme Travassos" target="Michael Felderer"/>
+<edge source="Guilherme Travassos" target="Daniel Mendez Fernandez"/>
+<edge source="Guilherme Travassos" target="Rafael Prikladnicki"/>
+<edge source="Guilherme Travassos" target="Marcos Kalinowski"/>
+<edge source="Guilherme Travassos" target="Oscar Pastor"/>
+<edge source="Guilherme Travassos" target="Danilo Caivano"/>
+<edge source="Guilherme Travassos" target="Jeffrey Carver"/>
+<edge source="Guilherme Travassos" target="Marcus Ciolkowski"/>
+<edge source="Guilherme Travassos" target="Victor Basili"/>
+<edge source="Guilherme Travassos" target="Maurizio Morisio"/>
+<edge source="Michael Felderer" target="Daniel Mendez Fernandez"/>
 <edge source="Michael Felderer" target="Xavier Franch"/>
-<edge source="Michael Felderer" target="Stefan Biffl"/>
-<edge source="Michael Felderer" target="Maria Teresa Baldassarre"/>
+<edge source="Michael Felderer" target="Marcos Kalinowski"/>
 <edge source="Michael Felderer" target="Barbara Russo"/>
 <edge source="Michael Felderer" target="Clemente Izurieta"/>
+<edge source="Michael Felderer" target="Dietmar Pfahl"/>
+<edge source="Michael Felderer" target="Per Runeson"/>
+<edge source="Michael Felderer" target="Stefan Wagner"/>
+<edge source="Michael Felderer" target="Rogardt Heldal"/>
+<edge source="Michael Felderer" target="Laurie Williams"/>
+<edge source="Michael Felderer" target="Stefan Biffl"/>
+<edge source="Michael Felderer" target="Jeffrey Carver"/>
+<edge source="Michael Felderer" target="Andreas Jedlitschka"/>
+<edge source="Michael Felderer" target="Sira Vegas"/>
 <edge source="Michael Felderer" target="Carolyn Seaman"/>
 <edge source="Michael Felderer" target="Burak Turhan"/>
-<edge source="Michael Felderer" target="Dietmar Pfahl"/>
-<edge source="Michael Felderer" target="Marcela Genero"/>
-<edge source="Michael Felderer" target="Rafael Prikladnicki"/>
-<edge source="Michael Felderer" target="Rogardt Heldal"/>
-<edge source="Michael Felderer" target="Per Runeson"/>
-<edge source="Michael Felderer" target="Desmond Greer"/>
-<edge source="Michael Felderer" target="Tomi Männistö"/>
-<edge source="Michael Felderer" target="Markku Oivo"/>
-<edge source="Michael Felderer" target="Sira Vegas"/>
-<edge source="Michael Felderer" target="Jeffrey Carver"/>
-<edge source="Michael Felderer" target="Laurie Williams"/>
-<edge source="Michael Felderer" target="Andreas Jedlitschka"/>
-<edge source="Michael Felderer" target="Daniel Mendez Fernandez"/>
-<edge source="Michael Felderer" target="Ayşe Başar"/>
-<edge source="Michael Felderer" target="Stefan Wagner"/>
 <edge source="Markku Oivo" target="Jeffrey Carver"/>
-<edge source="Markku Oivo" target="Laurie Williams"/>
 <edge source="Markku Oivo" target="Victor Basili"/>
 <edge source="Markku Oivo" target="Xavier Franch"/>
+<edge source="Markku Oivo" target="He Zhang"/>
 <edge source="Markku Oivo" target="Sira Vegas"/>
+<edge source="Markku Oivo" target="Stefan Wagner"/>
 <edge source="Markku Oivo" target="Burak Turhan"/>
-<edge source="Markku Oivo" target="Dietmar Pfahl"/>
-<edge source="Markku Oivo" target="Marcos Kalinowski"/>
-<edge source="Markku Oivo" target="Desmond Greer"/>
-<edge source="Markku Oivo" target="Tomi Männistö"/>
 <edge source="Markku Oivo" target="Rafael Prikladnicki"/>
+<edge source="Markku Oivo" target="Daniel Mendez Fernandez"/>
+<edge source="Markku Oivo" target="Tomi Männistö"/>
 <edge source="Markku Oivo" target="Andreas Jedlitschka"/>
-<edge source="Markku Oivo" target="Per Runeson"/>
-<edge source="Markku Oivo" target="Dag Sjøberg"/>
-<edge source="Markku Oivo" target="Audris Mockus"/>
 <edge source="Markku Oivo" target="Barbara Russo"/>
-<edge source="Markku Oivo" target="Maria Teresa Baldassarre"/>
 <edge source="Markku Oivo" target="Danilo Caivano"/>
 <edge source="Markku Oivo" target="Maurizio Morisio"/>
-<edge source="Markku Oivo" target="Daniel Mendez Fernandez"/>
-<edge source="Markku Oivo" target="Ayşe Başar"/>
-<edge source="Markku Oivo" target="Ali Babar"/>
-<edge source="Markku Oivo" target="Stefan Wagner"/>
 <edge source="Markku Oivo" target="Dieter Rombach"/>
+<edge source="Markku Oivo" target="Ali Babar"/>
+<edge source="Markku Oivo" target="Maria Teresa Baldassarre"/>
+<edge source="Markku Oivo" target="Audris Mockus"/>
+<edge source="Fabio Q.B. da Silva" target="Jingyu Li"/>
+<edge source="Fabio Q.B. da Silva" target="Ayşe Başar"/>
 <edge source="Fabio Q.B. da Silva" target="Maria Teresa Baldassarre"/>
-<edge source="Fabio Q.B. da Silva" target="Marcela Genero"/>
+<edge source="Fabio Q.B. da Silva" target="Oscar Pastor"/>
 <edge source="Fabio Q.B. da Silva" target="Carolyn Seaman"/>
 <edge source="Fabio Q.B. da Silva" target="Marcus Ciolkowski"/>
 <edge source="Fabio Q.B. da Silva" target="Rafael Prikladnicki"/>
+<edge source="Fabio Q.B. da Silva" target="He Zhang"/>
+<edge source="Fabio Q.B. da Silva" target="Qing Wang"/>
 <edge source="Fabio Q.B. da Silva" target="Andreas Jedlitschka"/>
-<edge source="Fabio Q.B. da Silva" target="Ayşe Başar"/>
-<edge source="Fabio Q.B. da Silva" target="Oscar Pastor"/>
+<edge source="Fabio Q.B. da Silva" target="Per Runeson"/>
+<edge source="Fabio Q.B. da Silva" target="Marcos Kalinowski"/>
 <edge source="Fabio Q.B. da Silva" target="Dan Port"/>
+<edge source="Daniel Mendez Fernandez" target="Qing Wang"/>
+<edge source="Daniel Mendez Fernandez" target="Dan Port"/>
 <edge source="Daniel Mendez Fernandez" target="Maya Daneva"/>
 <edge source="Daniel Mendez Fernandez" target="Xavier Franch"/>
-<edge source="Daniel Mendez Fernandez" target="Stefan Biffl"/>
 <edge source="Daniel Mendez Fernandez" target="Marcos Kalinowski"/>
-<edge source="Daniel Mendez Fernandez" target="Burak Turhan"/>
-<edge source="Daniel Mendez Fernandez" target="Sira Vegas"/>
+<edge source="Daniel Mendez Fernandez" target="Stefan Wagner"/>
 <edge source="Daniel Mendez Fernandez" target="Rahul Mohanani"/>
 <edge source="Daniel Mendez Fernandez" target="Paris Avgeriou"/>
-<edge source="Daniel Mendez Fernandez" target="Maria Teresa Baldassarre"/>
 <edge source="Daniel Mendez Fernandez" target="Nils Brede Moe"/>
+<edge source="Daniel Mendez Fernandez" target="Dag Sjøberg"/>
+<edge source="Daniel Mendez Fernandez" target="Stefan Biffl"/>
 <edge source="Daniel Mendez Fernandez" target="Maria Paasivaara"/>
-<edge source="Daniel Mendez Fernandez" target="Rogardt Heldal"/>
 <edge source="Daniel Mendez Fernandez" target="Jeffrey Carver"/>
-<edge source="Daniel Mendez Fernandez" target="Dietmar Pfahl"/>
-<edge source="Daniel Mendez Fernandez" target="Desmond Greer"/>
-<edge source="Daniel Mendez Fernandez" target="Tomi Männistö"/>
+<edge source="Daniel Mendez Fernandez" target="Jingyu Li"/>
 <edge source="Daniel Mendez Fernandez" target="Rafael Prikladnicki"/>
-<edge source="Daniel Mendez Fernandez" target="Audris Mockus"/>
-<edge source="Daniel Mendez Fernandez" target="Andreas Jedlitschka"/>
+<edge source="Daniel Mendez Fernandez" target="Desmond Greer"/>
+<edge source="Daniel Mendez Fernandez" target="Ali Babar"/>
+<edge source="Daniel Mendez Fernandez" target="Oscar Pastor"/>
+<edge source="Daniel Mendez Fernandez" target="Tomi Männistö"/>
+<edge source="Daniel Mendez Fernandez" target="Dietmar Pfahl"/>
 <edge source="Andreas Jedlitschka" target="Marcus Ciolkowski"/>
+<edge source="Andreas Jedlitschka" target="Dieter Rombach"/>
 <edge source="Andreas Jedlitschka" target="Xavier Franch"/>
 <edge source="Andreas Jedlitschka" target="Maurizio Morisio"/>
 <edge source="Andreas Jedlitschka" target="Burak Turhan"/>
-<edge source="Andreas Jedlitschka" target="Per Runeson"/>
-<edge source="Andreas Jedlitschka" target="Dag Sjøberg"/>
-<edge source="Andreas Jedlitschka" target="He Zhang"/>
 <edge source="Andreas Jedlitschka" target="Tomi Männistö"/>
-<edge source="Andreas Jedlitschka" target="Maria Teresa Baldassarre"/>
 <edge source="Andreas Jedlitschka" target="Sira Vegas"/>
 <edge source="Andreas Jedlitschka" target="Dietmar Pfahl"/>
 <edge source="Andreas Jedlitschka" target="Ayşe Başar"/>
-<edge source="Andreas Jedlitschka" target="Dieter Rombach"/>
-<edge source="Qing Wang" target="Laurie Williams"/>
+<edge source="Barbara Russo" target="Qing Wang"/>
+<edge source="Barbara Russo" target="Jingyu Li"/>
+<edge source="Barbara Russo" target="Sandro Morasca"/>
+<edge source="Barbara Russo" target="Dan Port"/>
+<edge source="Barbara Russo" target="Dietmar Pfahl"/>
+<edge source="Barbara Russo" target="Martin Solari"/>
 <edge source="Qing Wang" target="He Zhang"/>
+<edge source="Qing Wang" target="Jingyu Li"/>
+<edge source="Qing Wang" target="Minghui Zhou"/>
+<edge source="Qing Wang" target="Desmond Greer"/>
+<edge source="Qing Wang" target="Ayşe Başar"/>
+<edge source="Qing Wang" target="Ali Babar"/>
+<edge source="Qing Wang" target="Dan Port"/>
+<edge source="Qing Wang" target="Burak Turhan"/>
+<edge source="Qing Wang" target="Stefan Wagner"/>
+<edge source="Qing Wang" target="Dietmar Pfahl"/>
+<edge source="Qing Wang" target="Audris Mockus"/>
+<edge source="Qing Wang" target="Maya Daneva"/>
+<edge source="Qing Wang" target="Ross Jeffery"/>
 <edge source="Per Runeson" target="Maria Teresa Baldassarre"/>
 <edge source="Per Runeson" target="Dag Sjøberg"/>
-<edge source="Per Runeson" target="Burak Turhan"/>
 <edge source="Per Runeson" target="Dietmar Pfahl"/>
 <edge source="Per Runeson" target="Danilo Caivano"/>
-<edge source="Per Runeson" target="Marcela Genero"/>
 <edge source="Maria Paasivaara" target="Nils Brede Moe"/>
 <edge source="Maria Paasivaara" target="Jeffrey Carver"/>
 <edge source="Clemente Izurieta" target="Carolyn Seaman"/>
 <edge source="Clemente Izurieta" target="Paris Avgeriou"/>
-<edge source="He Zhang" target="Laurie Williams"/>
+<edge source="Clemente Izurieta" target="Laurie Williams"/>
 <edge source="He Zhang" target="Minghui Zhou"/>
-<edge source="He Zhang" target="Ayşe Başar"/>
+<edge source="He Zhang" target="Jingyu Li"/>
+<edge source="He Zhang" target="Kenichi Matsumoto"/>
 <edge source="He Zhang" target="Ali Babar"/>
+<edge source="He Zhang" target="Paris Avgeriou"/>
+<edge source="He Zhang" target="Oscar Pastor"/>
+<edge source="He Zhang" target="Dan Port"/>
+<edge source="He Zhang" target="Dietmar Pfahl"/>
+<edge source="He Zhang" target="Audris Mockus"/>
+<edge source="He Zhang" target="Maya Daneva"/>
+<edge source="He Zhang" target="Victor Basili"/>
+<edge source="He Zhang" target="Ross Jeffery"/>
 <edge source="Kenichi Matsumoto" target="Shinji Kusumoto"/>
 <edge source="Kenichi Matsumoto" target="Koji Torii"/>
+<edge source="Kenichi Matsumoto" target="Takeshi Hayama"/>
+<edge source="Jingyu Li" target="Minghui Zhou"/>
 <edge source="Jingyu Li" target="Xavier Franch"/>
 <edge source="Jingyu Li" target="Nils Brede Moe"/>
 <edge source="Jingyu Li" target="Maurizio Morisio"/>
+<edge source="Jingyu Li" target="Ali Babar"/>
+<edge source="Jingyu Li" target="Dan Port"/>
+<edge source="Jingyu Li" target="Audris Mockus"/>
+<edge source="Jingyu Li" target="Maya Daneva"/>
+<edge source="Laurie Williams" target="Minghui Zhou"/>
 <edge source="Laurie Williams" target="Jeffrey Carver"/>
 <edge source="Laurie Williams" target="Carolyn Seaman"/>
 <edge source="Laurie Williams" target="Victor Basili"/>
-<edge source="Laurie Williams" target="Ayşe Başar"/>
+<edge source="Laurie Williams" target="Dan Port"/>
+<edge source="Laurie Williams" target="Koji Torii"/>
 <edge source="Shinji Kusumoto" target="Koji Torii"/>
 <edge source="Minghui Zhou" target="Audris Mockus"/>
 <edge source="Minghui Zhou" target="Marcos Kalinowski"/>
-<edge source="Minghui Zhou" target="Burak Turhan"/>
+<edge source="Minghui Zhou" target="Jeffrey Carver"/>
+<edge source="Minghui Zhou" target="Desmond Greer"/>
+<edge source="Minghui Zhou" target="Ali Babar"/>
+<edge source="Minghui Zhou" target="Dan Port"/>
+<edge source="Minghui Zhou" target="Ross Jeffery"/>
 <edge source="Marcos Kalinowski" target="Maria Teresa Baldassarre"/>
 <edge source="Marcos Kalinowski" target="Paris Avgeriou"/>
+<edge source="Marcos Kalinowski" target="Nils Brede Moe"/>
 <edge source="Marcos Kalinowski" target="Stefan Biffl"/>
+<edge source="Marcos Kalinowski" target="Martin Solari"/>
 <edge source="Marcos Kalinowski" target="Dietmar Pfahl"/>
+<edge source="Marcos Kalinowski" target="Stefan Wagner"/>
 <edge source="Marcos Kalinowski" target="Marcela Genero"/>
 <edge source="Marcos Kalinowski" target="Rafael Prikladnicki"/>
-<edge source="Marcos Kalinowski" target="Rogardt Heldal"/>
-<edge source="Marcos Kalinowski" target="Desmond Greer"/>
-<edge source="Marcos Kalinowski" target="Tomi Männistö"/>
-<edge source="Marcos Kalinowski" target="Burak Turhan"/>
-<edge source="Marcos Kalinowski" target="Xavier Franch"/>
 <edge source="Marcos Kalinowski" target="Oscar Pastor"/>
-<edge source="Marcos Kalinowski" target="Stefan Wagner"/>
-<edge source="Marcos Kalinowski" target="Martin Solari"/>
-<edge source="Rafael Prikladnicki" target="Paris Avgeriou"/>
+<edge source="Marcos Kalinowski" target="Burak Turhan"/>
 <edge source="Rafael Prikladnicki" target="Nils Brede Moe"/>
+<edge source="Rafael Prikladnicki" target="Paris Avgeriou"/>
 <edge source="Rafael Prikladnicki" target="Dietmar Pfahl"/>
-<edge source="Rafael Prikladnicki" target="Marcela Genero"/>
-<edge source="Rafael Prikladnicki" target="Rogardt Heldal"/>
-<edge source="Rafael Prikladnicki" target="Stefan Biffl"/>
 <edge source="Rafael Prikladnicki" target="Jeffrey Carver"/>
-<edge source="Rafael Prikladnicki" target="Desmond Greer"/>
-<edge source="Rafael Prikladnicki" target="Tomi Männistö"/>
-<edge source="Rafael Prikladnicki" target="Carolyn Seaman"/>
 <edge source="Rafael Prikladnicki" target="Stefan Wagner"/>
 <edge source="Rafael Prikladnicki" target="Martin Solari"/>
+<edge source="Rafael Prikladnicki" target="Rogardt Heldal"/>
+<edge source="Rafael Prikladnicki" target="Carolyn Seaman"/>
 <edge source="Marcus Ciolkowski" target="Paris Avgeriou"/>
 <edge source="Marcus Ciolkowski" target="Dietmar Pfahl"/>
-<edge source="Marcus Ciolkowski" target="Sandro Morasca"/>
-<edge source="Marcus Ciolkowski" target="Sira Vegas"/>
+<edge source="Marcus Ciolkowski" target="Dieter Rombach"/>
 <edge source="Marcus Ciolkowski" target="Giovanni Cantone"/>
 <edge source="Marcus Ciolkowski" target="Stefan Biffl"/>
-<edge source="Marcus Ciolkowski" target="Dieter Rombach"/>
-<edge source="Marcus Ciolkowski" target="Ross Jeffery"/>
-<edge source="Desmond Greer" target="Dietmar Pfahl"/>
-<edge source="Desmond Greer" target="Tomi Männistö"/>
+<edge source="Marcus Ciolkowski" target="Sira Vegas"/>
+<edge source="Marcus Ciolkowski" target="Sandro Morasca"/>
 <edge source="Desmond Greer" target="Stefan Wagner"/>
 <edge source="Ayşe Başar" target="Burak Turhan"/>
 <edge source="Ayşe Başar" target="Maria Teresa Baldassarre"/>
-<edge source="Ayşe Başar" target="Stefan Biffl"/>
 <edge source="Ayşe Başar" target="Audris Mockus"/>
 <edge source="Ayşe Başar" target="Jeffrey Carver"/>
 <edge source="Ayşe Başar" target="Maurizio Morisio"/>
+<edge source="Ayşe Başar" target="Ali Babar"/>
+<edge source="Ayşe Başar" target="Oscar Pastor"/>
 <edge source="Magne Jørgensen" target="Dag Sjøberg"/>
+<edge source="Magne Jørgensen" target="Oscar Pastor"/>
+<edge source="Nils Brede Moe" target="Maria Teresa Baldassarre"/>
 <edge source="Nils Brede Moe" target="Paris Avgeriou"/>
 <edge source="Nils Brede Moe" target="Dag Sjøberg"/>
 <edge source="Danilo Caivano" target="Maria Teresa Baldassarre"/>
-<edge source="Danilo Caivano" target="Burak Turhan"/>
 <edge source="Danilo Caivano" target="Marcela Genero"/>
+<edge source="Xavier Franch" target="Oscar Pastor"/>
 <edge source="Xavier Franch" target="Maya Daneva"/>
 <edge source="Xavier Franch" target="Tomi Männistö"/>
+<edge source="Xavier Franch" target="Stefan Wagner"/>
 <edge source="Xavier Franch" target="Burak Turhan"/>
 <edge source="Xavier Franch" target="Rogardt Heldal"/>
-<edge source="Xavier Franch" target="Jeffrey Carver"/>
 <edge source="Xavier Franch" target="Stefan Biffl"/>
 <edge source="Xavier Franch" target="Paris Avgeriou"/>
 <edge source="Xavier Franch" target="Dan Port"/>
 <edge source="Xavier Franch" target="Ali Babar"/>
-<edge source="Xavier Franch" target="Oscar Pastor"/>
-<edge source="Xavier Franch" target="Stefan Wagner"/>
+<edge source="Xavier Franch" target="Jeffrey Carver"/>
+<edge source="Ali Babar" target="Oscar Pastor"/>
 <edge source="Ali Babar" target="Stefan Biffl"/>
-<edge source="Ali Babar" target="Giovanni Cantone"/>
 <edge source="Ali Babar" target="Paris Avgeriou"/>
+<edge source="Ali Babar" target="Ross Jeffery"/>
+<edge source="Ali Babar" target="Giovanni Cantone"/>
 <edge source="Ali Babar" target="Tomi Männistö"/>
 <edge source="Paris Avgeriou" target="Rogardt Heldal"/>
 <edge source="Paris Avgeriou" target="Carolyn Seaman"/>
 <edge source="Paris Avgeriou" target="Tomi Männistö"/>
+<edge source="Sira Vegas" target="Giovanni Cantone"/>
+<edge source="Sira Vegas" target="Martin Solari"/>
 <edge source="Sira Vegas" target="Burak Turhan"/>
+<edge source="Sira Vegas" target="Oscar Pastor"/>
 <edge source="Sira Vegas" target="Dietmar Pfahl"/>
 <edge source="Sira Vegas" target="Jeffrey Carver"/>
-<edge source="Sira Vegas" target="Maria Teresa Baldassarre"/>
 <edge source="Sira Vegas" target="Victor Basili"/>
-<edge source="Sira Vegas" target="Sandro Morasca"/>
-<edge source="Sira Vegas" target="Stefan Biffl"/>
-<edge source="Sira Vegas" target="Oscar Pastor"/>
-<edge source="Sira Vegas" target="Martin Solari"/>
-<edge source="Oscar Pastor" target="Maya Daneva"/>
+<edge source="Oscar Pastor" target="Dan Port"/>
 <edge source="Oscar Pastor" target="Marcela Genero"/>
+<edge source="Oscar Pastor" target="Maya Daneva"/>
 <edge source="Sandro Morasca" target="Jeffrey Carver"/>
 <edge source="Sandro Morasca" target="Marcela Genero"/>
-<edge source="Sandro Morasca" target="Dietmar Pfahl"/>
 <edge source="Sandro Morasca" target="Victor Basili"/>
 <edge source="Jeffrey Carver" target="Victor Basili"/>
-<edge source="Jeffrey Carver" target="Rogardt Heldal"/>
 <edge source="Jeffrey Carver" target="Maria Teresa Baldassarre"/>
 <edge source="Jeffrey Carver" target="Dietmar Pfahl"/>
+<edge source="Jeffrey Carver" target="Dan Port"/>
 <edge source="Maria Teresa Baldassarre" target="Marcela Genero"/>
-<edge source="Maria Teresa Baldassarre" target="Stefan Biffl"/>
 <edge source="Maria Teresa Baldassarre" target="Burak Turhan"/>
-<edge source="Maria Teresa Baldassarre" target="Stefan Wagner"/>
 <edge source="Marcela Genero" target="Dietmar Pfahl"/>
-<edge source="Marcela Genero" target="Rogardt Heldal"/>
-<edge source="Marcela Genero" target="Stefan Biffl"/>
-<edge source="Marcela Genero" target="Giovanni Cantone"/>
 <edge source="Marcela Genero" target="Martin Solari"/>
+<edge source="Marcela Genero" target="Rogardt Heldal"/>
+<edge source="Marcela Genero" target="Giovanni Cantone"/>
 <edge source="Dan Port" target="Carolyn Seaman"/>
 <edge source="Dan Port" target="Dietmar Pfahl"/>
 <edge source="Dan Port" target="Victor Basili"/>
-<edge source="Tomi Männistö" target="Dietmar Pfahl"/>
+<edge source="Dan Port" target="Stefan Wagner"/>
 <edge source="Tomi Männistö" target="Stefan Wagner"/>
 <edge source="Rahul Mohanani" target="Burak Turhan"/>
 <edge source="Carolyn Seaman" target="Victor Basili"/>
-<edge source="Carolyn Seaman" target="Maurizio Morisio"/>
 <edge source="Carolyn Seaman" target="Dieter Rombach"/>
-<edge source="Dag Sjøberg" target="Burak Turhan"/>
+<edge source="Carolyn Seaman" target="Maurizio Morisio"/>
 <edge source="Dag Sjøberg" target="Audris Mockus"/>
 <edge source="Dag Sjøberg" target="Dietmar Pfahl"/>
 <edge source="Dag Sjøberg" target="Victor Basili"/>
-<edge source="Burak Turhan" target="Dietmar Pfahl"/>
 <edge source="Burak Turhan" target="Stefan Biffl"/>
 <edge source="Burak Turhan" target="Stefan Wagner"/>
-<edge source="Stefan Wagner" target="Stefan Biffl"/>
 <edge source="Stefan Wagner" target="Dietmar Pfahl"/>
-<edge source="Stefan Wagner" target="Maya Daneva"/>
+<edge source="Stefan Wagner" target="Audris Mockus"/>
 <edge source="Dietmar Pfahl" target="Rogardt Heldal"/>
-<edge source="Dietmar Pfahl" target="Stefan Biffl"/>
 <edge source="Dietmar Pfahl" target="Victor Basili"/>
-<edge source="Dietmar Pfahl" target="Dieter Rombach"/>
 <edge source="Dietmar Pfahl" target="Ross Jeffery"/>
-<edge source="Maya Daneva" target="Stefan Biffl"/>
+<edge source="Dietmar Pfahl" target="Stefan Biffl"/>
 <edge source="Maurizio Morisio" target="Victor Basili"/>
-<edge source="Stefan Biffl" target="Rogardt Heldal"/>
+<edge source="Victor Basili" target="Dieter Rombach"/>
 <edge source="Victor Basili" target="Koji Torii"/>
 <edge source="Victor Basili" target="Giovanni Cantone"/>
-<edge source="Victor Basili" target="Dieter Rombach"/>
 <edge source="Victor Basili" target="Ross Jeffery"/>
 <edge source="Giovanni Cantone" target="Dieter Rombach"/>
+<edge source="Dieter Rombach" target="Ross Jeffery"/>
 </graph></graphml>

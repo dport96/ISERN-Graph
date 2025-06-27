@@ -1,0 +1,1221 @@
+{
+  "metadata": {
+    "timestamp": "2025-06-26 20:53:27",
+    "method": "full_member_to_member_collaboration_discovery",
+    "description": "Complete ISERN collaboration network from DBLP data"
+  },
+  "network_statistics": {
+    "total_members": 59,
+    "total_collaborations": 366,
+    "network_density": 0.21390999415546463,
+    "connected_components": 2,
+    "connected_members": 58,
+    "isolated_members": 1,
+    "largest_component_size": 58
+  },
+  "members": {
+    "Casper Lassenius": {
+      "collaboration_count": 13,
+      "collaborators": [
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Jeffrey Carver",
+        "Magne Jørgensen",
+        "Marcos Kalinowski",
+        "Maria Paasivaara",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Nils Brede Moe",
+        "Rafael Prikladnicki",
+        "Stefan Wagner",
+        "Tomi Männistö"
+      ],
+      "degree_centrality": 0.22413793103448276,
+      "betweenness_centrality": 0.010517667125518616,
+      "closeness_centrality": 0.5092476489028213
+    },
+    "Eray Tüzün": {
+      "collaboration_count": 13,
+      "collaborators": [
+        "Burak Turhan",
+        "Carolyn Seaman",
+        "Dietmar Pfahl",
+        "Hakan Erdogmus",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Michael Felderer",
+        "Qing Wang",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Rogardt Heldal",
+        "Stefan Biffl"
+      ],
+      "degree_centrality": 0.22413793103448276,
+      "betweenness_centrality": 0.005200287720482731,
+      "closeness_centrality": 0.5235256203673864
+    },
+    "Nauman bin Ali": {
+      "collaboration_count": 9,
+      "collaborators": [
+        "Ali Babar",
+        "Ayşe Başar",
+        "Dietmar Pfahl",
+        "He Zhang",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Minghui Zhou",
+        "Paris Avgeriou",
+        "Qing Wang"
+      ],
+      "degree_centrality": 0.15517241379310345,
+      "betweenness_centrality": 0.006348852524255537,
+      "closeness_centrality": 0.4871064467766117
+    },
+    "Hakan Erdogmus": {
+      "collaboration_count": 13,
+      "collaborators": [
+        "Burak Turhan",
+        "Carolyn Seaman",
+        "Eray Tüzün",
+        "He Zhang",
+        "Laurie Williams",
+        "Magne Jørgensen",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Maurizio Morisio",
+        "Michael Felderer",
+        "Robert Feldt",
+        "Sira Vegas",
+        "Stefan Biffl"
+      ],
+      "degree_centrality": 0.22413793103448276,
+      "betweenness_centrality": 0.012688149678545224,
+      "closeness_centrality": 0.5386273209549072
+    },
+    "Robert Feldt": {
+      "collaboration_count": 14,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Burak Turhan",
+        "Carolyn Seaman",
+        "Dag Sjøberg",
+        "Daniel Mendez Fernandez",
+        "Eray Tüzün",
+        "Hakan Erdogmus",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Per Runeson",
+        "Qing Wang",
+        "Sira Vegas",
+        "Stefan Wagner"
+      ],
+      "degree_centrality": 0.24137931034482757,
+      "betweenness_centrality": 0.00611082830478469,
+      "closeness_centrality": 0.5284645413142485
+    },
+    "Guilherme Travassos": {
+      "collaboration_count": 19,
+      "collaborators": [
+        "Daniel Mendez Fernandez",
+        "Danilo Caivano",
+        "Fabio Q.B. da Silva",
+        "Jeffrey Carver",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Marcus Ciolkowski",
+        "Maria Teresa Baldassarre",
+        "Martin Solari",
+        "Maurizio Morisio",
+        "Michael Felderer",
+        "Nils Brede Moe",
+        "Per Runeson",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Sandro Morasca",
+        "Sira Vegas",
+        "Victor Basili",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.3275862068965517,
+      "betweenness_centrality": 0.028077640599438698,
+      "closeness_centrality": 0.5658307210031348
+    },
+    "Michael Felderer": {
+      "collaboration_count": 27,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Ayşe Başar",
+        "Barbara Russo",
+        "Burak Turhan",
+        "Carolyn Seaman",
+        "Casper Lassenius",
+        "Clemente Izurieta",
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Guilherme Travassos",
+        "Hakan Erdogmus",
+        "Jeffrey Carver",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Per Runeson",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Rogardt Heldal",
+        "Sira Vegas",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Tomi Männistö",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.46551724137931033,
+      "betweenness_centrality": 0.041280096287211125,
+      "closeness_centrality": 0.6023359288097886
+    },
+    "Markku Oivo": {
+      "collaboration_count": 28,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Audris Mockus",
+        "Ayşe Başar",
+        "Barbara Russo",
+        "Burak Turhan",
+        "Casper Lassenius",
+        "Dag Sjøberg",
+        "Daniel Mendez Fernandez",
+        "Danilo Caivano",
+        "Desmond Greer",
+        "Dieter Rombach",
+        "Dietmar Pfahl",
+        "Hakan Erdogmus",
+        "He Zhang",
+        "Jeffrey Carver",
+        "Laurie Williams",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Maurizio Morisio",
+        "Michael Felderer",
+        "Per Runeson",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Sira Vegas",
+        "Stefan Wagner",
+        "Tomi Männistö",
+        "Victor Basili",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.48275862068965514,
+      "betweenness_centrality": 0.060769430907586526,
+      "closeness_centrality": 0.6365595611285266
+    },
+    "Fabio Q.B. da Silva": {
+      "collaboration_count": 15,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Ayşe Başar",
+        "Carolyn Seaman",
+        "Dan Port",
+        "Daniel Mendez Fernandez",
+        "Guilherme Travassos",
+        "Jingyu Li",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Marcus Ciolkowski",
+        "Maria Teresa Baldassarre",
+        "Nils Brede Moe",
+        "Oscar Pastor",
+        "Per Runeson",
+        "Rafael Prikladnicki"
+      ],
+      "degree_centrality": 0.25862068965517243,
+      "betweenness_centrality": 0.015563039926461924,
+      "closeness_centrality": 0.5235256203673864
+    },
+    "Daniel Mendez Fernandez": {
+      "collaboration_count": 26,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Audris Mockus",
+        "Burak Turhan",
+        "Casper Lassenius",
+        "Dan Port",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Fabio Q.B. da Silva",
+        "Guilherme Travassos",
+        "He Zhang",
+        "Jeffrey Carver",
+        "Laurie Williams",
+        "Magne Jørgensen",
+        "Marcos Kalinowski",
+        "Markku Oivo",
+        "Maya Daneva",
+        "Michael Felderer",
+        "Minghui Zhou",
+        "Oscar Pastor",
+        "Qing Wang",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Rogardt Heldal",
+        "Stefan Biffl",
+        "Tomi Männistö",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.4482758620689655,
+      "betweenness_centrality": 0.05041759772669964,
+      "closeness_centrality": 0.6155740810913224
+    },
+    "Andreas Jedlitschka": {
+      "collaboration_count": 18,
+      "collaborators": [
+        "Ayşe Başar",
+        "Burak Turhan",
+        "Dag Sjøberg",
+        "Daniel Mendez Fernandez",
+        "Dieter Rombach",
+        "Dietmar Pfahl",
+        "Fabio Q.B. da Silva",
+        "He Zhang",
+        "Marcus Ciolkowski",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Maurizio Morisio",
+        "Michael Felderer",
+        "Per Runeson",
+        "Robert Feldt",
+        "Sira Vegas",
+        "Tomi Männistö",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.3103448275862069,
+      "betweenness_centrality": 0.015827130424848644,
+      "closeness_centrality": 0.5491886409736308
+    },
+    "Barbara Russo": {
+      "collaboration_count": 7,
+      "collaborators": [
+        "Dietmar Pfahl",
+        "Laurie Williams",
+        "Markku Oivo",
+        "Martin Solari",
+        "Michael Felderer",
+        "Qing Wang",
+        "Sandro Morasca"
+      ],
+      "degree_centrality": 0.12068965517241378,
+      "betweenness_centrality": 0.004966980143130458,
+      "closeness_centrality": 0.4871064467766117
+    },
+    "Qing Wang": {
+      "collaboration_count": 19,
+      "collaborators": [
+        "Ali Babar",
+        "Audris Mockus",
+        "Ayşe Başar",
+        "Barbara Russo",
+        "Burak Turhan",
+        "Dan Port",
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Eray Tüzün",
+        "He Zhang",
+        "Jingyu Li",
+        "Laurie Williams",
+        "Maya Daneva",
+        "Minghui Zhou",
+        "Nauman bin Ali",
+        "Nils Brede Moe",
+        "Robert Feldt",
+        "Ross Jeffery",
+        "Stefan Wagner"
+      ],
+      "degree_centrality": 0.3275862068965517,
+      "betweenness_centrality": 0.038885718760055046,
+      "closeness_centrality": 0.5716045038705136
+    },
+    "Per Runeson": {
+      "collaboration_count": 12,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Burak Turhan",
+        "Dag Sjøberg",
+        "Danilo Caivano",
+        "Dietmar Pfahl",
+        "Fabio Q.B. da Silva",
+        "Guilherme Travassos",
+        "Marcela Genero",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Robert Feldt"
+      ],
+      "degree_centrality": 0.20689655172413793,
+      "betweenness_centrality": 0.003930939081649801,
+      "closeness_centrality": 0.504659832246039
+    },
+    "Maria Paasivaara": {
+      "collaboration_count": 3,
+      "collaborators": [
+        "Casper Lassenius",
+        "Jeffrey Carver",
+        "Nils Brede Moe"
+      ],
+      "degree_centrality": 0.05172413793103448,
+      "betweenness_centrality": 0.00012099213551119178,
+      "closeness_centrality": 0.39172896069447793
+    },
+    "Clemente Izurieta": {
+      "collaboration_count": 4,
+      "collaborators": [
+        "Carolyn Seaman",
+        "Laurie Williams",
+        "Michael Felderer",
+        "Paris Avgeriou"
+      ],
+      "degree_centrality": 0.06896551724137931,
+      "betweenness_centrality": 0.0009153261875584926,
+      "closeness_centrality": 0.4445812807881773
+    },
+    "He Zhang": {
+      "collaboration_count": 19,
+      "collaborators": [
+        "Ali Babar",
+        "Andreas Jedlitschka",
+        "Audris Mockus",
+        "Ayşe Başar",
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Hakan Erdogmus",
+        "Jingyu Li",
+        "Laurie Williams",
+        "Markku Oivo",
+        "Maya Daneva",
+        "Minghui Zhou",
+        "Nauman bin Ali",
+        "Nils Brede Moe",
+        "Oscar Pastor",
+        "Paris Avgeriou",
+        "Qing Wang",
+        "Ross Jeffery",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.3275862068965517,
+      "betweenness_centrality": 0.04362573507976532,
+      "closeness_centrality": 0.5716045038705136
+    },
+    "Kenichi Matsumoto": {
+      "collaboration_count": 2,
+      "collaborators": [
+        "Koji Torii",
+        "Shinji Kusumoto"
+      ],
+      "degree_centrality": 0.034482758620689655,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.2829153605015674
+    },
+    "Jingyu Li": {
+      "collaboration_count": 9,
+      "collaborators": [
+        "Audris Mockus",
+        "Dan Port",
+        "Fabio Q.B. da Silva",
+        "He Zhang",
+        "Maria Teresa Baldassarre",
+        "Maurizio Morisio",
+        "Maya Daneva",
+        "Minghui Zhou",
+        "Qing Wang"
+      ],
+      "degree_centrality": 0.15517241379310345,
+      "betweenness_centrality": 0.005617314461834567,
+      "closeness_centrality": 0.4629524080934739
+    },
+    "Laurie Williams": {
+      "collaboration_count": 14,
+      "collaborators": [
+        "Ayşe Başar",
+        "Barbara Russo",
+        "Carolyn Seaman",
+        "Clemente Izurieta",
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Hakan Erdogmus",
+        "He Zhang",
+        "Jeffrey Carver",
+        "Koji Torii",
+        "Markku Oivo",
+        "Minghui Zhou",
+        "Qing Wang",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.24137931034482757,
+      "betweenness_centrality": 0.06134820979159695,
+      "closeness_centrality": 0.5546261522703994
+    },
+    "Takeshi Hayama": {
+      "collaboration_count": 0,
+      "collaborators": [],
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.0
+    },
+    "Shinji Kusumoto": {
+      "collaboration_count": 2,
+      "collaborators": [
+        "Kenichi Matsumoto",
+        "Koji Torii"
+      ],
+      "degree_centrality": 0.034482758620689655,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.2829153605015674
+    },
+    "Minghui Zhou": {
+      "collaboration_count": 12,
+      "collaborators": [
+        "Ali Babar",
+        "Audris Mockus",
+        "Burak Turhan",
+        "Daniel Mendez Fernandez",
+        "He Zhang",
+        "Jingyu Li",
+        "Laurie Williams",
+        "Marcos Kalinowski",
+        "Nauman bin Ali",
+        "Nils Brede Moe",
+        "Qing Wang",
+        "Ross Jeffery"
+      ],
+      "degree_centrality": 0.20689655172413793,
+      "betweenness_centrality": 0.013389933258373897,
+      "closeness_centrality": 0.5284645413142485
+    },
+    "Marcos Kalinowski": {
+      "collaboration_count": 22,
+      "collaborators": [
+        "Burak Turhan",
+        "Casper Lassenius",
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Fabio Q.B. da Silva",
+        "Guilherme Travassos",
+        "Marcela Genero",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Martin Solari",
+        "Michael Felderer",
+        "Minghui Zhou",
+        "Nauman bin Ali",
+        "Nils Brede Moe",
+        "Paris Avgeriou",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Tomi Männistö"
+      ],
+      "degree_centrality": 0.3793103448275862,
+      "betweenness_centrality": 0.025265242728531232,
+      "closeness_centrality": 0.5774973338073232
+    },
+    "Rafael Prikladnicki": {
+      "collaboration_count": 21,
+      "collaborators": [
+        "Carolyn Seaman",
+        "Casper Lassenius",
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Fabio Q.B. da Silva",
+        "Guilherme Travassos",
+        "Jeffrey Carver",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Martin Solari",
+        "Michael Felderer",
+        "Nils Brede Moe",
+        "Paris Avgeriou",
+        "Rogardt Heldal",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Tomi Männistö"
+      ],
+      "degree_centrality": 0.3620689655172414,
+      "betweenness_centrality": 0.017429026476150723,
+      "closeness_centrality": 0.5601724137931033
+    },
+    "Marcus Ciolkowski": {
+      "collaboration_count": 11,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Dieter Rombach",
+        "Dietmar Pfahl",
+        "Fabio Q.B. da Silva",
+        "Giovanni Cantone",
+        "Guilherme Travassos",
+        "Paris Avgeriou",
+        "Ross Jeffery",
+        "Sandro Morasca",
+        "Sira Vegas",
+        "Stefan Biffl"
+      ],
+      "degree_centrality": 0.1896551724137931,
+      "betweenness_centrality": 0.010625147050792498,
+      "closeness_centrality": 0.4957277998169057
+    },
+    "Desmond Greer": {
+      "collaboration_count": 11,
+      "collaborators": [
+        "Casper Lassenius",
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Marcos Kalinowski",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Nils Brede Moe",
+        "Qing Wang",
+        "Rafael Prikladnicki",
+        "Stefan Wagner",
+        "Tomi Männistö"
+      ],
+      "degree_centrality": 0.1896551724137931,
+      "betweenness_centrality": 0.001426912462824398,
+      "closeness_centrality": 0.5092476489028213
+    },
+    "Ayşe Başar": {
+      "collaboration_count": 14,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Audris Mockus",
+        "Burak Turhan",
+        "Fabio Q.B. da Silva",
+        "He Zhang",
+        "Jeffrey Carver",
+        "Laurie Williams",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Maurizio Morisio",
+        "Michael Felderer",
+        "Nauman bin Ali",
+        "Qing Wang",
+        "Stefan Biffl"
+      ],
+      "degree_centrality": 0.24137931034482757,
+      "betweenness_centrality": 0.011824494669808153,
+      "closeness_centrality": 0.5334975369458127
+    },
+    "Magne Jørgensen": {
+      "collaboration_count": 6,
+      "collaborators": [
+        "Casper Lassenius",
+        "Dag Sjøberg",
+        "Daniel Mendez Fernandez",
+        "Hakan Erdogmus",
+        "Nils Brede Moe",
+        "Oscar Pastor"
+      ],
+      "degree_centrality": 0.10344827586206896,
+      "betweenness_centrality": 0.0025927137996103514,
+      "closeness_centrality": 0.4445812807881773
+    },
+    "Nils Brede Moe": {
+      "collaboration_count": 15,
+      "collaborators": [
+        "Casper Lassenius",
+        "Dag Sjøberg",
+        "Desmond Greer",
+        "Fabio Q.B. da Silva",
+        "Guilherme Travassos",
+        "He Zhang",
+        "Magne Jørgensen",
+        "Marcos Kalinowski",
+        "Maria Paasivaara",
+        "Maria Teresa Baldassarre",
+        "Minghui Zhou",
+        "Paris Avgeriou",
+        "Qing Wang",
+        "Rafael Prikladnicki",
+        "Stefan Wagner"
+      ],
+      "degree_centrality": 0.25862068965517243,
+      "betweenness_centrality": 0.02403001367168205,
+      "closeness_centrality": 0.5235256203673864
+    },
+    "Danilo Caivano": {
+      "collaboration_count": 6,
+      "collaborators": [
+        "Burak Turhan",
+        "Guilherme Travassos",
+        "Marcela Genero",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Per Runeson"
+      ],
+      "degree_centrality": 0.10344827586206896,
+      "betweenness_centrality": 0.00045710964361546196,
+      "closeness_centrality": 0.45915771622385526
+    },
+    "Xavier Franch": {
+      "collaboration_count": 14,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Burak Turhan",
+        "Dan Port",
+        "Daniel Mendez Fernandez",
+        "Guilherme Travassos",
+        "Jeffrey Carver",
+        "Markku Oivo",
+        "Maya Daneva",
+        "Michael Felderer",
+        "Oscar Pastor",
+        "Rogardt Heldal",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Tomi Männistö"
+      ],
+      "degree_centrality": 0.24137931034482757,
+      "betweenness_centrality": 0.009476085231632816,
+      "closeness_centrality": 0.5139196456817462
+    },
+    "Ali Babar": {
+      "collaboration_count": 4,
+      "collaborators": [
+        "He Zhang",
+        "Minghui Zhou",
+        "Nauman bin Ali",
+        "Qing Wang"
+      ],
+      "degree_centrality": 0.06896551724137931,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.39728539985326483
+    },
+    "Paris Avgeriou": {
+      "collaboration_count": 10,
+      "collaborators": [
+        "Carolyn Seaman",
+        "Clemente Izurieta",
+        "He Zhang",
+        "Marcos Kalinowski",
+        "Marcus Ciolkowski",
+        "Nauman bin Ali",
+        "Nils Brede Moe",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Tomi Männistö"
+      ],
+      "degree_centrality": 0.1724137931034483,
+      "betweenness_centrality": 0.009986579398817877,
+      "closeness_centrality": 0.4957277998169057
+    },
+    "Sira Vegas": {
+      "collaboration_count": 17,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Burak Turhan",
+        "Dietmar Pfahl",
+        "Giovanni Cantone",
+        "Guilherme Travassos",
+        "Hakan Erdogmus",
+        "Jeffrey Carver",
+        "Marcus Ciolkowski",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Martin Solari",
+        "Michael Felderer",
+        "Oscar Pastor",
+        "Robert Feldt",
+        "Sandro Morasca",
+        "Stefan Biffl",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.29310344827586204,
+      "betweenness_centrality": 0.02674329493925236,
+      "closeness_centrality": 0.5601724137931033
+    },
+    "Oscar Pastor": {
+      "collaboration_count": 9,
+      "collaborators": [
+        "Daniel Mendez Fernandez",
+        "Fabio Q.B. da Silva",
+        "He Zhang",
+        "Magne Jørgensen",
+        "Marcela Genero",
+        "Martin Solari",
+        "Maya Daneva",
+        "Sira Vegas",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.15517241379310345,
+      "betweenness_centrality": 0.008562180532219415,
+      "closeness_centrality": 0.4871064467766117
+    },
+    "Sandro Morasca": {
+      "collaboration_count": 8,
+      "collaborators": [
+        "Barbara Russo",
+        "Dietmar Pfahl",
+        "Guilherme Travassos",
+        "Jeffrey Carver",
+        "Marcela Genero",
+        "Marcus Ciolkowski",
+        "Sira Vegas",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.13793103448275862,
+      "betweenness_centrality": 0.0027227442402212674,
+      "closeness_centrality": 0.48290725326991674
+    },
+    "Jeffrey Carver": {
+      "collaboration_count": 16,
+      "collaborators": [
+        "Ayşe Başar",
+        "Casper Lassenius",
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Guilherme Travassos",
+        "Laurie Williams",
+        "Maria Paasivaara",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Sandro Morasca",
+        "Sira Vegas",
+        "Victor Basili",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.27586206896551724,
+      "betweenness_centrality": 0.02546543774440703,
+      "closeness_centrality": 0.5491886409736308
+    },
+    "Maria Teresa Baldassarre": {
+      "collaboration_count": 22,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Ayşe Başar",
+        "Burak Turhan",
+        "Danilo Caivano",
+        "Eray Tüzün",
+        "Fabio Q.B. da Silva",
+        "Guilherme Travassos",
+        "Hakan Erdogmus",
+        "Jeffrey Carver",
+        "Jingyu Li",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Nauman bin Ali",
+        "Nils Brede Moe",
+        "Per Runeson",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Sira Vegas",
+        "Stefan Biffl",
+        "Stefan Wagner"
+      ],
+      "degree_centrality": 0.3793103448275862,
+      "betweenness_centrality": 0.02660385201610504,
+      "closeness_centrality": 0.5716045038705136
+    },
+    "Marcela Genero": {
+      "collaboration_count": 16,
+      "collaborators": [
+        "Danilo Caivano",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Fabio Q.B. da Silva",
+        "Giovanni Cantone",
+        "Guilherme Travassos",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Martin Solari",
+        "Michael Felderer",
+        "Oscar Pastor",
+        "Per Runeson",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Sandro Morasca",
+        "Stefan Biffl"
+      ],
+      "degree_centrality": 0.27586206896551724,
+      "betweenness_centrality": 0.019255143598086548,
+      "closeness_centrality": 0.5235256203673864
+    },
+    "Dan Port": {
+      "collaboration_count": 8,
+      "collaborators": [
+        "Carolyn Seaman",
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Fabio Q.B. da Silva",
+        "Jingyu Li",
+        "Qing Wang",
+        "Victor Basili",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.13793103448275862,
+      "betweenness_centrality": 0.0047837163860506215,
+      "closeness_centrality": 0.5001539408866995
+    },
+    "Tomi Männistö": {
+      "collaboration_count": 12,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Casper Lassenius",
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Marcos Kalinowski",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Paris Avgeriou",
+        "Rafael Prikladnicki",
+        "Stefan Wagner",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.20689655172413793,
+      "betweenness_centrality": 0.002606751728001862,
+      "closeness_centrality": 0.504659832246039
+    },
+    "Rahul Mohanani": {
+      "collaboration_count": 1,
+      "collaborators": [
+        "Burak Turhan"
+      ],
+      "degree_centrality": 0.017241379310344827,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.3614015572858732
+    },
+    "Carolyn Seaman": {
+      "collaboration_count": 13,
+      "collaborators": [
+        "Clemente Izurieta",
+        "Dan Port",
+        "Dieter Rombach",
+        "Eray Tüzün",
+        "Fabio Q.B. da Silva",
+        "Hakan Erdogmus",
+        "Laurie Williams",
+        "Maurizio Morisio",
+        "Michael Felderer",
+        "Paris Avgeriou",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.22413793103448276,
+      "betweenness_centrality": 0.01826786632073191,
+      "closeness_centrality": 0.5139196456817462
+    },
+    "Dag Sjøberg": {
+      "collaboration_count": 10,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Audris Mockus",
+        "Burak Turhan",
+        "Dietmar Pfahl",
+        "Magne Jørgensen",
+        "Markku Oivo",
+        "Nils Brede Moe",
+        "Per Runeson",
+        "Robert Feldt",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.1724137931034483,
+      "betweenness_centrality": 0.009537263122801757,
+      "closeness_centrality": 0.5092476489028213
+    },
+    "Burak Turhan": {
+      "collaboration_count": 21,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Ayşe Başar",
+        "Dag Sjøberg",
+        "Daniel Mendez Fernandez",
+        "Danilo Caivano",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Hakan Erdogmus",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Minghui Zhou",
+        "Per Runeson",
+        "Qing Wang",
+        "Rahul Mohanani",
+        "Robert Feldt",
+        "Sira Vegas",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.3620689655172414,
+      "betweenness_centrality": 0.05084687408171871,
+      "closeness_centrality": 0.5658307210031348
+    },
+    "Stefan Wagner": {
+      "collaboration_count": 17,
+      "collaborators": [
+        "Audris Mockus",
+        "Burak Turhan",
+        "Casper Lassenius",
+        "Desmond Greer",
+        "Dietmar Pfahl",
+        "Marcos Kalinowski",
+        "Maria Teresa Baldassarre",
+        "Markku Oivo",
+        "Maya Daneva",
+        "Michael Felderer",
+        "Nils Brede Moe",
+        "Qing Wang",
+        "Rafael Prikladnicki",
+        "Robert Feldt",
+        "Stefan Biffl",
+        "Tomi Männistö",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.29310344827586204,
+      "betweenness_centrality": 0.011616394912411555,
+      "closeness_centrality": 0.5438567124204887
+    },
+    "Dietmar Pfahl": {
+      "collaboration_count": 29,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Barbara Russo",
+        "Burak Turhan",
+        "Casper Lassenius",
+        "Dag Sjøberg",
+        "Dan Port",
+        "Daniel Mendez Fernandez",
+        "Desmond Greer",
+        "Dieter Rombach",
+        "Eray Tüzün",
+        "He Zhang",
+        "Jeffrey Carver",
+        "Laurie Williams",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Marcus Ciolkowski",
+        "Markku Oivo",
+        "Michael Felderer",
+        "Nauman bin Ali",
+        "Per Runeson",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Ross Jeffery",
+        "Sandro Morasca",
+        "Sira Vegas",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Tomi Männistö",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.07639653503342454,
+      "closeness_centrality": 0.6438763376932223
+    },
+    "Audris Mockus": {
+      "collaboration_count": 9,
+      "collaborators": [
+        "Ayşe Başar",
+        "Dag Sjøberg",
+        "Daniel Mendez Fernandez",
+        "He Zhang",
+        "Jingyu Li",
+        "Markku Oivo",
+        "Minghui Zhou",
+        "Qing Wang",
+        "Stefan Wagner"
+      ],
+      "degree_centrality": 0.15517241379310345,
+      "betweenness_centrality": 0.0030554655399820385,
+      "closeness_centrality": 0.4707331208345407
+    },
+    "Maya Daneva": {
+      "collaboration_count": 8,
+      "collaborators": [
+        "Daniel Mendez Fernandez",
+        "He Zhang",
+        "Jingyu Li",
+        "Oscar Pastor",
+        "Qing Wang",
+        "Stefan Biffl",
+        "Stefan Wagner",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.13793103448275862,
+      "betweenness_centrality": 0.0027963964515118614,
+      "closeness_centrality": 0.4629524080934739
+    },
+    "Martin Solari": {
+      "collaboration_count": 7,
+      "collaborators": [
+        "Barbara Russo",
+        "Guilherme Travassos",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Oscar Pastor",
+        "Rafael Prikladnicki",
+        "Sira Vegas"
+      ],
+      "degree_centrality": 0.12068965517241378,
+      "betweenness_centrality": 0.0022581734249837375,
+      "closeness_centrality": 0.4554247266610597
+    },
+    "Maurizio Morisio": {
+      "collaboration_count": 8,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Ayşe Başar",
+        "Carolyn Seaman",
+        "Guilherme Travassos",
+        "Hakan Erdogmus",
+        "Jingyu Li",
+        "Markku Oivo",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.13793103448275862,
+      "betweenness_centrality": 0.003683849364177203,
+      "closeness_centrality": 0.5001539408866995
+    },
+    "Stefan Biffl": {
+      "collaboration_count": 17,
+      "collaborators": [
+        "Ayşe Başar",
+        "Burak Turhan",
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Hakan Erdogmus",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Marcus Ciolkowski",
+        "Maria Teresa Baldassarre",
+        "Maya Daneva",
+        "Michael Felderer",
+        "Rafael Prikladnicki",
+        "Rogardt Heldal",
+        "Sira Vegas",
+        "Stefan Wagner",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.29310344827586204,
+      "betweenness_centrality": 0.011941217237881477,
+      "closeness_centrality": 0.5386273209549072
+    },
+    "Rogardt Heldal": {
+      "collaboration_count": 12,
+      "collaborators": [
+        "Daniel Mendez Fernandez",
+        "Dietmar Pfahl",
+        "Eray Tüzün",
+        "Guilherme Travassos",
+        "Jeffrey Carver",
+        "Marcela Genero",
+        "Marcos Kalinowski",
+        "Michael Felderer",
+        "Paris Avgeriou",
+        "Rafael Prikladnicki",
+        "Stefan Biffl",
+        "Xavier Franch"
+      ],
+      "degree_centrality": 0.20689655172413793,
+      "betweenness_centrality": 0.003102203817164795,
+      "closeness_centrality": 0.5092476489028213
+    },
+    "Victor Basili": {
+      "collaboration_count": 16,
+      "collaborators": [
+        "Carolyn Seaman",
+        "Dag Sjøberg",
+        "Dan Port",
+        "Dieter Rombach",
+        "Dietmar Pfahl",
+        "Giovanni Cantone",
+        "Guilherme Travassos",
+        "He Zhang",
+        "Jeffrey Carver",
+        "Koji Torii",
+        "Laurie Williams",
+        "Markku Oivo",
+        "Maurizio Morisio",
+        "Ross Jeffery",
+        "Sandro Morasca",
+        "Sira Vegas"
+      ],
+      "degree_centrality": 0.27586206896551724,
+      "betweenness_centrality": 0.07039195343490202,
+      "closeness_centrality": 0.5658307210031348
+    },
+    "Giovanni Cantone": {
+      "collaboration_count": 5,
+      "collaborators": [
+        "Dieter Rombach",
+        "Marcela Genero",
+        "Marcus Ciolkowski",
+        "Sira Vegas",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.08620689655172414,
+      "betweenness_centrality": 0.0015276386820104126,
+      "closeness_centrality": 0.42761252961305607
+    },
+    "Dieter Rombach": {
+      "collaboration_count": 8,
+      "collaborators": [
+        "Andreas Jedlitschka",
+        "Carolyn Seaman",
+        "Dietmar Pfahl",
+        "Giovanni Cantone",
+        "Marcus Ciolkowski",
+        "Markku Oivo",
+        "Ross Jeffery",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.13793103448275862,
+      "betweenness_centrality": 0.004101689502222901,
+      "closeness_centrality": 0.4787798408488063
+    },
+    "Ross Jeffery": {
+      "collaboration_count": 7,
+      "collaborators": [
+        "Dieter Rombach",
+        "Dietmar Pfahl",
+        "He Zhang",
+        "Marcus Ciolkowski",
+        "Minghui Zhou",
+        "Qing Wang",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.12068965517241378,
+      "betweenness_centrality": 0.004842724034465177,
+      "closeness_centrality": 0.4787798408488063
+    },
+    "Koji Torii": {
+      "collaboration_count": 4,
+      "collaborators": [
+        "Kenichi Matsumoto",
+        "Laurie Williams",
+        "Shinji Kusumoto",
+        "Victor Basili"
+      ],
+      "degree_centrality": 0.06896551724137931,
+      "betweenness_centrality": 0.06654567453115548,
+      "closeness_centrality": 0.39172896069447793
+    }
+  }
+}

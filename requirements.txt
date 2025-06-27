@@ -26,3 +26,13 @@ tqdm>=4.64.0
 # Jupyter notebook support (if needed)
 jupyter>=1.0.0
 ipykernel>=6.15.0
+
+# Name normalization and matching packages
+nameparser>=1.1.3       # Parse human names into components
+unidecode>=1.3.6        # Transliterate Unicode to ASCII
+rapidfuzz>=3.5.2        # Fast fuzzy string matching
+jellyfish>=0.11.2       # Phonetic matching algorithms (Soundex, Metaphone, etc.)
+python-Levenshtein>=0.20.9  # Fast Levenshtein distance
+recordlinkage>=0.16.0   # Advanced record linkage and deduplication
+usaddress>=0.5.10       # Address parsing (useful for author affiliations)
+python-stdnum>=1.19     # Standardize and validate various number formats

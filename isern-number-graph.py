@@ -5,9 +5,16 @@ import time
 import matplotlib.pyplot as plt
 import json
 import os
-from datetime import datetime
 from urllib.parse import quote
 from collections import deque
+from enhanced_name_utils import EnhancedNameMatcher
+from isern_utils import load_isern_members
+
+# Initialize enhanced name matcher
+name_matcher = EnhancedNameMatcher(similarity_threshold=0.85)
+
+# Load ISERN members from JSON file
+isern_members = load_isern_members('isern_members_enhanced.json')
 
 # ISERN founding members (Level 0) - extracted from historical records
 founding_members = [
@@ -19,87 +26,21 @@ founding_members = [
     "Markku Oivo"          # VTT Electronics (Finland)
 ]
 
-# Full ISERN member list from the official page
-isern_members = [
-    "Casper Lassenius",
-    "Eray Tüzün",
-    "Nauman bin Ali",
-    "Hakan Erdogmus",
-    "Robert Feldt",
-    "Guilherme Travassos",
-    "Michael Felderer",
-    "Markku Oivo",
-    "Fabio Q.B. da Silva",
-    "Daniel Mendez Fernandez",
-    "Andreas Jedlitschka",
-    "Barbara Russo",
-    "Qing Wang",
-    "Per Runeson",
-    "Maria Paasivaara",
-    "Clemente Izurieta",
-    "He Zhang",
-    "Kenichi Matsumoto",
-    "Jingyu Li",
-    "Laurie Williams",
-    "Takeshi Hayama",
-    "Shinji Kusumoto",
-    "Minghui Zhou",
-    "Marcos Kalinowski",
-    "Rafael Prikladnicki",
-    "Marcus Ciolkowski",
-    "Desmond Greer",
-    "Ayşe Başar",
-    "Magne Jørgensen",
-    "Nils Brede Moe",
-    "Danilo Caivano",
-    "Xavier Franch",
-    "Ali Babar",
-    "Paris Avgeriou",
-    "Sira Vegas",
-    "Oscar Pastor",
-    "Sandro Morasca",
-    "Jeffrey Carver",
-    "Maria Teresa Baldassarre",
-    "Marcela Genero",
-    "Dan Port",
-    "Tomi Männistö",
-    "Rahul Mohanani",
-    "Carolyn Seaman",
-    "Dag Sjøberg",
-    "Burak Turhan",
-    "Stefan Wagner",
-    "Dietmar Pfahl",
-    "Audris Mockus",
-    "Maya Daneva",
-    "Martin Solari",
-    "Maurizio Morisio",
-    "Stefan Biffl",
-    "Rogardt Heldal",
-    "Victor Basili",
-    "Giovanni Cantone",
-    "Dieter Rombach",
-    "Ross Jeffery",
-    "Koji Torii"
-]
-
-# Normalize names for matching (e.g., lowercase, strip accents if needed)
-def normalize(name):
-    return name.lower().replace("ö", "o").replace("ü", "u").replace("ç", "c").replace("å", "a").replace("ø", "o")
-
-def names_match(name1, name2):
-    """Check if two names likely refer to the same person, handling common variations"""
-    if name1 == name2:
+def is_isern_member(author_name):
+    """Check if an author is an ISERN member using enhanced name matching"""
+    if not author_name:
+        return False
+    
+    # Use enhanced name matching to find potential ISERN members
+    matches = name_matcher.find_best_matches(author_name, isern_members, top_k=1)
+    
+    if matches and matches[0][1] >= name_matcher.similarity_threshold:
+        matched_name = matches[0][0]
+        score = matches[0][1]
+        print(f"    ISERN member match: {author_name} -> {matched_name} (score: {score:.3f})")
         return True
     
-    # Normalize both names
-    norm1 = normalize(name1)
-    norm2 = normalize(name2)
-    
-    if norm1 == norm2:
-        return True
-    
-    # Split into parts for more flexible matching
-    parts1 = norm1.split()
+    return False
     parts2 = norm2.split()
     
     if len(parts1) < 2 or len(parts2) < 2:
@@ -195,13 +136,12 @@ def get_coauthors_from_publication(pub):
     return coauthors
 
 def clean_old_cache_files():
-    """Remove cache files older than today"""
-    today_date = datetime.now().strftime("%Y%m%d")
-    cache_pattern = "isern_collaboration_cache_"
+    """Remove old cache files - simplified version without timestamps"""
+    cache_pattern = "isern_collaboration_cache"
     
     try:
         files_in_dir = os.listdir('.')
-        old_cache_files = [f for f in files_in_dir if f.startswith(cache_pattern) and not f.endswith(f"{today_date}.graphml")]
+        old_cache_files = [f for f in files_in_dir if f.startswith(cache_pattern) and f.endswith('.graphml')]
         
         for old_file in old_cache_files:
             try:
@@ -218,12 +158,11 @@ def clean_old_cache_files():
 
 def build_collaboration_graph():
     """Build the full collaboration graph between ISERN members"""
-    # Check if cached data exists for today
-    today_date = datetime.now().strftime("%Y%m%d")
-    cache_filename = f"isern_collaboration_cache_{today_date}.graphml"
+    # Check if cached data exists
+    cache_filename = "isern_collaboration_cache.graphml"
     
     if os.path.exists(cache_filename):
-        print(f"Found cached collaboration graph for {today_date}")
+        print("Found cached collaboration graph")
         print(f"Loading from: {cache_filename}")
         try:
             G = nx.read_graphml(cache_filename)
@@ -249,11 +188,15 @@ def build_collaboration_graph():
                 coauthors = get_coauthors_from_publication(pub)
                 
                 for coauthor in coauthors:
-                    # Check if this coauthor is also an ISERN member using improved matching
-                    for other_member in isern_members:
-                        if names_match(coauthor, other_member) and other_member != member:
-                            G.add_edge(member, other_member)
-                            break
+                    # Check if this coauthor is also an ISERN member using enhanced matching
+                    if is_isern_member(coauthor):
+                        # Find the best matching ISERN member name
+                        matches = name_matcher.find_best_matches(coauthor, isern_members, top_k=1)
+                        if matches:
+                            other_member = matches[0][0]
+                            if other_member != member:
+                                G.add_edge(member, other_member)
+                                break
             
             # Be respectful to DBLP API
             time.sleep(0.5)
@@ -352,7 +295,6 @@ def main():
     pos, levels = create_layered_visualization(G, isern_numbers)
     
     # Save data
-    timestamp = datetime.now().strftime("%Y%m%d")
     
     # Save ISERN numbers as JSON
     isern_data = {
@@ -360,18 +302,17 @@ def main():
                          for member, num in isern_numbers.items()},
         "levels": {str(level): members for level, members in levels.items()},
         "founding_members": founding_members,
-        "timestamp": timestamp,
         "total_members": len(isern_members),
         "connected_members": len([n for n in isern_numbers.values() if n != float('inf')])
     }
     
-    json_filename = f"isern_numbers_{timestamp}.json"
+    json_filename = "isern_numbers.json"
     with open(json_filename, 'w') as f:
         json.dump(isern_data, f, indent=2)
     print(f"\nISERN numbers saved as JSON: {json_filename}")
     
     # Save graph data
-    graphml_filename = f"isern_numbers_graph_{timestamp}.graphml"
+    graphml_filename = "isern_numbers_graph.graphml"
     # Add ISERN numbers as node attributes
     for node in G.nodes():
         G.nodes[node]['isern_number'] = isern_numbers[node]
@@ -450,7 +391,7 @@ def main():
     plt.tight_layout()
     
     # Save the plot
-    plot_filename = f"isern_numbers_graph_{timestamp}.png"
+    plot_filename = "isern_numbers_graph.png"
     plt.savefig(plot_filename, dpi=300, bbox_inches='tight', 
                facecolor='white', edgecolor='none')
     print(f"ISERN numbers visualization saved: {plot_filename}")

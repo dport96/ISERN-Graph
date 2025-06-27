@@ -1,0 +1,4697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISERN Co-authorship Network - Colored by ISERN Number</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script>
+        // Fallback if vis is not loaded
+        if (typeof vis === 'undefined') {
+            document.write('<script src="https://cdn.jsdelivr.net/npm/vis-network@latest/standalone/umd/vis-network.min.js"><\/script>');
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .controls {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            background-color: #f8f9fa;
+        }
+        
+        .controls h3 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }
+        
+        .control-group {
+            margin-bottom: 15px;
+        }
+        
+        .control-group label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 2px;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        #network {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+        }
+        
+        .legend {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+        
+        .legend h3 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin: 5px 15px 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        .collaborators-table {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+        
+        .collaborators-table h3 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }
+        
+        .collaborators-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .collaborators-table th,
+        .collaborators-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .collaborators-table th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .collaborators-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .isern-number-cell {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .info-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            max-width: 300px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .info-panel h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ISERN Co-authorship Network</h1>
+            <p>Interactive visualization of research collaborations within the International Software Engineering Research Network</p>
+            <p><strong>Spring Layout</strong> - Same layout as the static PNG visualization for consistency</p>
+            <p><strong>Nodes colored by ISERN Number</strong> - Distance from founding members (Koji Torii, Dieter Rombach, Victor Basili, Ross Jeffery, Giovanni Cantone, Markku Oivo)</p>
+            <p>Generated on June 27, 2025 at 06:19</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">59</span>
+                <span class="stat-label">Researchers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">306</span>
+                <span class="stat-label">Collaborations</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Components</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">0.179</span>
+                <span class="stat-label">Density</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <h3>Controls</h3>
+            <div class="control-group">
+                <label>Layout:</label>
+                <button onclick="setLayout('spring')">Spring Layout</button>
+                <button onclick="setLayout('physics')">Physics</button>
+                <button onclick="setLayout('random')">Random</button>
+            </div>
+            <div class="control-group">
+                <label>Actions:</label>
+                <button onclick="fitNetwork()">Fit to Screen</button>
+                <button onclick="togglePhysics()">Toggle Physics</button>
+                <button onclick="resetZoom()">Reset Zoom</button>
+            </div>
+        </div>
+        
+        <div id="network"></div>
+        
+        <div class="legend">
+            <h3>Legend - ISERN Numbers</h3>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #8B0000;"></span>
+                Level 0 (Founding Members)
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #FF4500;"></span>
+                Level 1 (Direct collaborators)
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #DAA520;"></span>
+                Level 2 (Second degree)
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #228B22;"></span>
+                Level 3 (Third degree)
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #404040;"></span>
+                Disconnected (∞)
+            </div>
+        </div>
+        
+        <div class="collaborators-table">
+            <h3>Top 10 Collaborators</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Researcher</th>
+                        <th>ISERN Number</th>
+                        <th>Collaborations</th>
+                        <th>Centrality</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Daniel Mendez Fernandez</strong></td>
+                        <td class="isern-number-cell">1</td>
+                        <td>25</td>
+                        <td>0.4310</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Dietmar Pfahl</strong></td>
+                        <td class="isern-number-cell">2</td>
+                        <td>22</td>
+                        <td>0.3793</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><strong>Markku Oivo</strong></td>
+                        <td class="isern-number-cell">0</td>
+                        <td>21</td>
+                        <td>0.3621</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Michael Felderer</strong></td>
+                        <td class="isern-number-cell">2</td>
+                        <td>19</td>
+                        <td>0.3276</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Qing Wang</strong></td>
+                        <td class="isern-number-cell">2</td>
+                        <td>18</td>
+                        <td>0.3103</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><strong>Xavier Franch</strong></td>
+                        <td class="isern-number-cell">1</td>
+                        <td>17</td>
+                        <td>0.2931</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><strong>He Zhang</strong></td>
+                        <td class="isern-number-cell">1</td>
+                        <td>16</td>
+                        <td>0.2759</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><strong>Marcos Kalinowski</strong></td>
+                        <td class="isern-number-cell">2</td>
+                        <td>16</td>
+                        <td>0.2759</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><strong>Jeffrey Carver</strong></td>
+                        <td class="isern-number-cell">1</td>
+                        <td>16</td>
+                        <td>0.2759</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><strong>Victor Basili</strong></td>
+                        <td class="isern-number-cell">0</td>
+                        <td>16</td>
+                        <td>0.2759</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div id="info-panel" class="info-panel">
+        <h4 id="node-name"></h4>
+        <p id="node-details"></p>
+    </div>
+
+    <script type="text/javascript">
+        // Check if vis.js is loaded
+        if (typeof vis === 'undefined') {
+            document.getElementById('network').innerHTML = '<p style="color: red; padding: 20px; text-align: center;">Error: vis.js library failed to load. Please check your internet connection or try refreshing the page.</p>';
+        } else {
+            console.log('vis.js loaded successfully');
+        }
+        
+        // Network data
+        var nodes = new vis.DataSet([
+  {
+    "id": "Casper Lassenius",
+    "label": "Casper Lassenius (1)",
+    "title": "Casper Lassenius<br>ISERN Number: 1<br>Collaborations: 8",
+    "level": 1,
+    "x": -51.35362233993177,
+    "y": 799.8277872735441,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Eray T\u00fcz\u00fcn",
+    "label": "Eray T\u00fcz\u00fcn (2)",
+    "title": "Eray T\u00fcz\u00fcn<br>ISERN Number: 2<br>Collaborations: 9",
+    "level": 2,
+    "x": 655.2641132806191,
+    "y": 375.4392834843148,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Nauman bin Ali",
+    "label": "Nauman bin Ali (2)",
+    "title": "Nauman bin Ali<br>ISERN Number: 2<br>Collaborations: 4",
+    "level": 2,
+    "x": -514.6100135849056,
+    "y": -624.0466928245436,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Hakan Erdogmus",
+    "label": "Hakan Erdogmus (1)",
+    "title": "Hakan Erdogmus<br>ISERN Number: 1<br>Collaborations: 10",
+    "level": 1,
+    "x": -698.5373227446884,
+    "y": 438.41517487313115,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Robert Feldt",
+    "label": "Robert Feldt (1)",
+    "title": "Robert Feldt<br>ISERN Number: 1<br>Collaborations: 11",
+    "level": 1,
+    "x": 231.76778416162844,
+    "y": 705.3566204216023,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Guilherme Travassos",
+    "label": "Guilherme Travassos (1)",
+    "title": "Guilherme Travassos<br>ISERN Number: 1<br>Collaborations: 14",
+    "level": 1,
+    "x": -574.3478151231074,
+    "y": 632.2477274225554,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Michael Felderer",
+    "label": "Michael Felderer (2)",
+    "title": "Michael Felderer<br>ISERN Number: 2<br>Collaborations: 19",
+    "level": 2,
+    "x": 686.3575364152007,
+    "y": -426.39312512924806,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Markku Oivo",
+    "label": "Markku Oivo (0)",
+    "title": "Markku Oivo<br>ISERN Number: 0<br>Collaborations: 21",
+    "level": 0,
+    "x": -670.5233598097215,
+    "y": -423.28852361691946,
+    "shape": "ellipse",
+    "color": {
+      "background": "#8B0000",
+      "border": "#000000",
+      "highlight": {
+        "background": "#8B0000",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Fabio Q.B. da Silva",
+    "label": "Fabio Q.B. da Silva (2)",
+    "title": "Fabio Q.B. da Silva<br>ISERN Number: 2<br>Collaborations: 15",
+    "level": 2,
+    "x": -102.36129891466648,
+    "y": 164.12994449131787,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Daniel Mendez Fernandez",
+    "label": "Daniel Mendez Fernandez (1)",
+    "title": "Daniel Mendez Fernandez<br>ISERN Number: 1<br>Collaborations: 25",
+    "level": 1,
+    "x": 175.16407982552687,
+    "y": -179.41069904163513,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Andreas Jedlitschka",
+    "label": "Andreas Jedlitschka (1)",
+    "title": "Andreas Jedlitschka<br>ISERN Number: 1<br>Collaborations: 13",
+    "level": 1,
+    "x": 294.77923677638984,
+    "y": -732.5445856355517,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Barbara Russo",
+    "label": "Barbara Russo (1)",
+    "title": "Barbara Russo<br>ISERN Number: 1<br>Collaborations: 8",
+    "level": 1,
+    "x": -713.7697850871526,
+    "y": -177.5300503527278,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Qing Wang",
+    "label": "Qing Wang (2)",
+    "title": "Qing Wang<br>ISERN Number: 2<br>Collaborations: 18",
+    "level": 2,
+    "x": 56.419014818823435,
+    "y": 752.2872905533557,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Per Runeson",
+    "label": "Per Runeson (2)",
+    "title": "Per Runeson<br>ISERN Number: 2<br>Collaborations: 7",
+    "level": 2,
+    "x": -751.4853826844543,
+    "y": 42.737705562221024,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Maria Paasivaara",
+    "label": "Maria Paasivaara (2)",
+    "title": "Maria Paasivaara<br>ISERN Number: 2<br>Collaborations: 4",
+    "level": 2,
+    "x": 191.0851411504891,
+    "y": -788.8811047330616,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Clemente Izurieta",
+    "label": "Clemente Izurieta (2)",
+    "title": "Clemente Izurieta<br>ISERN Number: 2<br>Collaborations: 4",
+    "level": 2,
+    "x": 444.48104937043774,
+    "y": -637.2036780196647,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "He Zhang",
+    "label": "He Zhang (1)",
+    "title": "He Zhang<br>ISERN Number: 1<br>Collaborations: 16",
+    "level": 1,
+    "x": -387.21954063001897,
+    "y": 740.0850329237218,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Kenichi Matsumoto",
+    "label": "Kenichi Matsumoto (1)",
+    "title": "Kenichi Matsumoto<br>ISERN Number: 1<br>Collaborations: 4",
+    "level": 1,
+    "x": 710.9672351697652,
+    "y": 444.95851789980145,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Jingyu Li",
+    "label": "Jingyu Li (2)",
+    "title": "Jingyu Li<br>ISERN Number: 2<br>Collaborations: 13",
+    "level": 2,
+    "x": -258.2513293684998,
+    "y": -759.1451935169039,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Laurie Williams",
+    "label": "Laurie Williams (1)",
+    "title": "Laurie Williams<br>ISERN Number: 1<br>Collaborations: 9",
+    "level": 1,
+    "x": 650.9977279955316,
+    "y": -349.45209678379337,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Takeshi Hayama",
+    "label": "Takeshi Hayama (2)",
+    "title": "Takeshi Hayama<br>ISERN Number: 2<br>Collaborations: 1",
+    "level": 2,
+    "x": -772.6971410855172,
+    "y": -51.322089328652446,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Shinji Kusumoto",
+    "label": "Shinji Kusumoto (2)",
+    "title": "Shinji Kusumoto<br>ISERN Number: 2<br>Collaborations: 2",
+    "level": 2,
+    "x": -640.4888072686315,
+    "y": 543.5703348412461,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Minghui Zhou",
+    "label": "Minghui Zhou (2)",
+    "title": "Minghui Zhou<br>ISERN Number: 2<br>Collaborations: 11",
+    "level": 2,
+    "x": -256.35805927366937,
+    "y": 688.9092341857453,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Marcos Kalinowski",
+    "label": "Marcos Kalinowski (2)",
+    "title": "Marcos Kalinowski<br>ISERN Number: 2<br>Collaborations: 16",
+    "level": 2,
+    "x": 29.297104976045947,
+    "y": -32.098372140707326,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Rafael Prikladnicki",
+    "label": "Rafael Prikladnicki (1)",
+    "title": "Rafael Prikladnicki<br>ISERN Number: 1<br>Collaborations: 14",
+    "level": 1,
+    "x": 94.51582261623238,
+    "y": -720.6217904730667,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Marcus Ciolkowski",
+    "label": "Marcus Ciolkowski (1)",
+    "title": "Marcus Ciolkowski<br>ISERN Number: 1<br>Collaborations: 10",
+    "level": 1,
+    "x": 772.7928234350907,
+    "y": 305.59182811115295,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Desmond Greer",
+    "label": "Desmond Greer (2)",
+    "title": "Desmond Greer<br>ISERN Number: 2<br>Collaborations: 4",
+    "level": 2,
+    "x": 507.4726205195848,
+    "y": 670.187076623761,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Ay\u015fe Ba\u015far",
+    "label": "Ay\u015fe Ba\u015far (2)",
+    "title": "Ay\u015fe Ba\u015far<br>ISERN Number: 2<br>Collaborations: 10",
+    "level": 2,
+    "x": 158.99478453386834,
+    "y": 781.0744333613735,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Magne J\u00f8rgensen",
+    "label": "Magne J\u00f8rgensen (2)",
+    "title": "Magne J\u00f8rgensen<br>ISERN Number: 2<br>Collaborations: 4",
+    "level": 2,
+    "x": -741.3538973113526,
+    "y": -322.09799731066744,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Nils Brede Moe",
+    "label": "Nils Brede Moe (2)",
+    "title": "Nils Brede Moe<br>ISERN Number: 2<br>Collaborations: 10",
+    "level": 2,
+    "x": -782.139341171887,
+    "y": -185.25285566725535,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Danilo Caivano",
+    "label": "Danilo Caivano (1)",
+    "title": "Danilo Caivano<br>ISERN Number: 1<br>Collaborations: 5",
+    "level": 1,
+    "x": -172.18571202175787,
+    "y": -729.3453902997489,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Xavier Franch",
+    "label": "Xavier Franch (1)",
+    "title": "Xavier Franch<br>ISERN Number: 1<br>Collaborations: 17",
+    "level": 1,
+    "x": 757.2844492376479,
+    "y": -215.75126642427355,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Ali Babar",
+    "label": "Ali Babar (1)",
+    "title": "Ali Babar<br>ISERN Number: 1<br>Collaborations: 14",
+    "level": 1,
+    "x": -410.43042974279666,
+    "y": 281.18711498706375,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Paris Avgeriou",
+    "label": "Paris Avgeriou (2)",
+    "title": "Paris Avgeriou<br>ISERN Number: 2<br>Collaborations: 13",
+    "level": 2,
+    "x": -465.7267702508024,
+    "y": 641.9199660902495,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Sira Vegas",
+    "label": "Sira Vegas (1)",
+    "title": "Sira Vegas<br>ISERN Number: 1<br>Collaborations: 12",
+    "level": 1,
+    "x": -237.23758578676285,
+    "y": 796.8630636556445,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Oscar Pastor",
+    "label": "Oscar Pastor (2)",
+    "title": "Oscar Pastor<br>ISERN Number: 2<br>Collaborations: 13",
+    "level": 2,
+    "x": 532.3103577657823,
+    "y": -594.7431524261068,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Sandro Morasca",
+    "label": "Sandro Morasca (1)",
+    "title": "Sandro Morasca<br>ISERN Number: 1<br>Collaborations: 5",
+    "level": 1,
+    "x": -788.1371912166414,
+    "y": 235.32559046149157,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Jeffrey Carver",
+    "label": "Jeffrey Carver (1)",
+    "title": "Jeffrey Carver<br>ISERN Number: 1<br>Collaborations: 16",
+    "level": 1,
+    "x": 413.955561543359,
+    "y": 620.6510114250395,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Maria Teresa Baldassarre",
+    "label": "Maria Teresa Baldassarre (2)",
+    "title": "Maria Teresa Baldassarre<br>ISERN Number: 2<br>Collaborations: 12",
+    "level": 2,
+    "x": 386.4064440277149,
+    "y": -727.4186997244418,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Marcela Genero",
+    "label": "Marcela Genero (2)",
+    "title": "Marcela Genero<br>ISERN Number: 2<br>Collaborations: 9",
+    "level": 2,
+    "x": -0.7718945384286966,
+    "y": -786.5374651526279,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Dan Port",
+    "label": "Dan Port (1)",
+    "title": "Dan Port<br>ISERN Number: 1<br>Collaborations: 15",
+    "level": 1,
+    "x": 769.0099320969572,
+    "y": 194.11356221863642,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Tomi M\u00e4nnist\u00f6",
+    "label": "Tomi M\u00e4nnist\u00f6 (1)",
+    "title": "Tomi M\u00e4nnist\u00f6<br>ISERN Number: 1<br>Collaborations: 8",
+    "level": 1,
+    "x": -99.81769241129014,
+    "y": -800.0,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Rahul Mohanani",
+    "label": "Rahul Mohanani (2)",
+    "title": "Rahul Mohanani<br>ISERN Number: 2<br>Collaborations: 2",
+    "level": 2,
+    "x": -525.2989969874502,
+    "y": -527.8580230675432,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Carolyn Seaman",
+    "label": "Carolyn Seaman (2)",
+    "title": "Carolyn Seaman<br>ISERN Number: 2<br>Collaborations: 13",
+    "level": 2,
+    "x": 530.954383396019,
+    "y": 534.7633511790202,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Dag Sj\u00f8berg",
+    "label": "Dag Sj\u00f8berg (2)",
+    "title": "Dag Sj\u00f8berg<br>ISERN Number: 2<br>Collaborations: 8",
+    "level": 2,
+    "x": 795.4725151413484,
+    "y": -28.53504809589259,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Burak Turhan",
+    "label": "Burak Turhan (1)",
+    "title": "Burak Turhan<br>ISERN Number: 1<br>Collaborations: 15",
+    "level": 1,
+    "x": -691.563366290978,
+    "y": 332.9926753744703,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Stefan Wagner",
+    "label": "Stefan Wagner (1)",
+    "title": "Stefan Wagner<br>ISERN Number: 1<br>Collaborations: 15",
+    "level": 1,
+    "x": 756.182445107055,
+    "y": 89.98681215506356,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Dietmar Pfahl",
+    "label": "Dietmar Pfahl (2)",
+    "title": "Dietmar Pfahl<br>ISERN Number: 2<br>Collaborations: 22",
+    "level": 2,
+    "x": 754.3108725819017,
+    "y": -111.02873834745806,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Audris Mockus",
+    "label": "Audris Mockus (3)",
+    "title": "Audris Mockus<br>ISERN Number: 3<br>Collaborations: 8",
+    "level": 3,
+    "x": 552.3607135511337,
+    "y": 105.00135506591846,
+    "shape": "ellipse",
+    "color": {
+      "background": "#228B22",
+      "border": "#000000",
+      "highlight": {
+        "background": "#228B22",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Maya Daneva",
+    "label": "Maya Daneva (2)",
+    "title": "Maya Daneva<br>ISERN Number: 2<br>Collaborations: 6",
+    "level": 2,
+    "x": -646.5607149858846,
+    "y": -541.5509104913988,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Martin Solari",
+    "label": "Martin Solari (2)",
+    "title": "Martin Solari<br>ISERN Number: 2<br>Collaborations: 6",
+    "level": 2,
+    "x": -792.8820292613585,
+    "y": 120.438470691695,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Maurizio Morisio",
+    "label": "Maurizio Morisio (1)",
+    "title": "Maurizio Morisio<br>ISERN Number: 1<br>Collaborations: 8",
+    "level": 1,
+    "x": -615.5175222602901,
+    "y": -311.5026314639553,
+    "shape": "ellipse",
+    "color": {
+      "background": "#FF4500",
+      "border": "#000000",
+      "highlight": {
+        "background": "#FF4500",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Stefan Biffl",
+    "label": "Stefan Biffl (2)",
+    "title": "Stefan Biffl<br>ISERN Number: 2<br>Collaborations: 9",
+    "level": 2,
+    "x": 756.2954762137142,
+    "y": -314.77031957724074,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Rogardt Heldal",
+    "label": "Rogardt Heldal (2)",
+    "title": "Rogardt Heldal<br>ISERN Number: 2<br>Collaborations: 7",
+    "level": 2,
+    "x": -104.91836721082667,
+    "y": 739.5416649064391,
+    "shape": "ellipse",
+    "color": {
+      "background": "#DAA520",
+      "border": "#000000",
+      "highlight": {
+        "background": "#DAA520",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#000000",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#000000"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Victor Basili",
+    "label": "Victor Basili (0)",
+    "title": "Victor Basili<br>ISERN Number: 0<br>Collaborations: 16",
+    "level": 0,
+    "x": -344.3077007487239,
+    "y": -738.8190825736974,
+    "shape": "ellipse",
+    "color": {
+      "background": "#8B0000",
+      "border": "#000000",
+      "highlight": {
+        "background": "#8B0000",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Giovanni Cantone",
+    "label": "Giovanni Cantone (0)",
+    "title": "Giovanni Cantone<br>ISERN Number: 0<br>Collaborations: 6",
+    "level": 0,
+    "x": -417.1100928272657,
+    "y": -667.5966083321953,
+    "shape": "ellipse",
+    "color": {
+      "background": "#8B0000",
+      "border": "#000000",
+      "highlight": {
+        "background": "#8B0000",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Dieter Rombach",
+    "label": "Dieter Rombach (0)",
+    "title": "Dieter Rombach<br>ISERN Number: 0<br>Collaborations: 7",
+    "level": 0,
+    "x": 627.9150377640915,
+    "y": 536.6669599114449,
+    "shape": "ellipse",
+    "color": {
+      "background": "#8B0000",
+      "border": "#000000",
+      "highlight": {
+        "background": "#8B0000",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Ross Jeffery",
+    "label": "Ross Jeffery (0)",
+    "title": "Ross Jeffery<br>ISERN Number: 0<br>Collaborations: 7",
+    "level": 0,
+    "x": 323.9852051049996,
+    "y": 719.3704778166381,
+    "shape": "ellipse",
+    "color": {
+      "background": "#8B0000",
+      "border": "#000000",
+      "highlight": {
+        "background": "#8B0000",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  },
+  {
+    "id": "Koji Torii",
+    "label": "Koji Torii (0)",
+    "title": "Koji Torii<br>ISERN Number: 0<br>Collaborations: 4",
+    "level": 0,
+    "x": 611.1633143625065,
+    "y": -528.8938774166791,
+    "shape": "ellipse",
+    "color": {
+      "background": "#8B0000",
+      "border": "#000000",
+      "highlight": {
+        "background": "#8B0000",
+        "border": "#000000"
+      }
+    },
+    "font": {
+      "color": "#FFFFFF",
+      "size": 14,
+      "face": "Arial",
+      "bold": {
+        "color": "#FFFFFF"
+      }
+    },
+    "margin": {
+      "top": 8,
+      "bottom": 8,
+      "left": 12,
+      "right": 12
+    },
+    "widthConstraint": {
+      "minimum": 100,
+      "maximum": 250
+    },
+    "heightConstraint": {
+      "minimum": 35,
+      "valign": "middle"
+    }
+  }
+]);
+        var edges = new vis.DataSet([
+  {
+    "from": "Casper Lassenius",
+    "to": "Maria Paasivaara",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Magne J\u00f8rgensen",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Rafael Prikladnicki",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Markku Oivo",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Casper Lassenius",
+    "to": "Daniel Mendez Fernandez",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Michael Felderer",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Hakan Erdogmus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Qing Wang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Robert Feldt",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Eray T\u00fcz\u00fcn",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nauman bin Ali",
+    "to": "Fabio Q.B. da Silva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nauman bin Ali",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nauman bin Ali",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nauman bin Ali",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "He Zhang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Magne J\u00f8rgensen",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Sira Vegas",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Laurie Williams",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Hakan Erdogmus",
+    "to": "Markku Oivo",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Michael Felderer",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Qing Wang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Per Runeson",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Daniel Mendez Fernandez",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Andreas Jedlitschka",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Markku Oivo",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Dag Sj\u00f8berg",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Robert Feldt",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Martin Solari",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Xavier Franch",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Fabio Q.B. da Silva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Michael Felderer",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Daniel Mendez Fernandez",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Rafael Prikladnicki",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Marcos Kalinowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Danilo Caivano",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Marcus Ciolkowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Guilherme Travassos",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Daniel Mendez Fernandez",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Xavier Franch",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Marcos Kalinowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Barbara Russo",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Clemente Izurieta",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Per Runeson",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Laurie Williams",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Andreas Jedlitschka",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Sira Vegas",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Michael Felderer",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Xavier Franch",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "He Zhang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Sira Vegas",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Rafael Prikladnicki",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Daniel Mendez Fernandez",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Andreas Jedlitschka",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Barbara Russo",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Danilo Caivano",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Dieter Rombach",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Markku Oivo",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Jingyu Li",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Ay\u015fe Ba\u015far",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Marcus Ciolkowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Rafael Prikladnicki",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "He Zhang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Qing Wang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Andreas Jedlitschka",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Per Runeson",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Marcos Kalinowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Fabio Q.B. da Silva",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Qing Wang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Maya Daneva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Xavier Franch",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Marcos Kalinowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Rahul Mohanani",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Dag Sj\u00f8berg",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Maria Paasivaara",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Jingyu Li",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Rafael Prikladnicki",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Desmond Greer",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Daniel Mendez Fernandez",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Marcus Ciolkowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Dieter Rombach",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Xavier Franch",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Sira Vegas",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Andreas Jedlitschka",
+    "to": "Ay\u015fe Ba\u015far",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Barbara Russo",
+    "to": "Qing Wang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Barbara Russo",
+    "to": "Jingyu Li",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Barbara Russo",
+    "to": "Sandro Morasca",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Barbara Russo",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Barbara Russo",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Barbara Russo",
+    "to": "Martin Solari",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "He Zhang",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Jingyu Li",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Minghui Zhou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Desmond Greer",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Ay\u015fe Ba\u015far",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Maya Daneva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Qing Wang",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Per Runeson",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Per Runeson",
+    "to": "Dag Sj\u00f8berg",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Per Runeson",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Per Runeson",
+    "to": "Danilo Caivano",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Maria Paasivaara",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Maria Paasivaara",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Clemente Izurieta",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Clemente Izurieta",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Clemente Izurieta",
+    "to": "Laurie Williams",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Minghui Zhou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Jingyu Li",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Kenichi Matsumoto",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Maya Daneva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "He Zhang",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Kenichi Matsumoto",
+    "to": "Shinji Kusumoto",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Kenichi Matsumoto",
+    "to": "Koji Torii",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Kenichi Matsumoto",
+    "to": "Takeshi Hayama",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Minghui Zhou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Xavier Franch",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jingyu Li",
+    "to": "Maya Daneva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Laurie Williams",
+    "to": "Minghui Zhou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Laurie Williams",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Laurie Williams",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Laurie Williams",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Laurie Williams",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Laurie Williams",
+    "to": "Koji Torii",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Shinji Kusumoto",
+    "to": "Koji Torii",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Marcos Kalinowski",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Desmond Greer",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Minghui Zhou",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Martin Solari",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Marcela Genero",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Rafael Prikladnicki",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcos Kalinowski",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Nils Brede Moe",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Martin Solari",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rafael Prikladnicki",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Dieter Rombach",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Giovanni Cantone",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Sira Vegas",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcus Ciolkowski",
+    "to": "Sandro Morasca",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Desmond Greer",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ay\u015fe Ba\u015far",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Magne J\u00f8rgensen",
+    "to": "Dag Sj\u00f8berg",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Magne J\u00f8rgensen",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nils Brede Moe",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nils Brede Moe",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Nils Brede Moe",
+    "to": "Dag Sj\u00f8berg",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Danilo Caivano",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Danilo Caivano",
+    "to": "Marcela Genero",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Maya Daneva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Ali Babar",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Xavier Franch",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ali Babar",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ali Babar",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ali Babar",
+    "to": "Paris Avgeriou",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ali Babar",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ali Babar",
+    "to": "Giovanni Cantone",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Ali Babar",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Paris Avgeriou",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Paris Avgeriou",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Paris Avgeriou",
+    "to": "Tomi M\u00e4nnist\u00f6",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Giovanni Cantone",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Martin Solari",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Oscar Pastor",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sira Vegas",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Oscar Pastor",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Oscar Pastor",
+    "to": "Marcela Genero",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Oscar Pastor",
+    "to": "Maya Daneva",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sandro Morasca",
+    "to": "Jeffrey Carver",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sandro Morasca",
+    "to": "Marcela Genero",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Sandro Morasca",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jeffrey Carver",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jeffrey Carver",
+    "to": "Maria Teresa Baldassarre",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jeffrey Carver",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Jeffrey Carver",
+    "to": "Dan Port",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Maria Teresa Baldassarre",
+    "to": "Marcela Genero",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Maria Teresa Baldassarre",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcela Genero",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcela Genero",
+    "to": "Martin Solari",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcela Genero",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Marcela Genero",
+    "to": "Giovanni Cantone",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dan Port",
+    "to": "Carolyn Seaman",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dan Port",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dan Port",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dan Port",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Tomi M\u00e4nnist\u00f6",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Rahul Mohanani",
+    "to": "Burak Turhan",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Carolyn Seaman",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Carolyn Seaman",
+    "to": "Dieter Rombach",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Carolyn Seaman",
+    "to": "Maurizio Morisio",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dag Sj\u00f8berg",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dag Sj\u00f8berg",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dag Sj\u00f8berg",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Burak Turhan",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Burak Turhan",
+    "to": "Stefan Wagner",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Stefan Wagner",
+    "to": "Dietmar Pfahl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Stefan Wagner",
+    "to": "Audris Mockus",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dietmar Pfahl",
+    "to": "Rogardt Heldal",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dietmar Pfahl",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dietmar Pfahl",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dietmar Pfahl",
+    "to": "Stefan Biffl",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Maurizio Morisio",
+    "to": "Victor Basili",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Victor Basili",
+    "to": "Dieter Rombach",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Victor Basili",
+    "to": "Koji Torii",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Victor Basili",
+    "to": "Giovanni Cantone",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Victor Basili",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Giovanni Cantone",
+    "to": "Dieter Rombach",
+    "width": 1,
+    "color": "#999999"
+  },
+  {
+    "from": "Dieter Rombach",
+    "to": "Ross Jeffery",
+    "width": 1,
+    "color": "#999999"
+  }
+]);
+        
+        // Network options
+        var options = {
+            physics: {
+                enabled: false  // Start with fixed positions for circular layout
+            },
+            nodes: {
+                borderWidth: 2,
+                shadow: true,
+                chosen: {
+                    node: function(values, id, selected, hovering) {
+                        // Highlight the node but keep original font color
+                        if (values.color && typeof values.color === 'object') {
+                            values.color.background = '#ff6b6b';
+                            values.color.border = '#ff0000';
+                        } else {
+                            values.color = '#ff6b6b';
+                        }
+                        values.size = values.size * 1.2;
+                    }
+                }
+            },
+            edges: {
+                color: {
+                    color: '#999999',
+                    highlight: '#ff6b6b'
+                },
+                width: 1,
+                smooth: {
+                    enabled: true,
+                    type: 'continuous'
+                }
+            },
+            physics: {
+                enabled: true,
+                stabilization: {
+                    enabled: true,
+                    iterations: 1000
+                }
+            },
+            interaction: {
+                dragNodes: true,
+                dragView: true,
+                zoomView: true,
+                selectConnectedEdges: true,
+                hover: true,
+                tooltipDelay: 300
+            }
+        };
+        
+        // Create network
+        var container = document.getElementById('network');
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        
+        console.log('Creating network with', nodes.length, 'nodes and', edges.length, 'edges');
+        console.log('Container element:', container);
+        
+        try {
+            var network = new vis.Network(container, data, options);
+            console.log('Network created successfully');
+            
+            // Set spring layout after creation
+            setTimeout(function() {
+                console.log('Setting spring layout');
+                setLayout('spring');
+            }, 1000);
+            
+        } catch (error) {
+            console.error('Error creating network:', error);
+            document.getElementById('network').innerHTML = '<p style="color: red; padding: 20px;">Error creating network: ' + error.message + '</p>';
+        }
+        
+        // Event handlers
+        network.on('click', function(params) {
+            if (params.nodes.length > 0) {
+                var nodeId = params.nodes[0];
+                var node = nodes.get(nodeId);
+                var connectedEdges = network.getConnectedEdges(nodeId);
+                
+                document.getElementById('node-name').textContent = node.label;
+                document.getElementById('node-details').innerHTML = 
+                    'Collaborations: ' + connectedEdges.length + '<br>' +
+                    'Click and drag to move this node<br>' +
+                    'Double-click to focus on this researcher';
+                document.getElementById('info-panel').style.display = 'block';
+            } else {
+                document.getElementById('info-panel').style.display = 'none';
+            }
+        });
+        
+        network.on('doubleClick', function(params) {
+            if (params.nodes.length > 0) {
+                network.focus(params.nodes[0], {
+                    scale: 1.5,
+                    animation: true
+                });
+            }
+        });
+        
+        // Control functions
+        function setLayout(type) {
+            var updateOptions = {};
+            
+            switch(type) {
+                case 'spring':
+                    // Reset to original spring layout positions and disable physics
+                    updateOptions = {
+                        physics: { 
+                            enabled: false,
+                            stabilization: { enabled: false }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false }
+                        }
+                    };
+                    // Reset node positions to original spring layout
+                    nodes.forEach(function(node) {
+                        network.moveNode(node.id, node.x, node.y);
+                    });
+                    break;
+                case 'physics':
+                    updateOptions = {
+                        physics: { 
+                            enabled: true,
+                            stabilization: { enabled: true }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false },
+                            randomSeed: 2 
+                        }
+                    };
+                    break;
+                case 'random':
+                    updateOptions = {
+                        physics: { 
+                            enabled: false,
+                            stabilization: { enabled: false }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false },
+                            randomSeed: Math.floor(Math.random() * 1000) 
+                        }
+                    };
+                    break;
+            }
+            
+            network.setOptions(updateOptions);
+            // Fit the network after layout change
+            setTimeout(function() {
+                network.fit();
+            }, 100);
+        }
+        
+        function fitNetwork() {
+            network.fit();
+        }
+        
+        function togglePhysics() {
+            var currentPhysics = network.physics.physicsEnabled;
+            network.setOptions({ physics: { enabled: !currentPhysics } });
+        }
+        
+        function resetZoom() {
+            network.moveTo({
+                position: {x: 0, y: 0},
+                scale: 1,
+                animation: true
+            });
+        }
+        
+        // Hide info panel when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('#info-panel') && !event.target.closest('#network')) {
+                document.getElementById('info-panel').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

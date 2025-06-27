@@ -4,8 +4,15 @@ import networkx as nx
 import time
 import matplotlib.pyplot as plt
 import json
-from datetime import datetime
 from urllib.parse import quote
+from enhanced_name_utils import EnhancedNameMatcher
+from isern_utils import load_isern_members
+
+# Initialize enhanced name matcher
+name_matcher = EnhancedNameMatcher(similarity_threshold=0.85)
+
+# Load ISERN members from JSON file
+isern_members = load_isern_members('isern_members_enhanced.json')
 
 # Founding members of ISERN with their organizations and contacts
 founding_isern_members = [
@@ -17,134 +24,18 @@ founding_isern_members = [
     {"organization": "VTT Electronics, Technical Research Centre of Finland", "contact": "Dr. Markku Oivo"}
 ]
 
-
-# Full ISERN member list from the official page [1][3]
-isern_members = [
-    "Casper Lassenius",
-    "Eray Tüzün",
-    "Nauman bin Ali",
-    "Hakan Erdogmus",
-    "Robert Feldt",
-    "Guilherme Travassos",
-    "Michael Felderer",
-    "Markku Oivo",
-    "Fabio Q.B. da Silva",
-    "Daniel Mendez Fernandez",
-    "Andreas Jedlitschka",
-    "Barbara Russo",
-    "Qing Wang",
-    "Per Runeson",
-    "Maria Paasivaara",
-    "Clemente Izurieta",
-    "He Zhang",
-    "Kenichi Matsumoto",
-    "Jingyu Li",
-    "Laurie Williams",
-    "Takeshi Hayama",
-    "Shinji Kusumoto",
-    "Minghui Zhou",
-    "Marcos Kalinowski",
-    "Rafael Prikladnicki",
-    "Marcus Ciolkowski",
-    "Desmond Greer",
-    "Ayşe Başar",
-    "Magne Jørgensen",
-    "Nils Brede Moe",
-    "Danilo Caivano",
-    "Xavier Franch",
-    "Ali Babar",
-    "Paris Avgeriou",
-    "Sira Vegas",
-    "Oscar Pastor",
-    "Sandro Morasca",
-    "Jeffrey Carver",
-    "Maria Teresa Baldassarre",
-    "Marcela Genero",
-    "Dan Port",
-    "Tomi Männistö",
-    "Rahul Mohanani",
-    "Carolyn Seaman",
-    "Dag Sjøberg",
-    "Burak Turhan",
-    "Stefan Wagner",
-    "Dietmar Pfahl",
-    "Audris Mockus",
-    "Maya Daneva",
-    "Martin Solari",
-    "Maurizio Morisio",
-    "Stefan Biffl",
-    "Rogardt Heldal",
-    "Victor Basili",
-    "Giovanni Cantone",
-    "Dieter Rombach",
-    "Ross Jeffery"
-    # Add or adjust names as needed for completeness
-]
-
-# Normalize names for matching (e.g., lowercase, strip accents if needed)
-def normalize(name):
-    return name.lower().replace("ö", "o").replace("ü", "u").replace("ç", "c")  # expand as needed
-
-def names_match(name1, name2):
-    """Check if two names likely refer to the same person, handling common variations"""
-    if name1 == name2:
-        return True
-    
-    # Normalize both names
-    norm1 = normalize(name1)
-    norm2 = normalize(name2)
-    
-    if norm1 == norm2:
-        return True
-    
-    # Split into parts for more flexible matching
-    parts1 = norm1.split()
-    parts2 = norm2.split()
-    
-    if len(parts1) < 2 or len(parts2) < 2:
+def is_isern_member(author_name):
+    """Check if an author is an ISERN member using enhanced name matching"""
+    if not author_name:
         return False
     
-    # Get first and last names
-    first1, last1 = parts1[0], parts1[-1]
-    first2, last2 = parts2[0], parts2[-1]
+    # Use enhanced name matching to find potential ISERN members
+    matches = name_matcher.find_best_matches(author_name, isern_members, top_k=1)
     
-    # Last names must match
-    if last1 != last2:
-        return False
-    
-    # Check first name variations
-    # Full match (Daniel = Daniel)
-    if first1 == first2:
-        return True
-    
-    # Initial match (D. = Daniel or Dan)
-    if (len(first1) == 2 and first1.endswith('.') and first1[0] == first2[0]) or \
-       (len(first2) == 2 and first2.endswith('.') and first2[0] == first1[0]):
-        return True
-    
-    # Common nickname variations
-    nickname_map = {
-        'daniel': ['dan', 'danny'],
-        'dan': ['daniel', 'danny'],
-        'william': ['bill', 'will'],
-        'bill': ['william'],
-        'robert': ['bob', 'rob'],
-        'bob': ['robert'],
-        'richard': ['rick', 'dick'],
-        'rick': ['richard'],
-        'michael': ['mike'],
-        'mike': ['michael'],
-        'christopher': ['chris'],
-        'chris': ['christopher'],
-        'anthony': ['tony'],
-        'tony': ['anthony'],
-        'victor': ['vic'],
-        'vic': ['victor']
-    }
-    
-    if first1 in nickname_map and first2 in nickname_map[first1]:
-        return True
-    if first2 in nickname_map and first1 in nickname_map[first2]:
+    if matches and matches[0][1] >= name_matcher.similarity_threshold:
+        matched_name = matches[0][0]
+        score = matches[0][1]
+        print(f"    ISERN member match: {author_name} -> {matched_name} (score: {score:.3f})")
         return True
     
     return False
@@ -162,8 +53,8 @@ def search_dblp_author(author_name):
             print(f"  Found {len(author_variations)} author variations from DBLP")
             variations = author_variations
         else:
-            print(f"  No author found in DBLP author search, using manual variations")
-            variations = generate_manual_variations(author_name)
+            print(f"  No author found in DBLP author search, using enhanced variations")
+            variations = generate_name_variations(author_name)
         
         best_publications = []
         best_variation = ""
@@ -241,7 +132,7 @@ def get_dblp_author_variations(author_name):
                 if 'info' in hit and 'author' in hit['info']:
                     # Add the main author name
                     main_author = hit['info']['author']
-                    if names_match(author_name, main_author):
+                    if name_matcher.is_likely_same_person(author_name, main_author):
                         variations.append(main_author)
                     
                     # Add aliases if they exist
@@ -251,7 +142,7 @@ def get_dblp_author_variations(author_name):
                             aliases = [aliases]
                         
                         for alias in aliases:
-                            if names_match(author_name, alias):
+                            if name_matcher.is_likely_same_person(author_name, alias):
                                 variations.append(alias)
         
         # Remove duplicates
@@ -263,33 +154,23 @@ def get_dblp_author_variations(author_name):
         print(f"    Error in DBLP author search: {e}")
         return []
 
-def generate_manual_variations(author_name):
-    """Generate manual name variations as fallback"""
-    variations = [author_name]
+def generate_name_variations(author_name):
+    """Generate name variations using enhanced name matching system"""
+    # Use the enhanced name matcher to generate comprehensive variations
+    variations = name_matcher.generate_name_variations(author_name)
     
-    # Add common variations
-    name_parts = author_name.split()
-    if len(name_parts) >= 2:
-        # Try First Last format
-        variations.append(f"{name_parts[0]} {name_parts[-1]}")
-        # Try Last, First format
-        variations.append(f"{name_parts[-1]}, {name_parts[0]}")
-        # Try F. Last format
-        variations.append(f"{name_parts[0][0]}. {name_parts[-1]}")
+    # Convert set to list and add the original name
+    variation_list = [author_name] + list(variations)
     
-    # Special cases for known ISERN members
-    if "Dan Port" in author_name:
-        variations.extend(["Daniel Port", "D. Port"])
-    elif "Victor Basili" in author_name:
-        variations.extend(["Victor R. Basili", "V.R. Basili", "V. Basili"])
-    elif "Guilherme Travassos" in author_name:
-        variations.extend(["Guilherme H. Travassos", "G. H. Travassos"])
-    elif "Fabio Q.B. da Silva" in author_name:
-        variations.extend(["Fábio Q. B. da Silva", "Fabio Queda Bueno da Silva"])
-    elif "Daniel Mendez Fernandez" in author_name:
-        variations.extend(["Daniel Méndez", "Daniel Mendez", "D. Méndez"])
+    # Remove duplicates while preserving order
+    unique_variations = []
+    seen = set()
+    for variation in variation_list:
+        if variation not in seen:
+            unique_variations.append(variation)
+            seen.add(variation)
     
-    return variations
+    return unique_variations
 
 def get_coauthors_from_publication(pub):
     """Extract coauthor names from a publication"""
@@ -321,12 +202,16 @@ for i, member in enumerate(isern_members, 1):
             coauthors = get_coauthors_from_publication(pub)
             
             for coauthor in coauthors:
-                # Check if this coauthor is also an ISERN member using improved matching
-                for other_member in isern_members:
-                    if names_match(coauthor, other_member) and other_member != member:
-                        G.add_edge(member, other_member)
-                        print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
-                        break
+                # Check if this coauthor is also an ISERN member using enhanced matching
+                if is_isern_member(coauthor):
+                    # Find the best matching ISERN member name
+                    matches = name_matcher.find_best_matches(coauthor, isern_members, top_k=1)
+                    if matches:
+                        other_member = matches[0][0]
+                        if other_member != member:
+                            G.add_edge(member, other_member)
+                            print(f"  Found collaboration: {member} <-> {other_member} (via coauthor '{coauthor}')")
+                            break
         
         # Be respectful to DBLP API
         time.sleep(0.5)
@@ -346,10 +231,9 @@ for edge in G.edges():
     print(edge)
 
 # Save graph data to files
-timestamp = datetime.now().strftime("%Y%m%d")
 
 # Save as GraphML (preserves node/edge attributes and can be read by many tools)
-graphml_filename = f"isern_coauthorship_graph_{timestamp}.graphml"
+graphml_filename = "isern_coauthorship_graph.graphml"
 nx.write_graphml(G, graphml_filename)
 print(f"\nGraph saved as GraphML: {graphml_filename}")
 
@@ -358,20 +242,19 @@ graph_data = {
     "nodes": [{"id": node, "label": node} for node in G.nodes()],
     "edges": [{"source": edge[0], "target": edge[1]} for edge in G.edges()],
     "metadata": {
-        "timestamp": timestamp,
         "num_nodes": G.number_of_nodes(),
         "num_edges": G.number_of_edges(),
         "connected_components": nx.number_connected_components(G)
     }
 }
 
-json_filename = f"isern_coauthorship_graph_{timestamp}.json"
+json_filename = "isern_coauthorship_graph.json"
 with open(json_filename, 'w') as f:
     json.dump(graph_data, f, indent=2)
 print(f"Graph saved as JSON: {json_filename}")
 
 # Save edge list (simple format)
-edgelist_filename = f"isern_coauthorship_edgelist_{timestamp}.txt"
+edgelist_filename = "isern_coauthorship_edgelist.txt"
 nx.write_edgelist(G, edgelist_filename)
 print(f"Graph saved as edge list: {edgelist_filename}")
 
@@ -391,7 +274,7 @@ plt.axis('off')
 plt.tight_layout()
 
 # Save the plot
-plot_filename = f"isern_coauthorship_graph_{timestamp}.png"
+plot_filename = "isern_coauthorship_graph.png"
 plt.savefig(plot_filename, dpi=300, bbox_inches='tight', 
            facecolor='white', edgecolor='none')
 print(f"Graph visualization saved: {plot_filename}")

@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="node" attr.name="level" attr.type="long"/>
+<key id="d0" for="node" attr.name="isern_number" attr.type="long"/>
+<graph edgedefault="undirected"><node id="Casper Lassenius">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Eray Tüzün">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Nauman bin Ali">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Hakan Erdogmus">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Robert Feldt">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Guilherme Travassos">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Michael Felderer">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Markku Oivo">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="Fabio Q.B. da Silva">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Daniel Mendez Fernandez">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Andreas Jedlitschka">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Barbara Russo">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Qing Wang">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Per Runeson">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Maria Paasivaara">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Clemente Izurieta">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="He Zhang">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Kenichi Matsumoto">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Jingyu Li">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Laurie Williams">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Takeshi Hayama">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Shinji Kusumoto">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Minghui Zhou">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Marcos Kalinowski">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Rafael Prikladnicki">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Marcus Ciolkowski">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Desmond Greer">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Ayşe Başar">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Magne Jørgensen">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Nils Brede Moe">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Danilo Caivano">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Xavier Franch">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Ali Babar">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Paris Avgeriou">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Sira Vegas">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Oscar Pastor">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Sandro Morasca">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Jeffrey Carver">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Maria Teresa Baldassarre">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Marcela Genero">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Dan Port">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Tomi Männistö">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Rahul Mohanani">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Carolyn Seaman">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Dag Sjøberg">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Burak Turhan">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Stefan Wagner">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Dietmar Pfahl">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Audris Mockus">
+  <data key="d0">3</data>
+  <data key="d1">3</data>
+</node>
+<node id="Maya Daneva">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Martin Solari">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Maurizio Morisio">
+  <data key="d0">1</data>
+  <data key="d1">1</data>
+</node>
+<node id="Stefan Biffl">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Rogardt Heldal">
+  <data key="d0">2</data>
+  <data key="d1">2</data>
+</node>
+<node id="Victor Basili">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="Giovanni Cantone">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="Dieter Rombach">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="Ross Jeffery">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<node id="Koji Torii">
+  <data key="d0">0</data>
+  <data key="d1">0</data>
+</node>
+<edge source="Casper Lassenius" target="Maria Paasivaara"/>
+<edge source="Casper Lassenius" target="Magne Jørgensen"/>
+<edge source="Casper Lassenius" target="Tomi Männistö"/>
+<edge source="Casper Lassenius" target="Nils Brede Moe"/>
+<edge source="Casper Lassenius" target="Stefan Wagner"/>
+<edge source="Casper Lassenius" target="Rafael Prikladnicki"/>
+<edge source="Casper Lassenius" target="Markku Oivo"/>
+<edge source="Casper Lassenius" target="Daniel Mendez Fernandez"/>
+<edge source="Eray Tüzün" target="Michael Felderer"/>
+<edge source="Eray Tüzün" target="Carolyn Seaman"/>
+<edge source="Eray Tüzün" target="Hakan Erdogmus"/>
+<edge source="Eray Tüzün" target="Qing Wang"/>
+<edge source="Eray Tüzün" target="Dietmar Pfahl"/>
+<edge source="Eray Tüzün" target="Rogardt Heldal"/>
+<edge source="Eray Tüzün" target="Robert Feldt"/>
+<edge source="Nauman bin Ali" target="Fabio Q.B. da Silva"/>
+<edge source="Nauman bin Ali" target="Dietmar Pfahl"/>
+<edge source="Nauman bin Ali" target="Paris Avgeriou"/>
+<edge source="Nauman bin Ali" target="Maria Teresa Baldassarre"/>
+<edge source="Nauman bin Ali" target="Ali Babar"/>
+<edge source="Hakan Erdogmus" target="He Zhang"/>
+<edge source="Hakan Erdogmus" target="Magne Jørgensen"/>
+<edge source="Hakan Erdogmus" target="Sira Vegas"/>
+<edge source="Hakan Erdogmus" target="Burak Turhan"/>
+<edge source="Hakan Erdogmus" target="Carolyn Seaman"/>
+<edge source="Hakan Erdogmus" target="Laurie Williams"/>
+<edge source="Hakan Erdogmus" target="Stefan Biffl"/>
+<edge source="Hakan Erdogmus" target="Maurizio Morisio"/>
+<edge source="Hakan Erdogmus" target="Markku Oivo"/>
+<edge source="Robert Feldt" target="Michael Felderer"/>
+<edge source="Robert Feldt" target="Qing Wang"/>
+<edge source="Robert Feldt" target="Carolyn Seaman"/>
+<edge source="Robert Feldt" target="Per Runeson"/>
+<edge source="Robert Feldt" target="Stefan Wagner"/>
+<edge source="Robert Feldt" target="Daniel Mendez Fernandez"/>
+<edge source="Robert Feldt" target="Andreas Jedlitschka"/>
+<edge source="Robert Feldt" target="Markku Oivo"/>
+<edge source="Guilherme Travassos" target="Martin Solari"/>
+<edge source="Guilherme Travassos" target="Xavier Franch"/>
+<edge source="Guilherme Travassos" target="Fabio Q.B. da Silva"/>
+<edge source="Guilherme Travassos" target="Michael Felderer"/>
+<edge source="Guilherme Travassos" target="Daniel Mendez Fernandez"/>
+<edge source="Guilherme Travassos" target="Rafael Prikladnicki"/>
+<edge source="Guilherme Travassos" target="Marcos Kalinowski"/>
+<edge source="Guilherme Travassos" target="Oscar Pastor"/>
+<edge source="Guilherme Travassos" target="Danilo Caivano"/>
+<edge source="Guilherme Travassos" target="Jeffrey Carver"/>
+<edge source="Guilherme Travassos" target="Marcus Ciolkowski"/>
+<edge source="Guilherme Travassos" target="Victor Basili"/>
+<edge source="Guilherme Travassos" target="Maurizio Morisio"/>
+<edge source="Michael Felderer" target="Daniel Mendez Fernandez"/>
+<edge source="Michael Felderer" target="Xavier Franch"/>
+<edge source="Michael Felderer" target="Marcos Kalinowski"/>
+<edge source="Michael Felderer" target="Barbara Russo"/>
+<edge source="Michael Felderer" target="Clemente Izurieta"/>
+<edge source="Michael Felderer" target="Dietmar Pfahl"/>
+<edge source="Michael Felderer" target="Per Runeson"/>
+<edge source="Michael Felderer" target="Stefan Wagner"/>
+<edge source="Michael Felderer" target="Rogardt Heldal"/>
+<edge source="Michael Felderer" target="Laurie Williams"/>
+<edge source="Michael Felderer" target="Stefan Biffl"/>
+<edge source="Michael Felderer" target="Jeffrey Carver"/>
+<edge source="Michael Felderer" target="Andreas Jedlitschka"/>
+<edge source="Michael Felderer" target="Sira Vegas"/>
+<edge source="Markku Oivo" target="Jeffrey Carver"/>
+<edge source="Markku Oivo" target="Victor Basili"/>
+<edge source="Markku Oivo" target="Xavier Franch"/>
+<edge source="Markku Oivo" target="He Zhang"/>
+<edge source="Markku Oivo" target="Sira Vegas"/>
+<edge source="Markku Oivo" target="Stefan Wagner"/>
+<edge source="Markku Oivo" target="Burak Turhan"/>
+<edge source="Markku Oivo" target="Rafael Prikladnicki"/>
+<edge source="Markku Oivo" target="Daniel Mendez Fernandez"/>
+<edge source="Markku Oivo" target="Tomi Männistö"/>
+<edge source="Markku Oivo" target="Andreas Jedlitschka"/>
+<edge source="Markku Oivo" target="Barbara Russo"/>
+<edge source="Markku Oivo" target="Danilo Caivano"/>
+<edge source="Markku Oivo" target="Maurizio Morisio"/>
+<edge source="Markku Oivo" target="Dieter Rombach"/>
+<edge source="Markku Oivo" target="Ali Babar"/>
+<edge source="Fabio Q.B. da Silva" target="Jingyu Li"/>
+<edge source="Fabio Q.B. da Silva" target="Ayşe Başar"/>
+<edge source="Fabio Q.B. da Silva" target="Maria Teresa Baldassarre"/>
+<edge source="Fabio Q.B. da Silva" target="Oscar Pastor"/>
+<edge source="Fabio Q.B. da Silva" target="Carolyn Seaman"/>
+<edge source="Fabio Q.B. da Silva" target="Marcus Ciolkowski"/>
+<edge source="Fabio Q.B. da Silva" target="Rafael Prikladnicki"/>
+<edge source="Fabio Q.B. da Silva" target="He Zhang"/>
+<edge source="Fabio Q.B. da Silva" target="Qing Wang"/>
+<edge source="Fabio Q.B. da Silva" target="Andreas Jedlitschka"/>
+<edge source="Fabio Q.B. da Silva" target="Per Runeson"/>
+<edge source="Fabio Q.B. da Silva" target="Marcos Kalinowski"/>
+<edge source="Daniel Mendez Fernandez" target="Qing Wang"/>
+<edge source="Daniel Mendez Fernandez" target="Dan Port"/>
+<edge source="Daniel Mendez Fernandez" target="Maya Daneva"/>
+<edge source="Daniel Mendez Fernandez" target="Xavier Franch"/>
+<edge source="Daniel Mendez Fernandez" target="Marcos Kalinowski"/>
+<edge source="Daniel Mendez Fernandez" target="Stefan Wagner"/>
+<edge source="Daniel Mendez Fernandez" target="Rahul Mohanani"/>
+<edge source="Daniel Mendez Fernandez" target="Paris Avgeriou"/>
+<edge source="Daniel Mendez Fernandez" target="Nils Brede Moe"/>
+<edge source="Daniel Mendez Fernandez" target="Dag Sjøberg"/>
+<edge source="Daniel Mendez Fernandez" target="Stefan Biffl"/>
+<edge source="Daniel Mendez Fernandez" target="Maria Paasivaara"/>
+<edge source="Daniel Mendez Fernandez" target="Jeffrey Carver"/>
+<edge source="Daniel Mendez Fernandez" target="He Zhang"/>
+<edge source="Daniel Mendez Fernandez" target="Jingyu Li"/>
+<edge source="Daniel Mendez Fernandez" target="Rafael Prikladnicki"/>
+<edge source="Daniel Mendez Fernandez" target="Desmond Greer"/>
+<edge source="Daniel Mendez Fernandez" target="Ali Babar"/>
+<edge source="Daniel Mendez Fernandez" target="Oscar Pastor"/>
+<edge source="Andreas Jedlitschka" target="Marcus Ciolkowski"/>
+<edge source="Andreas Jedlitschka" target="Dieter Rombach"/>
+<edge source="Andreas Jedlitschka" target="Xavier Franch"/>
+<edge source="Andreas Jedlitschka" target="Maurizio Morisio"/>
+<edge source="Andreas Jedlitschka" target="Burak Turhan"/>
+<edge source="Andreas Jedlitschka" target="Tomi Männistö"/>
+<edge source="Andreas Jedlitschka" target="Sira Vegas"/>
+<edge source="Andreas Jedlitschka" target="Dietmar Pfahl"/>
+<edge source="Andreas Jedlitschka" target="Ayşe Başar"/>
+<edge source="Barbara Russo" target="Qing Wang"/>
+<edge source="Barbara Russo" target="Jingyu Li"/>
+<edge source="Barbara Russo" target="Sandro Morasca"/>
+<edge source="Qing Wang" target="He Zhang"/>
+<edge source="Qing Wang" target="Jingyu Li"/>
+<edge source="Qing Wang" target="Minghui Zhou"/>
+<edge source="Qing Wang" target="Desmond Greer"/>
+<edge source="Qing Wang" target="Ayşe Başar"/>
+<edge source="Qing Wang" target="Ali Babar"/>
+<edge source="Per Runeson" target="Maria Teresa Baldassarre"/>
+<edge source="Per Runeson" target="Dag Sjøberg"/>
+<edge source="Per Runeson" target="Dietmar Pfahl"/>
+<edge source="Per Runeson" target="Danilo Caivano"/>
+<edge source="Maria Paasivaara" target="Nils Brede Moe"/>
+<edge source="Maria Paasivaara" target="Jeffrey Carver"/>
+<edge source="Clemente Izurieta" target="Carolyn Seaman"/>
+<edge source="Clemente Izurieta" target="Paris Avgeriou"/>
+<edge source="Clemente Izurieta" target="Laurie Williams"/>
+<edge source="He Zhang" target="Minghui Zhou"/>
+<edge source="He Zhang" target="Jingyu Li"/>
+<edge source="He Zhang" target="Dan Port"/>
+<edge source="He Zhang" target="Laurie Williams"/>
+<edge source="He Zhang" target="Kenichi Matsumoto"/>
+<edge source="He Zhang" target="Ali Babar"/>
+<edge source="He Zhang" target="Paris Avgeriou"/>
+<edge source="He Zhang" target="Oscar Pastor"/>
+<edge source="Kenichi Matsumoto" target="Shinji Kusumoto"/>
+<edge source="Kenichi Matsumoto" target="Koji Torii"/>
+<edge source="Kenichi Matsumoto" target="Takeshi Hayama"/>
+<edge source="Jingyu Li" target="Minghui Zhou"/>
+<edge source="Jingyu Li" target="Xavier Franch"/>
+<edge source="Jingyu Li" target="Nils Brede Moe"/>
+<edge source="Jingyu Li" target="Maurizio Morisio"/>
+<edge source="Jingyu Li" target="Ali Babar"/>
+<edge source="Laurie Williams" target="Minghui Zhou"/>
+<edge source="Laurie Williams" target="Jeffrey Carver"/>
+<edge source="Laurie Williams" target="Carolyn Seaman"/>
+<edge source="Laurie Williams" target="Victor Basili"/>
+<edge source="Minghui Zhou" target="Audris Mockus"/>
+<edge source="Minghui Zhou" target="Marcos Kalinowski"/>
+<edge source="Minghui Zhou" target="Jeffrey Carver"/>
+<edge source="Minghui Zhou" target="Ali Babar"/>
+<edge source="Marcos Kalinowski" target="Maria Teresa Baldassarre"/>
+<edge source="Marcos Kalinowski" target="Paris Avgeriou"/>
+<edge source="Marcos Kalinowski" target="Stefan Biffl"/>
+<edge source="Marcos Kalinowski" target="Martin Solari"/>
+<edge source="Marcos Kalinowski" target="Dietmar Pfahl"/>
+<edge source="Marcos Kalinowski" target="Stefan Wagner"/>
+<edge source="Marcos Kalinowski" target="Marcela Genero"/>
+<edge source="Marcos Kalinowski" target="Rafael Prikladnicki"/>
+<edge source="Marcos Kalinowski" target="Oscar Pastor"/>
+<edge source="Rafael Prikladnicki" target="Paris Avgeriou"/>
+<edge source="Rafael Prikladnicki" target="Dietmar Pfahl"/>
+<edge source="Rafael Prikladnicki" target="Jeffrey Carver"/>
+<edge source="Rafael Prikladnicki" target="Stefan Wagner"/>
+<edge source="Rafael Prikladnicki" target="Martin Solari"/>
+<edge source="Rafael Prikladnicki" target="Rogardt Heldal"/>
+<edge source="Rafael Prikladnicki" target="Carolyn Seaman"/>
+<edge source="Marcus Ciolkowski" target="Paris Avgeriou"/>
+<edge source="Marcus Ciolkowski" target="Dietmar Pfahl"/>
+<edge source="Marcus Ciolkowski" target="Dieter Rombach"/>
+<edge source="Marcus Ciolkowski" target="Giovanni Cantone"/>
+<edge source="Marcus Ciolkowski" target="Stefan Biffl"/>
+<edge source="Marcus Ciolkowski" target="Sira Vegas"/>
+<edge source="Marcus Ciolkowski" target="Sandro Morasca"/>
+<edge source="Desmond Greer" target="Stefan Wagner"/>
+<edge source="Ayşe Başar" target="Burak Turhan"/>
+<edge source="Ayşe Başar" target="Maria Teresa Baldassarre"/>
+<edge source="Ayşe Başar" target="Audris Mockus"/>
+<edge source="Ayşe Başar" target="Jeffrey Carver"/>
+<edge source="Ayşe Başar" target="Maurizio Morisio"/>
+<edge source="Ayşe Başar" target="Ali Babar"/>
+<edge source="Ayşe Başar" target="Oscar Pastor"/>
+<edge source="Magne Jørgensen" target="Dag Sjøberg"/>
+<edge source="Magne Jørgensen" target="Oscar Pastor"/>
+<edge source="Nils Brede Moe" target="Paris Avgeriou"/>
+<edge source="Nils Brede Moe" target="Dag Sjøberg"/>
+<edge source="Danilo Caivano" target="Maria Teresa Baldassarre"/>
+<edge source="Danilo Caivano" target="Marcela Genero"/>
+<edge source="Xavier Franch" target="Oscar Pastor"/>
+<edge source="Xavier Franch" target="Maya Daneva"/>
+<edge source="Xavier Franch" target="Tomi Männistö"/>
+<edge source="Xavier Franch" target="Stefan Wagner"/>
+<edge source="Xavier Franch" target="Burak Turhan"/>
+<edge source="Xavier Franch" target="Rogardt Heldal"/>
+<edge source="Xavier Franch" target="Stefan Biffl"/>
+<edge source="Xavier Franch" target="Paris Avgeriou"/>
+<edge source="Xavier Franch" target="Dan Port"/>
+<edge source="Xavier Franch" target="Ali Babar"/>
+<edge source="Xavier Franch" target="Jeffrey Carver"/>
+<edge source="Ali Babar" target="Stefan Biffl"/>
+<edge source="Ali Babar" target="Giovanni Cantone"/>
+<edge source="Ali Babar" target="Paris Avgeriou"/>
+<edge source="Ali Babar" target="Oscar Pastor"/>
+<edge source="Ali Babar" target="Tomi Männistö"/>
+<edge source="Ali Babar" target="Ross Jeffery"/>
+<edge source="Paris Avgeriou" target="Rogardt Heldal"/>
+<edge source="Paris Avgeriou" target="Carolyn Seaman"/>
+<edge source="Paris Avgeriou" target="Tomi Männistö"/>
+<edge source="Sira Vegas" target="Giovanni Cantone"/>
+<edge source="Sira Vegas" target="Martin Solari"/>
+<edge source="Sira Vegas" target="Burak Turhan"/>
+<edge source="Sira Vegas" target="Oscar Pastor"/>
+<edge source="Sira Vegas" target="Dietmar Pfahl"/>
+<edge source="Sira Vegas" target="Jeffrey Carver"/>
+<edge source="Sira Vegas" target="Victor Basili"/>
+<edge source="Oscar Pastor" target="Maya Daneva"/>
+<edge source="Oscar Pastor" target="Marcela Genero"/>
+<edge source="Oscar Pastor" target="Dan Port"/>
+<edge source="Sandro Morasca" target="Jeffrey Carver"/>
+<edge source="Sandro Morasca" target="Marcela Genero"/>
+<edge source="Sandro Morasca" target="Victor Basili"/>
+<edge source="Jeffrey Carver" target="Victor Basili"/>
+<edge source="Jeffrey Carver" target="Maria Teresa Baldassarre"/>
+<edge source="Jeffrey Carver" target="Dietmar Pfahl"/>
+<edge source="Jeffrey Carver" target="Dan Port"/>
+</graph></graphml>
