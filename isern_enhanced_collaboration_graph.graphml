@@ -30,13 +30,13 @@
 <node id="Robert Feldt">
   <data key="d0">14</data>
   <data key="d1">0.24137931034482757</data>
-  <data key="d2">0.00611082830478469</data>
+  <data key="d2">0.006110828304784691</data>
   <data key="d3">1</data>
 </node>
 <node id="Guilherme Travassos">
   <data key="d0">19</data>
   <data key="d1">0.3275862068965517</data>
-  <data key="d2">0.028077640599438698</data>
+  <data key="d2">0.0280776405994387</data>
   <data key="d3">1</data>
 </node>
 <node id="Michael Felderer">
@@ -48,7 +48,7 @@
 <node id="Markku Oivo">
   <data key="d0">28</data>
   <data key="d1">0.48275862068965514</data>
-  <data key="d2">0.060769430907586526</data>
+  <data key="d2">0.06076943090758652</data>
   <data key="d3">0</data>
 </node>
 <node id="Fabio Q.B. da Silva">
@@ -60,7 +60,7 @@
 <node id="Daniel Mendez Fernandez">
   <data key="d0">26</data>
   <data key="d1">0.4482758620689655</data>
-  <data key="d2">0.05041759772669964</data>
+  <data key="d2">0.05041759772669963</data>
   <data key="d3">1</data>
 </node>
 <node id="Andreas Jedlitschka">
@@ -114,7 +114,7 @@
 <node id="Jingyu Li">
   <data key="d0">9</data>
   <data key="d1">0.15517241379310345</data>
-  <data key="d2">0.005617314461834567</data>
+  <data key="d2">0.005617314461834568</data>
   <data key="d3">2</data>
 </node>
 <node id="Laurie Williams">
@@ -156,7 +156,7 @@
 <node id="Marcus Ciolkowski">
   <data key="d0">11</data>
   <data key="d1">0.1896551724137931</data>
-  <data key="d2">0.010625147050792498</data>
+  <data key="d2">0.010625147050792502</data>
   <data key="d3">1</data>
 </node>
 <node id="Desmond Greer">
@@ -168,7 +168,7 @@
 <node id="Ayşe Başar">
   <data key="d0">14</data>
   <data key="d1">0.24137931034482757</data>
-  <data key="d2">0.011824494669808153</data>
+  <data key="d2">0.011824494669808155</data>
   <data key="d3">1</data>
 </node>
 <node id="Magne Jørgensen">
@@ -192,7 +192,7 @@
 <node id="Xavier Franch">
   <data key="d0">14</data>
   <data key="d1">0.24137931034482757</data>
-  <data key="d2">0.009476085231632816</data>
+  <data key="d2">0.009476085231632814</data>
   <data key="d3">1</data>
 </node>
 <node id="Ali Babar">
@@ -234,7 +234,7 @@
 <node id="Maria Teresa Baldassarre">
   <data key="d0">22</data>
   <data key="d1">0.3793103448275862</data>
-  <data key="d2">0.02660385201610504</data>
+  <data key="d2">0.026603852016105038</data>
   <data key="d3">1</data>
 </node>
 <node id="Marcela Genero">
@@ -252,7 +252,7 @@
 <node id="Tomi Männistö">
   <data key="d0">12</data>
   <data key="d1">0.20689655172413793</data>
-  <data key="d2">0.002606751728001862</data>
+  <data key="d2">0.0026067517280018615</data>
   <data key="d3">1</data>
 </node>
 <node id="Rahul Mohanani">
@@ -288,7 +288,7 @@
 <node id="Dietmar Pfahl">
   <data key="d0">29</data>
   <data key="d1">0.5</data>
-  <data key="d2">0.07639653503342454</data>
+  <data key="d2">0.07639653503342453</data>
   <data key="d3">1</data>
 </node>
 <node id="Audris Mockus">
@@ -306,7 +306,7 @@
 <node id="Martin Solari">
   <data key="d0">7</data>
   <data key="d1">0.12068965517241378</data>
-  <data key="d2">0.0022581734249837375</data>
+  <data key="d2">0.002258173424983737</data>
   <data key="d3">2</data>
 </node>
 <node id="Maurizio Morisio">

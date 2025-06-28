@@ -17,13 +17,22 @@ name_matcher = EnhancedNameMatcher(similarity_threshold=0.85)
 def ask_regenerate_file(filename, description):
     """Ask user if they want to regenerate an existing file"""
     while True:
-        response = input(f"{description} file '{filename}' already exists. Regenerate? (y/n): ").lower().strip()
-        if response in ['y', 'yes']:
+        try:
+            response = input(f"{description} file '{filename}' already exists. Regenerate? (y/n): ").lower().strip()
+            if response in ['y', 'yes']:
+                return True
+            elif response in ['n', 'no']:
+                return False
+            else:
+                print("Please enter 'y' for yes or 'n' for no.")
+        except EOFError:
+            # Handle case where no input is available (non-interactive environment)
+            print(f"\nNo input available. Using default: regenerate {description} file.")
             return True
-        elif response in ['n', 'no']:
+        except KeyboardInterrupt:
+            # Handle Ctrl+C gracefully
+            print(f"\nOperation cancelled. Skipping {description} file regeneration.")
             return False
-        else:
-            print("Please enter 'y' for yes or 'n' for no.")
 
 # Load ISERN member list from JSON file
 isern_members = load_isern_members('isern_members_enhanced.json')
@@ -325,6 +334,7 @@ def create_interactive_website(G):
             "label": label,
             "title": title,
             "level": level_for_layout,  # Use finite number for hierarchical layout
+            "isern_number": isern_number if isern_numbers and node in isern_numbers else None,  # Add ISERN number for JavaScript
             "x": x,  # Initial x position for circular layout
             "y": y,  # Initial y position for circular layout
             "shape": "ellipse",  # Oval shape that expands to fit text
@@ -604,6 +614,7 @@ def create_interactive_website(G):
                 <label>Layout:</label>
                 <button onclick="setLayout('spring')">Spring Layout</button>
                 <button onclick="setLayout('physics')">Physics</button>
+                <button onclick="setLayout('isern')">ISERN Layers</button>
                 <button onclick="setLayout('random')">Random</button>
             </div>
             <div class="control-group">
@@ -705,9 +716,6 @@ def create_interactive_website(G):
     
     html_content += """
         var options = {
-            physics: {
-                enabled: false  // Start with fixed positions for circular layout
-            },
             nodes: {
                 borderWidth: 2,
                 shadow: true,
@@ -736,10 +744,9 @@ def create_interactive_website(G):
                 }
             },
             physics: {
-                enabled: true,
+                enabled: false,  // Start with fixed positions for circular layout
                 stabilization: {
-                    enabled: true,
-                    iterations: 1000
+                    enabled: false
                 }
             },
             interaction: {
@@ -829,13 +836,98 @@ def create_interactive_website(G):
                     updateOptions = {
                         physics: { 
                             enabled: true,
-                            stabilization: { enabled: true }
+                            stabilization: { enabled: true, iterations: 2000 },
+                            barnesHut: {
+                                gravitationalConstant: -8000,  // Stronger repulsion
+                                centralGravity: 0.3,            // More central gravity to prevent drift
+                                springLength: 400,              // Longer springs for more space
+                                springConstant: 0.01,           // Weaker springs for gentler forces
+                                damping: 0.4,                   // Higher damping for faster stabilization
+                                avoidOverlap: 1.5               // Stronger overlap avoidance
+                            }
                         },
                         layout: { 
                             hierarchical: { enabled: false },
                             randomSeed: 2 
                         }
                     };
+                    break;
+                case 'isern':
+                    // Arrange nodes in horizontal layers by ISERN number
+                    updateOptions = {
+                        physics: { 
+                            enabled: false,
+                            stabilization: { enabled: false }
+                        },
+                        layout: { 
+                            hierarchical: { enabled: false }
+                        }
+                    };
+                    
+                    // Group nodes by ISERN number
+                    var levels = {};
+                    var maxLevel = 0;
+                    
+                    nodes.forEach(function(node) {
+                        var level = node.isern_number;
+                        if (level === null || level === undefined) {
+                            level = 'unknown';
+                        } else if (level === Infinity || level === 'infinity') {
+                            level = 'inf';
+                        }
+                        
+                        if (!levels[level]) {
+                            levels[level] = [];
+                        }
+                        levels[level].push(node);
+                        
+                        if (typeof level === 'number' && level > maxLevel) {
+                            maxLevel = level;
+                        }
+                    });
+                    
+                    // Position nodes in layers
+                    var layerHeight = 200;
+                    var nodeSpacing = 150;
+                    
+                    // Position founding members (level 0) at the very top
+                    if (levels[0]) {
+                        var y = 0;  // Top of screen (Y=0 is top in web coordinates)
+                        levels[0].forEach(function(node, index) {
+                            var x = (index - (levels[0].length - 1) / 2) * nodeSpacing;
+                            network.moveNode(node.id, x, y);
+                        });
+                    }
+                    
+                    // Position other numbered levels (Level 1 below Level 0, Level 2 below Level 1, etc.)
+                    for (var level = 1; level <= maxLevel; level++) {
+                        if (levels[level]) {
+                            var y = level * layerHeight;  // Increasing Y as level increases (downward)
+                            levels[level].forEach(function(node, index) {
+                                var x = (index - (levels[level].length - 1) / 2) * nodeSpacing;
+                                network.moveNode(node.id, x, y);
+                            });
+                        }
+                    }
+                    
+                    // Position disconnected nodes below all numbered levels
+                    if (levels['inf']) {
+                        var y = (maxLevel + 1) * layerHeight;  // Below all numbered levels
+                        levels['inf'].forEach(function(node, index) {
+                            var x = (index - (levels['inf'].length - 1) / 2) * nodeSpacing;
+                            network.moveNode(node.id, x, y);
+                        });
+                    }
+                    
+                    // Position unknown nodes at the very bottom
+                    if (levels['unknown']) {
+                        var y = (maxLevel + 2) * layerHeight;  // Bottom of screen
+                        levels['unknown'].forEach(function(node, index) {
+                            var x = (index - (levels['unknown'].length - 1) / 2) * nodeSpacing;
+                            network.moveNode(node.id, x, y);
+                        });
+                    }
+                    
                     break;
                 case 'random':
                     updateOptions = {
@@ -844,10 +936,18 @@ def create_interactive_website(G):
                             stabilization: { enabled: false }
                         },
                         layout: { 
-                            hierarchical: { enabled: false },
-                            randomSeed: Math.floor(Math.random() * 1000) 
+                            hierarchical: { enabled: false }
                         }
                     };
+                    
+                    // Randomly position all nodes
+                    var canvasWidth = 1600;
+                    var canvasHeight = 1200;
+                    nodes.forEach(function(node) {
+                        var x = (Math.random() - 0.5) * canvasWidth;
+                        var y = (Math.random() - 0.5) * canvasHeight;
+                        network.moveNode(node.id, x, y);
+                    });
                     break;
             }
             

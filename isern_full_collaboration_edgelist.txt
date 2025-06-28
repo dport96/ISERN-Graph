@@ -1,218 +1,218 @@
 Member1	Member2
-Casper Lassenius	Maria Paasivaara
-Casper Lassenius	Michael Felderer
-Casper Lassenius	Tomi Männistö
-Casper Lassenius	Daniel Mendez Fernandez
-Casper Lassenius	Marcos Kalinowski
-Casper Lassenius	Nils Brede Moe
-Casper Lassenius	Markku Oivo
 Casper Lassenius	Desmond Greer
 Casper Lassenius	Magne Jørgensen
-Casper Lassenius	Stefan Wagner
-Casper Lassenius	Jeffrey Carver
-Casper Lassenius	Dietmar Pfahl
+Casper Lassenius	Nils Brede Moe
+Casper Lassenius	Marcos Kalinowski
 Casper Lassenius	Rafael Prikladnicki
-Eray Tüzün	Michael Felderer
+Casper Lassenius	Maria Paasivaara
+Casper Lassenius	Markku Oivo
+Casper Lassenius	Daniel Mendez Fernandez
+Casper Lassenius	Dietmar Pfahl
+Casper Lassenius	Tomi Männistö
+Casper Lassenius	Jeffrey Carver
+Casper Lassenius	Stefan Wagner
+Casper Lassenius	Michael Felderer
 Eray Tüzün	Marcos Kalinowski
-Eray Tüzün	Dietmar Pfahl
 Eray Tüzün	Rafael Prikladnicki
-Eray Tüzün	Carolyn Seaman
-Eray Tüzün	Qing Wang
+Eray Tüzün	Dietmar Pfahl
+Eray Tüzün	Michael Felderer
 Eray Tüzün	Hakan Erdogmus
-Eray Tüzün	Robert Feldt
 Eray Tüzün	Burak Turhan
-Eray Tüzün	Maria Teresa Baldassarre
-Eray Tüzün	Stefan Biffl
 Eray Tüzün	Rogardt Heldal
+Eray Tüzün	Qing Wang
+Eray Tüzün	Maria Teresa Baldassarre
+Eray Tüzün	Carolyn Seaman
+Eray Tüzün	Robert Feldt
+Eray Tüzün	Stefan Biffl
 Eray Tüzün	Marcela Genero
 Nauman bin Ali	Marcos Kalinowski
 Nauman bin Ali	Dietmar Pfahl
 Nauman bin Ali	Qing Wang
 Nauman bin Ali	Maria Teresa Baldassarre
+Nauman bin Ali	Ali Babar
 Nauman bin Ali	Paris Avgeriou
 Nauman bin Ali	Minghui Zhou
-Nauman bin Ali	Ayşe Başar
-Nauman bin Ali	Ali Babar
 Nauman bin Ali	He Zhang
-Hakan Erdogmus	Michael Felderer
-Hakan Erdogmus	Markku Oivo
+Nauman bin Ali	Ayşe Başar
 Hakan Erdogmus	Magne Jørgensen
-Hakan Erdogmus	Carolyn Seaman
-Hakan Erdogmus	Robert Feldt
+Hakan Erdogmus	Markku Oivo
+Hakan Erdogmus	Michael Felderer
 Hakan Erdogmus	Burak Turhan
+Hakan Erdogmus	Laurie Williams
+Hakan Erdogmus	Carolyn Seaman
 Hakan Erdogmus	Maria Teresa Baldassarre
 Hakan Erdogmus	Sira Vegas
-Hakan Erdogmus	Stefan Biffl
-Hakan Erdogmus	He Zhang
-Hakan Erdogmus	Laurie Williams
+Hakan Erdogmus	Robert Feldt
 Hakan Erdogmus	Maurizio Morisio
-Robert Feldt	Michael Felderer
-Robert Feldt	Daniel Mendez Fernandez
+Hakan Erdogmus	He Zhang
+Hakan Erdogmus	Stefan Biffl
 Robert Feldt	Markku Oivo
+Robert Feldt	Daniel Mendez Fernandez
 Robert Feldt	Stefan Wagner
-Robert Feldt	Carolyn Seaman
-Robert Feldt	Qing Wang
-Robert Feldt	Per Runeson
+Robert Feldt	Michael Felderer
 Robert Feldt	Burak Turhan
-Robert Feldt	Dag Sjøberg
+Robert Feldt	Qing Wang
 Robert Feldt	Maria Teresa Baldassarre
+Robert Feldt	Carolyn Seaman
+Robert Feldt	Per Runeson
+Robert Feldt	Dag Sjøberg
 Robert Feldt	Sira Vegas
 Robert Feldt	Andreas Jedlitschka
-Guilherme Travassos	Michael Felderer
-Guilherme Travassos	Daniel Mendez Fernandez
-Guilherme Travassos	Marcos Kalinowski
 Guilherme Travassos	Nils Brede Moe
-Guilherme Travassos	Jeffrey Carver
+Guilherme Travassos	Marcos Kalinowski
 Guilherme Travassos	Rafael Prikladnicki
-Guilherme Travassos	Maria Teresa Baldassarre
+Guilherme Travassos	Daniel Mendez Fernandez
+Guilherme Travassos	Jeffrey Carver
+Guilherme Travassos	Michael Felderer
 Guilherme Travassos	Rogardt Heldal
+Guilherme Travassos	Maria Teresa Baldassarre
 Guilherme Travassos	Marcela Genero
 Guilherme Travassos	Sira Vegas
 Guilherme Travassos	Maurizio Morisio
 Guilherme Travassos	Per Runeson
-Guilherme Travassos	Sandro Morasca
 Guilherme Travassos	Victor Basili
-Guilherme Travassos	Danilo Caivano
-Guilherme Travassos	Martin Solari
-Guilherme Travassos	Xavier Franch
 Guilherme Travassos	Marcus Ciolkowski
 Guilherme Travassos	Fabio Q.B. da Silva
-Michael Felderer	Burak Turhan
-Michael Felderer	Ayşe Başar
-Michael Felderer	Stefan Biffl
-Michael Felderer	Rogardt Heldal
-Michael Felderer	Daniel Mendez Fernandez
+Guilherme Travassos	Martin Solari
+Guilherme Travassos	Xavier Franch
+Guilherme Travassos	Sandro Morasca
+Guilherme Travassos	Danilo Caivano
 Michael Felderer	Desmond Greer
-Michael Felderer	Stefan Wagner
-Michael Felderer	Clemente Izurieta
-Michael Felderer	Marcela Genero
-Michael Felderer	Dietmar Pfahl
-Michael Felderer	Barbara Russo
-Michael Felderer	Xavier Franch
-Michael Felderer	Rafael Prikladnicki
-Michael Felderer	Carolyn Seaman
-Michael Felderer	Per Runeson
-Michael Felderer	Tomi Männistö
-Michael Felderer	Sira Vegas
-Michael Felderer	Markku Oivo
-Michael Felderer	Maria Teresa Baldassarre
 Michael Felderer	Marcos Kalinowski
-Michael Felderer	Andreas Jedlitschka
+Michael Felderer	Rafael Prikladnicki
+Michael Felderer	Markku Oivo
+Michael Felderer	Daniel Mendez Fernandez
+Michael Felderer	Dietmar Pfahl
+Michael Felderer	Tomi Männistö
 Michael Felderer	Jeffrey Carver
-Markku Oivo	Tomi Männistö
-Markku Oivo	Daniel Mendez Fernandez
-Markku Oivo	Marcos Kalinowski
-Markku Oivo	Burak Turhan
-Markku Oivo	Ayşe Başar
-Markku Oivo	He Zhang
-Markku Oivo	Victor Basili
-Markku Oivo	Dag Sjøberg
-Markku Oivo	Danilo Caivano
+Michael Felderer	Stefan Wagner
+Michael Felderer	Carolyn Seaman
+Michael Felderer	Barbara Russo
+Michael Felderer	Clemente Izurieta
+Michael Felderer	Andreas Jedlitschka
+Michael Felderer	Marcela Genero
+Michael Felderer	Burak Turhan
+Michael Felderer	Maria Teresa Baldassarre
+Michael Felderer	Sira Vegas
+Michael Felderer	Xavier Franch
+Michael Felderer	Per Runeson
+Michael Felderer	Rogardt Heldal
+Michael Felderer	Stefan Biffl
+Michael Felderer	Ayşe Başar
 Markku Oivo	Desmond Greer
-Markku Oivo	Dieter Rombach
+Markku Oivo	Marcos Kalinowski
+Markku Oivo	Rafael Prikladnicki
+Markku Oivo	Victor Basili
+Markku Oivo	Laurie Williams
+Markku Oivo	Dietmar Pfahl
 Markku Oivo	Stefan Wagner
 Markku Oivo	Barbara Russo
-Markku Oivo	Dietmar Pfahl
-Markku Oivo	Rafael Prikladnicki
-Markku Oivo	Xavier Franch
-Markku Oivo	Audris Mockus
-Markku Oivo	Per Runeson
-Markku Oivo	Sira Vegas
-Markku Oivo	Maurizio Morisio
-Markku Oivo	Maria Teresa Baldassarre
+Markku Oivo	Dag Sjøberg
 Markku Oivo	Andreas Jedlitschka
-Markku Oivo	Laurie Williams
+Markku Oivo	Burak Turhan
+Markku Oivo	Maria Teresa Baldassarre
+Markku Oivo	Sira Vegas
+Markku Oivo	Daniel Mendez Fernandez
+Markku Oivo	Tomi Männistö
 Markku Oivo	Jeffrey Carver
-Fabio Q.B. da Silva	Daniel Mendez Fernandez
-Fabio Q.B. da Silva	Marcos Kalinowski
+Markku Oivo	He Zhang
+Markku Oivo	Xavier Franch
+Markku Oivo	Per Runeson
+Markku Oivo	Audris Mockus
+Markku Oivo	Dieter Rombach
+Markku Oivo	Danilo Caivano
+Markku Oivo	Maurizio Morisio
+Markku Oivo	Ayşe Başar
 Fabio Q.B. da Silva	Nils Brede Moe
+Fabio Q.B. da Silva	Marcos Kalinowski
 Fabio Q.B. da Silva	Rafael Prikladnicki
-Fabio Q.B. da Silva	Carolyn Seaman
+Fabio Q.B. da Silva	Daniel Mendez Fernandez
 Fabio Q.B. da Silva	Maria Teresa Baldassarre
 Fabio Q.B. da Silva	Marcela Genero
+Fabio Q.B. da Silva	Carolyn Seaman
 Fabio Q.B. da Silva	Ayşe Başar
 Fabio Q.B. da Silva	Per Runeson
 Fabio Q.B. da Silva	Andreas Jedlitschka
+Fabio Q.B. da Silva	Marcus Ciolkowski
 Fabio Q.B. da Silva	Jingyu Li
 Fabio Q.B. da Silva	Oscar Pastor
-Fabio Q.B. da Silva	Marcus Ciolkowski
 Fabio Q.B. da Silva	Dan Port
-Daniel Mendez Fernandez	Tomi Männistö
-Daniel Mendez Fernandez	Burak Turhan
-Daniel Mendez Fernandez	Minghui Zhou
-Daniel Mendez Fernandez	Oscar Pastor
-Daniel Mendez Fernandez	Stefan Biffl
-Daniel Mendez Fernandez	Rogardt Heldal
-Daniel Mendez Fernandez	He Zhang
-Daniel Mendez Fernandez	Qing Wang
-Daniel Mendez Fernandez	Maya Daneva
 Daniel Mendez Fernandez	Desmond Greer
 Daniel Mendez Fernandez	Magne Jørgensen
-Daniel Mendez Fernandez	Dietmar Pfahl
-Daniel Mendez Fernandez	Xavier Franch
-Daniel Mendez Fernandez	Rafael Prikladnicki
-Daniel Mendez Fernandez	Dan Port
-Daniel Mendez Fernandez	Audris Mockus
 Daniel Mendez Fernandez	Marcos Kalinowski
-Daniel Mendez Fernandez	Andreas Jedlitschka
+Daniel Mendez Fernandez	Rafael Prikladnicki
 Daniel Mendez Fernandez	Laurie Williams
+Daniel Mendez Fernandez	Dietmar Pfahl
+Daniel Mendez Fernandez	Andreas Jedlitschka
+Daniel Mendez Fernandez	Minghui Zhou
+Daniel Mendez Fernandez	Burak Turhan
+Daniel Mendez Fernandez	Qing Wang
+Daniel Mendez Fernandez	Tomi Männistö
 Daniel Mendez Fernandez	Jeffrey Carver
-Andreas Jedlitschka	Tomi Männistö
+Daniel Mendez Fernandez	He Zhang
+Daniel Mendez Fernandez	Xavier Franch
+Daniel Mendez Fernandez	Audris Mockus
+Daniel Mendez Fernandez	Rogardt Heldal
+Daniel Mendez Fernandez	Oscar Pastor
+Daniel Mendez Fernandez	Maya Daneva
+Daniel Mendez Fernandez	Stefan Biffl
+Daniel Mendez Fernandez	Dan Port
 Andreas Jedlitschka	Dietmar Pfahl
+Andreas Jedlitschka	Tomi Männistö
 Andreas Jedlitschka	Burak Turhan
 Andreas Jedlitschka	Maria Teresa Baldassarre
-Andreas Jedlitschka	Ayşe Başar
 Andreas Jedlitschka	He Zhang
+Andreas Jedlitschka	Ayşe Başar
 Andreas Jedlitschka	Sira Vegas
 Andreas Jedlitschka	Maurizio Morisio
 Andreas Jedlitschka	Per Runeson
 Andreas Jedlitschka	Dag Sjøberg
+Andreas Jedlitschka	Marcus Ciolkowski
 Andreas Jedlitschka	Dieter Rombach
 Andreas Jedlitschka	Xavier Franch
-Andreas Jedlitschka	Marcus Ciolkowski
 Barbara Russo	Dietmar Pfahl
 Barbara Russo	Qing Wang
 Barbara Russo	Laurie Williams
 Barbara Russo	Martin Solari
 Barbara Russo	Sandro Morasca
-Qing Wang	Nils Brede Moe
 Qing Wang	Desmond Greer
+Qing Wang	Nils Brede Moe
 Qing Wang	Stefan Wagner
-Qing Wang	Jingyu Li
 Qing Wang	Burak Turhan
-Qing Wang	Minghui Zhou
 Qing Wang	Ayşe Başar
-Qing Wang	He Zhang
-Qing Wang	Maya Daneva
+Qing Wang	Jingyu Li
 Qing Wang	Ross Jeffery
-Qing Wang	Dan Port
-Qing Wang	Audris Mockus
-Qing Wang	Ali Babar
 Qing Wang	Laurie Williams
+Qing Wang	Ali Babar
+Qing Wang	Minghui Zhou
+Qing Wang	He Zhang
+Qing Wang	Audris Mockus
+Qing Wang	Maya Daneva
+Qing Wang	Dan Port
 Per Runeson	Dietmar Pfahl
 Per Runeson	Burak Turhan
 Per Runeson	Maria Teresa Baldassarre
 Per Runeson	Marcela Genero
 Per Runeson	Dag Sjøberg
 Per Runeson	Danilo Caivano
-Maria Paasivaara	Jeffrey Carver
 Maria Paasivaara	Nils Brede Moe
+Maria Paasivaara	Jeffrey Carver
 Clemente Izurieta	Carolyn Seaman
 Clemente Izurieta	Paris Avgeriou
 Clemente Izurieta	Laurie Williams
 He Zhang	Nils Brede Moe
 He Zhang	Dietmar Pfahl
+He Zhang	Ali Babar
 He Zhang	Paris Avgeriou
 He Zhang	Minghui Zhou
-He Zhang	Ayşe Başar
-He Zhang	Ali Babar
-He Zhang	Jingyu Li
-He Zhang	Oscar Pastor
 He Zhang	Victor Basili
-He Zhang	Maya Daneva
+He Zhang	Jingyu Li
 He Zhang	Ross Jeffery
-He Zhang	Audris Mockus
 He Zhang	Laurie Williams
+He Zhang	Audris Mockus
+He Zhang	Oscar Pastor
+He Zhang	Maya Daneva
+He Zhang	Ayşe Başar
 Kenichi Matsumoto	Shinji Kusumoto
 Kenichi Matsumoto	Koji Torii
 Jingyu Li	Maria Teresa Baldassarre
@@ -221,58 +221,58 @@ Jingyu Li	Maurizio Morisio
 Jingyu Li	Audris Mockus
 Jingyu Li	Maya Daneva
 Jingyu Li	Dan Port
-Laurie Williams	Jeffrey Carver
 Laurie Williams	Dietmar Pfahl
+Laurie Williams	Jeffrey Carver
 Laurie Williams	Carolyn Seaman
 Laurie Williams	Minghui Zhou
 Laurie Williams	Ayşe Başar
-Laurie Williams	Koji Torii
 Laurie Williams	Victor Basili
+Laurie Williams	Koji Torii
 Shinji Kusumoto	Koji Torii
-Minghui Zhou	Marcos Kalinowski
 Minghui Zhou	Nils Brede Moe
+Minghui Zhou	Marcos Kalinowski
 Minghui Zhou	Burak Turhan
+Minghui Zhou	Ali Babar
 Minghui Zhou	Audris Mockus
 Minghui Zhou	Ross Jeffery
-Minghui Zhou	Ali Babar
-Marcos Kalinowski	Tomi Männistö
-Marcos Kalinowski	Burak Turhan
-Marcos Kalinowski	Stefan Biffl
-Marcos Kalinowski	Rogardt Heldal
 Marcos Kalinowski	Desmond Greer
-Marcos Kalinowski	Stefan Wagner
-Marcos Kalinowski	Martin Solari
-Marcos Kalinowski	Marcela Genero
-Marcos Kalinowski	Dietmar Pfahl
-Marcos Kalinowski	Rafael Prikladnicki
 Marcos Kalinowski	Nils Brede Moe
-Marcos Kalinowski	Paris Avgeriou
+Marcos Kalinowski	Rafael Prikladnicki
+Marcos Kalinowski	Dietmar Pfahl
+Marcos Kalinowski	Stefan Wagner
+Marcos Kalinowski	Marcela Genero
+Marcos Kalinowski	Burak Turhan
+Marcos Kalinowski	Martin Solari
 Marcos Kalinowski	Maria Teresa Baldassarre
-Rafael Prikladnicki	Tomi Männistö
-Rafael Prikladnicki	Nils Brede Moe
+Marcos Kalinowski	Tomi Männistö
+Marcos Kalinowski	Rogardt Heldal
+Marcos Kalinowski	Paris Avgeriou
+Marcos Kalinowski	Stefan Biffl
 Rafael Prikladnicki	Desmond Greer
-Rafael Prikladnicki	Stefan Wagner
-Rafael Prikladnicki	Jeffrey Carver
-Rafael Prikladnicki	Dietmar Pfahl
-Rafael Prikladnicki	Stefan Biffl
-Rafael Prikladnicki	Rogardt Heldal
-Rafael Prikladnicki	Martin Solari
-Rafael Prikladnicki	Marcela Genero
+Rafael Prikladnicki	Nils Brede Moe
 Rafael Prikladnicki	Carolyn Seaman
-Rafael Prikladnicki	Paris Avgeriou
+Rafael Prikladnicki	Dietmar Pfahl
+Rafael Prikladnicki	Stefan Wagner
+Rafael Prikladnicki	Marcela Genero
+Rafael Prikladnicki	Martin Solari
 Rafael Prikladnicki	Maria Teresa Baldassarre
+Rafael Prikladnicki	Tomi Männistö
+Rafael Prikladnicki	Jeffrey Carver
+Rafael Prikladnicki	Rogardt Heldal
+Rafael Prikladnicki	Paris Avgeriou
+Rafael Prikladnicki	Stefan Biffl
 Marcus Ciolkowski	Dietmar Pfahl
 Marcus Ciolkowski	Stefan Biffl
 Marcus Ciolkowski	Paris Avgeriou
 Marcus Ciolkowski	Sira Vegas
-Marcus Ciolkowski	Dieter Rombach
 Marcus Ciolkowski	Sandro Morasca
 Marcus Ciolkowski	Ross Jeffery
+Marcus Ciolkowski	Dieter Rombach
 Marcus Ciolkowski	Giovanni Cantone
-Desmond Greer	Tomi Männistö
 Desmond Greer	Nils Brede Moe
-Desmond Greer	Stefan Wagner
 Desmond Greer	Dietmar Pfahl
+Desmond Greer	Tomi Männistö
+Desmond Greer	Stefan Wagner
 Ayşe Başar	Jeffrey Carver
 Ayşe Başar	Burak Turhan
 Ayşe Başar	Maria Teresa Baldassarre
@@ -282,86 +282,86 @@ Ayşe Başar	Maurizio Morisio
 Magne Jørgensen	Nils Brede Moe
 Magne Jørgensen	Dag Sjøberg
 Magne Jørgensen	Oscar Pastor
-Nils Brede Moe	Paris Avgeriou
-Nils Brede Moe	Maria Teresa Baldassarre
 Nils Brede Moe	Dag Sjøberg
+Nils Brede Moe	Maria Teresa Baldassarre
+Nils Brede Moe	Paris Avgeriou
 Nils Brede Moe	Stefan Wagner
 Danilo Caivano	Burak Turhan
 Danilo Caivano	Maria Teresa Baldassarre
 Danilo Caivano	Marcela Genero
 Xavier Franch	Tomi Männistö
-Xavier Franch	Stefan Wagner
 Xavier Franch	Jeffrey Carver
+Xavier Franch	Stefan Wagner
 Xavier Franch	Burak Turhan
-Xavier Franch	Stefan Biffl
 Xavier Franch	Rogardt Heldal
-Xavier Franch	Maya Daneva
+Xavier Franch	Stefan Biffl
 Xavier Franch	Oscar Pastor
+Xavier Franch	Maya Daneva
 Xavier Franch	Dan Port
 Paris Avgeriou	Tomi Männistö
-Paris Avgeriou	Carolyn Seaman
 Paris Avgeriou	Rogardt Heldal
-Sira Vegas	Jeffrey Carver
+Paris Avgeriou	Carolyn Seaman
 Sira Vegas	Dietmar Pfahl
+Sira Vegas	Jeffrey Carver
 Sira Vegas	Burak Turhan
 Sira Vegas	Maria Teresa Baldassarre
 Sira Vegas	Stefan Biffl
+Sira Vegas	Victor Basili
 Sira Vegas	Sandro Morasca
+Sira Vegas	Martin Solari
 Sira Vegas	Oscar Pastor
 Sira Vegas	Giovanni Cantone
-Sira Vegas	Victor Basili
-Sira Vegas	Martin Solari
 Oscar Pastor	Marcela Genero
 Oscar Pastor	Martin Solari
 Oscar Pastor	Maya Daneva
-Sandro Morasca	Jeffrey Carver
 Sandro Morasca	Dietmar Pfahl
+Sandro Morasca	Jeffrey Carver
 Sandro Morasca	Marcela Genero
 Sandro Morasca	Victor Basili
-Jeffrey Carver	Maria Teresa Baldassarre
+Jeffrey Carver	Dietmar Pfahl
 Jeffrey Carver	Victor Basili
 Jeffrey Carver	Rogardt Heldal
-Jeffrey Carver	Dietmar Pfahl
+Jeffrey Carver	Maria Teresa Baldassarre
 Maria Teresa Baldassarre	Stefan Wagner
 Maria Teresa Baldassarre	Burak Turhan
-Maria Teresa Baldassarre	Stefan Biffl
 Maria Teresa Baldassarre	Marcela Genero
+Maria Teresa Baldassarre	Stefan Biffl
 Marcela Genero	Dietmar Pfahl
-Marcela Genero	Stefan Biffl
 Marcela Genero	Rogardt Heldal
-Marcela Genero	Giovanni Cantone
 Marcela Genero	Martin Solari
+Marcela Genero	Giovanni Cantone
+Marcela Genero	Stefan Biffl
 Dan Port	Dietmar Pfahl
 Dan Port	Carolyn Seaman
 Dan Port	Victor Basili
-Tomi Männistö	Stefan Wagner
 Tomi Männistö	Dietmar Pfahl
+Tomi Männistö	Stefan Wagner
 Rahul Mohanani	Burak Turhan
 Carolyn Seaman	Victor Basili
 Carolyn Seaman	Dieter Rombach
 Carolyn Seaman	Maurizio Morisio
 Dag Sjøberg	Dietmar Pfahl
 Dag Sjøberg	Burak Turhan
-Dag Sjøberg	Audris Mockus
 Dag Sjøberg	Victor Basili
-Burak Turhan	Stefan Wagner
+Dag Sjøberg	Audris Mockus
 Burak Turhan	Dietmar Pfahl
+Burak Turhan	Stefan Wagner
 Burak Turhan	Stefan Biffl
+Stefan Wagner	Dietmar Pfahl
 Stefan Wagner	Audris Mockus
 Stefan Wagner	Maya Daneva
 Stefan Wagner	Stefan Biffl
-Stefan Wagner	Dietmar Pfahl
-Dietmar Pfahl	Stefan Biffl
-Dietmar Pfahl	Rogardt Heldal
 Dietmar Pfahl	Victor Basili
 Dietmar Pfahl	Ross Jeffery
+Dietmar Pfahl	Rogardt Heldal
 Dietmar Pfahl	Dieter Rombach
+Dietmar Pfahl	Stefan Biffl
 Maya Daneva	Stefan Biffl
 Maurizio Morisio	Victor Basili
 Stefan Biffl	Rogardt Heldal
 Victor Basili	Ross Jeffery
-Victor Basili	Giovanni Cantone
 Victor Basili	Dieter Rombach
+Victor Basili	Giovanni Cantone
 Victor Basili	Koji Torii
 Giovanni Cantone	Dieter Rombach
 Dieter Rombach	Ross Jeffery

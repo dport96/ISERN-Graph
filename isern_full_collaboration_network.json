@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-06-26 20:53:27",
+    "timestamp": "2025-06-27 16:55:53",
     "method": "full_member_to_member_collaboration_discovery",
     "description": "Complete ISERN collaboration network from DBLP data"
   },
@@ -113,7 +113,7 @@
         "Stefan Wagner"
       ],
       "degree_centrality": 0.24137931034482757,
-      "betweenness_centrality": 0.00611082830478469,
+      "betweenness_centrality": 0.006110828304784691,
       "closeness_centrality": 0.5284645413142485
     },
     "Guilherme Travassos": {
@@ -140,7 +140,7 @@
         "Xavier Franch"
       ],
       "degree_centrality": 0.3275862068965517,
-      "betweenness_centrality": 0.028077640599438698,
+      "betweenness_centrality": 0.0280776405994387,
       "closeness_centrality": 0.5658307210031348
     },
     "Michael Felderer": {
@@ -211,7 +211,7 @@
         "Xavier Franch"
       ],
       "degree_centrality": 0.48275862068965514,
-      "betweenness_centrality": 0.060769430907586526,
+      "betweenness_centrality": 0.06076943090758652,
       "closeness_centrality": 0.6365595611285266
     },
     "Fabio Q.B. da Silva": {
@@ -268,7 +268,7 @@
         "Xavier Franch"
       ],
       "degree_centrality": 0.4482758620689655,
-      "betweenness_centrality": 0.05041759772669964,
+      "betweenness_centrality": 0.05041759772669963,
       "closeness_centrality": 0.6155740810913224
     },
     "Andreas Jedlitschka": {
@@ -433,7 +433,7 @@
         "Qing Wang"
       ],
       "degree_centrality": 0.15517241379310345,
-      "betweenness_centrality": 0.005617314461834567,
+      "betweenness_centrality": 0.005617314461834568,
       "closeness_centrality": 0.4629524080934739
     },
     "Laurie Williams": {
@@ -570,7 +570,7 @@
         "Stefan Biffl"
       ],
       "degree_centrality": 0.1896551724137931,
-      "betweenness_centrality": 0.010625147050792498,
+      "betweenness_centrality": 0.010625147050792502,
       "closeness_centrality": 0.4957277998169057
     },
     "Desmond Greer": {
@@ -611,7 +611,7 @@
         "Stefan Biffl"
       ],
       "degree_centrality": 0.24137931034482757,
-      "betweenness_centrality": 0.011824494669808153,
+      "betweenness_centrality": 0.011824494669808155,
       "closeness_centrality": 0.5334975369458127
     },
     "Magne Jørgensen": {
@@ -684,7 +684,7 @@
         "Tomi Männistö"
       ],
       "degree_centrality": 0.24137931034482757,
-      "betweenness_centrality": 0.009476085231632816,
+      "betweenness_centrality": 0.009476085231632814,
       "closeness_centrality": 0.5139196456817462
     },
     "Ali Babar": {
@@ -826,7 +826,7 @@
         "Stefan Wagner"
       ],
       "degree_centrality": 0.3793103448275862,
-      "betweenness_centrality": 0.02660385201610504,
+      "betweenness_centrality": 0.026603852016105038,
       "closeness_centrality": 0.5716045038705136
     },
     "Marcela Genero": {
@@ -886,7 +886,7 @@
         "Xavier Franch"
       ],
       "degree_centrality": 0.20689655172413793,
-      "betweenness_centrality": 0.002606751728001862,
+      "betweenness_centrality": 0.0026067517280018615,
       "closeness_centrality": 0.504659832246039
     },
     "Rahul Mohanani": {
@@ -1025,7 +1025,7 @@
         "Victor Basili"
       ],
       "degree_centrality": 0.5,
-      "betweenness_centrality": 0.07639653503342454,
+      "betweenness_centrality": 0.07639653503342453,
       "closeness_centrality": 0.6438763376932223
     },
     "Audris Mockus": {
@@ -1073,7 +1073,7 @@
         "Sira Vegas"
       ],
       "degree_centrality": 0.12068965517241378,
-      "betweenness_centrality": 0.0022581734249837375,
+      "betweenness_centrality": 0.002258173424983737,
       "closeness_centrality": 0.4554247266610597
     },
     "Maurizio Morisio": {

@@ -240,7 +240,19 @@
   "edges": [
     {
       "source": "Casper Lassenius",
-      "target": "Maria Paasivaara"
+      "target": "Daniel Mendez Fernandez"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Desmond Greer"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Jeffrey Carver"
     },
     {
       "source": "Casper Lassenius",
@@ -248,19 +260,11 @@
     },
     {
       "source": "Casper Lassenius",
-      "target": "Tomi M\u00e4nnist\u00f6"
+      "target": "Marcos Kalinowski"
     },
     {
       "source": "Casper Lassenius",
-      "target": "Nils Brede Moe"
-    },
-    {
-      "source": "Casper Lassenius",
-      "target": "Stefan Wagner"
-    },
-    {
-      "source": "Casper Lassenius",
-      "target": "Rafael Prikladnicki"
+      "target": "Maria Paasivaara"
     },
     {
       "source": "Casper Lassenius",
@@ -268,15 +272,35 @@
     },
     {
       "source": "Casper Lassenius",
-      "target": "Daniel Mendez Fernandez"
+      "target": "Michael Felderer"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Nils Brede Moe"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Rafael Prikladnicki"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Stefan Wagner"
+    },
+    {
+      "source": "Casper Lassenius",
+      "target": "Tomi M\u00e4nnist\u00f6"
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
-      "target": "Michael Felderer"
+      "target": "Burak Turhan"
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
       "target": "Carolyn Seaman"
+    },
+    {
+      "source": "Eray T\u00fcz\u00fcn",
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
@@ -284,15 +308,27 @@
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
+      "target": "Marcela Genero"
+    },
+    {
+      "source": "Eray T\u00fcz\u00fcn",
+      "target": "Marcos Kalinowski"
+    },
+    {
+      "source": "Eray T\u00fcz\u00fcn",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Eray T\u00fcz\u00fcn",
+      "target": "Michael Felderer"
+    },
+    {
+      "source": "Eray T\u00fcz\u00fcn",
       "target": "Qing Wang"
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
-      "target": "Dietmar Pfahl"
-    },
-    {
-      "source": "Eray T\u00fcz\u00fcn",
-      "target": "Rogardt Heldal"
+      "target": "Rafael Prikladnicki"
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
@@ -300,15 +336,19 @@
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
-      "target": "Maria Teresa Baldassarre"
+      "target": "Rogardt Heldal"
     },
     {
       "source": "Eray T\u00fcz\u00fcn",
-      "target": "Burak Turhan"
+      "target": "Stefan Biffl"
     },
     {
       "source": "Nauman bin Ali",
-      "target": "Fabio Q.B. da Silva"
+      "target": "Ali Babar"
+    },
+    {
+      "source": "Nauman bin Ali",
+      "target": "Ay\u015fe Ba\u015far"
     },
     {
       "source": "Nauman bin Ali",
@@ -316,15 +356,43 @@
     },
     {
       "source": "Nauman bin Ali",
-      "target": "Paris Avgeriou"
+      "target": "He Zhang"
+    },
+    {
+      "source": "Nauman bin Ali",
+      "target": "Marcos Kalinowski"
     },
     {
       "source": "Nauman bin Ali",
       "target": "Maria Teresa Baldassarre"
     },
     {
+      "source": "Nauman bin Ali",
+      "target": "Minghui Zhou"
+    },
+    {
+      "source": "Nauman bin Ali",
+      "target": "Paris Avgeriou"
+    },
+    {
+      "source": "Nauman bin Ali",
+      "target": "Qing Wang"
+    },
+    {
+      "source": "Hakan Erdogmus",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Hakan Erdogmus",
+      "target": "Carolyn Seaman"
+    },
+    {
       "source": "Hakan Erdogmus",
       "target": "He Zhang"
+    },
+    {
+      "source": "Hakan Erdogmus",
+      "target": "Laurie Williams"
     },
     {
       "source": "Hakan Erdogmus",
@@ -332,23 +400,11 @@
     },
     {
       "source": "Hakan Erdogmus",
-      "target": "Sira Vegas"
+      "target": "Maria Teresa Baldassarre"
     },
     {
       "source": "Hakan Erdogmus",
-      "target": "Burak Turhan"
-    },
-    {
-      "source": "Hakan Erdogmus",
-      "target": "Carolyn Seaman"
-    },
-    {
-      "source": "Hakan Erdogmus",
-      "target": "Laurie Williams"
-    },
-    {
-      "source": "Hakan Erdogmus",
-      "target": "Stefan Biffl"
+      "target": "Markku Oivo"
     },
     {
       "source": "Hakan Erdogmus",
@@ -356,6 +412,46 @@
     },
     {
       "source": "Hakan Erdogmus",
+      "target": "Michael Felderer"
+    },
+    {
+      "source": "Hakan Erdogmus",
+      "target": "Robert Feldt"
+    },
+    {
+      "source": "Hakan Erdogmus",
+      "target": "Sira Vegas"
+    },
+    {
+      "source": "Hakan Erdogmus",
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Robert Feldt",
+      "target": "Andreas Jedlitschka"
+    },
+    {
+      "source": "Robert Feldt",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Robert Feldt",
+      "target": "Carolyn Seaman"
+    },
+    {
+      "source": "Robert Feldt",
+      "target": "Dag Sj\u00f8berg"
+    },
+    {
+      "source": "Robert Feldt",
+      "target": "Daniel Mendez Fernandez"
+    },
+    {
+      "source": "Robert Feldt",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Robert Feldt",
       "target": "Markku Oivo"
     },
     {
@@ -364,51 +460,27 @@
     },
     {
       "source": "Robert Feldt",
+      "target": "Per Runeson"
+    },
+    {
+      "source": "Robert Feldt",
       "target": "Qing Wang"
     },
     {
       "source": "Robert Feldt",
-      "target": "Carolyn Seaman"
-    },
-    {
-      "source": "Robert Feldt",
-      "target": "Per Runeson"
+      "target": "Sira Vegas"
     },
     {
       "source": "Robert Feldt",
       "target": "Stefan Wagner"
     },
     {
-      "source": "Robert Feldt",
+      "source": "Guilherme Travassos",
       "target": "Daniel Mendez Fernandez"
     },
     {
-      "source": "Robert Feldt",
-      "target": "Andreas Jedlitschka"
-    },
-    {
-      "source": "Robert Feldt",
-      "target": "Markku Oivo"
-    },
-    {
-      "source": "Robert Feldt",
-      "target": "Dag Sj\u00f8berg"
-    },
-    {
-      "source": "Robert Feldt",
-      "target": "Burak Turhan"
-    },
-    {
       "source": "Guilherme Travassos",
-      "target": "Martin Solari"
-    },
-    {
-      "source": "Guilherme Travassos",
-      "target": "Xavier Franch"
-    },
-    {
-      "source": "Guilherme Travassos",
-      "target": "Nils Brede Moe"
+      "target": "Danilo Caivano"
     },
     {
       "source": "Guilherme Travassos",
@@ -416,31 +488,15 @@
     },
     {
       "source": "Guilherme Travassos",
-      "target": "Michael Felderer"
+      "target": "Jeffrey Carver"
     },
     {
       "source": "Guilherme Travassos",
-      "target": "Daniel Mendez Fernandez"
-    },
-    {
-      "source": "Guilherme Travassos",
-      "target": "Rafael Prikladnicki"
+      "target": "Marcela Genero"
     },
     {
       "source": "Guilherme Travassos",
       "target": "Marcos Kalinowski"
-    },
-    {
-      "source": "Guilherme Travassos",
-      "target": "Oscar Pastor"
-    },
-    {
-      "source": "Guilherme Travassos",
-      "target": "Danilo Caivano"
-    },
-    {
-      "source": "Guilherme Travassos",
-      "target": "Jeffrey Carver"
     },
     {
       "source": "Guilherme Travassos",
@@ -448,27 +504,71 @@
     },
     {
       "source": "Guilherme Travassos",
-      "target": "Victor Basili"
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Martin Solari"
     },
     {
       "source": "Guilherme Travassos",
       "target": "Maurizio Morisio"
     },
     {
-      "source": "Michael Felderer",
-      "target": "Daniel Mendez Fernandez"
+      "source": "Guilherme Travassos",
+      "target": "Michael Felderer"
     },
     {
-      "source": "Michael Felderer",
+      "source": "Guilherme Travassos",
+      "target": "Nils Brede Moe"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Per Runeson"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Rafael Prikladnicki"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Rogardt Heldal"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Sandro Morasca"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Sira Vegas"
+    },
+    {
+      "source": "Guilherme Travassos",
+      "target": "Victor Basili"
+    },
+    {
+      "source": "Guilherme Travassos",
       "target": "Xavier Franch"
     },
     {
       "source": "Michael Felderer",
-      "target": "Marcos Kalinowski"
+      "target": "Andreas Jedlitschka"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Ay\u015fe Ba\u015far"
     },
     {
       "source": "Michael Felderer",
       "target": "Barbara Russo"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Carolyn Seaman"
     },
     {
       "source": "Michael Felderer",
@@ -476,7 +576,35 @@
     },
     {
       "source": "Michael Felderer",
+      "target": "Daniel Mendez Fernandez"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Desmond Greer"
+    },
+    {
+      "source": "Michael Felderer",
       "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Jeffrey Carver"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Marcela Genero"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Marcos Kalinowski"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Michael Felderer",
+      "target": "Markku Oivo"
     },
     {
       "source": "Michael Felderer",
@@ -484,7 +612,7 @@
     },
     {
       "source": "Michael Felderer",
-      "target": "Stefan Wagner"
+      "target": "Rafael Prikladnicki"
     },
     {
       "source": "Michael Felderer",
@@ -492,7 +620,7 @@
     },
     {
       "source": "Michael Felderer",
-      "target": "Laurie Williams"
+      "target": "Sira Vegas"
     },
     {
       "source": "Michael Felderer",
@@ -500,67 +628,27 @@
     },
     {
       "source": "Michael Felderer",
-      "target": "Jeffrey Carver"
+      "target": "Stefan Wagner"
     },
     {
       "source": "Michael Felderer",
-      "target": "Andreas Jedlitschka"
+      "target": "Tomi M\u00e4nnist\u00f6"
     },
     {
       "source": "Michael Felderer",
-      "target": "Sira Vegas"
-    },
-    {
-      "source": "Michael Felderer",
-      "target": "Carolyn Seaman"
-    },
-    {
-      "source": "Michael Felderer",
-      "target": "Burak Turhan"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Jeffrey Carver"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Victor Basili"
-    },
-    {
-      "source": "Markku Oivo",
       "target": "Xavier Franch"
     },
     {
       "source": "Markku Oivo",
-      "target": "He Zhang"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Sira Vegas"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Stefan Wagner"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Burak Turhan"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Rafael Prikladnicki"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Daniel Mendez Fernandez"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Tomi M\u00e4nnist\u00f6"
-    },
-    {
-      "source": "Markku Oivo",
       "target": "Andreas Jedlitschka"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Audris Mockus"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Ay\u015fe Ba\u015far"
     },
     {
       "source": "Markku Oivo",
@@ -568,11 +656,23 @@
     },
     {
       "source": "Markku Oivo",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Dag Sj\u00f8berg"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Daniel Mendez Fernandez"
+    },
+    {
+      "source": "Markku Oivo",
       "target": "Danilo Caivano"
     },
     {
       "source": "Markku Oivo",
-      "target": "Maurizio Morisio"
+      "target": "Desmond Greer"
     },
     {
       "source": "Markku Oivo",
@@ -580,51 +680,59 @@
     },
     {
       "source": "Markku Oivo",
-      "target": "Ali Babar"
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Markku Oivo",
-      "target": "Maria Teresa Baldassarre"
-    },
-    {
-      "source": "Markku Oivo",
-      "target": "Audris Mockus"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Jingyu Li"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Ay\u015fe Ba\u015far"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Maria Teresa Baldassarre"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Oscar Pastor"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Carolyn Seaman"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Marcus Ciolkowski"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Rafael Prikladnicki"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
       "target": "He Zhang"
     },
     {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Qing Wang"
+      "source": "Markku Oivo",
+      "target": "Jeffrey Carver"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Laurie Williams"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Marcos Kalinowski"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Maurizio Morisio"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Per Runeson"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Rafael Prikladnicki"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Sira Vegas"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Stefan Wagner"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Tomi M\u00e4nnist\u00f6"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Victor Basili"
+    },
+    {
+      "source": "Markku Oivo",
+      "target": "Xavier Franch"
     },
     {
       "source": "Fabio Q.B. da Silva",
@@ -632,75 +740,71 @@
     },
     {
       "source": "Fabio Q.B. da Silva",
+      "target": "Ay\u015fe Ba\u015far"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Carolyn Seaman"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Dan Port"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Daniel Mendez Fernandez"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Jingyu Li"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Marcela Genero"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Marcos Kalinowski"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Marcus Ciolkowski"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Nils Brede Moe"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
+      "target": "Oscar Pastor"
+    },
+    {
+      "source": "Fabio Q.B. da Silva",
       "target": "Per Runeson"
     },
     {
       "source": "Fabio Q.B. da Silva",
-      "target": "Marcos Kalinowski"
-    },
-    {
-      "source": "Fabio Q.B. da Silva",
-      "target": "Dan Port"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Qing Wang"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Dan Port"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Maya Daneva"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Xavier Franch"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Marcos Kalinowski"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Stefan Wagner"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Rahul Mohanani"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Paris Avgeriou"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Nils Brede Moe"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Dag Sj\u00f8berg"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Stefan Biffl"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Maria Paasivaara"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Jeffrey Carver"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
-      "target": "Jingyu Li"
-    },
-    {
-      "source": "Daniel Mendez Fernandez",
       "target": "Rafael Prikladnicki"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Andreas Jedlitschka"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Audris Mockus"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Dan Port"
     },
     {
       "source": "Daniel Mendez Fernandez",
@@ -708,7 +812,35 @@
     },
     {
       "source": "Daniel Mendez Fernandez",
-      "target": "Ali Babar"
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "He Zhang"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Jeffrey Carver"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Laurie Williams"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Magne J\u00f8rgensen"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Marcos Kalinowski"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Maya Daneva"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Minghui Zhou"
     },
     {
       "source": "Daniel Mendez Fernandez",
@@ -716,27 +848,31 @@
     },
     {
       "source": "Daniel Mendez Fernandez",
+      "target": "Qing Wang"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Rafael Prikladnicki"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Rogardt Heldal"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Daniel Mendez Fernandez",
       "target": "Tomi M\u00e4nnist\u00f6"
     },
     {
       "source": "Daniel Mendez Fernandez",
-      "target": "Dietmar Pfahl"
-    },
-    {
-      "source": "Andreas Jedlitschka",
-      "target": "Marcus Ciolkowski"
-    },
-    {
-      "source": "Andreas Jedlitschka",
-      "target": "Dieter Rombach"
-    },
-    {
-      "source": "Andreas Jedlitschka",
       "target": "Xavier Franch"
     },
     {
       "source": "Andreas Jedlitschka",
-      "target": "Maurizio Morisio"
+      "target": "Ay\u015fe Ba\u015far"
     },
     {
       "source": "Andreas Jedlitschka",
@@ -744,7 +880,35 @@
     },
     {
       "source": "Andreas Jedlitschka",
-      "target": "Tomi M\u00e4nnist\u00f6"
+      "target": "Dag Sj\u00f8berg"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "Dieter Rombach"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "He Zhang"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "Marcus Ciolkowski"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "Maurizio Morisio"
+    },
+    {
+      "source": "Andreas Jedlitschka",
+      "target": "Per Runeson"
     },
     {
       "source": "Andreas Jedlitschka",
@@ -752,11 +916,23 @@
     },
     {
       "source": "Andreas Jedlitschka",
-      "target": "Dietmar Pfahl"
+      "target": "Tomi M\u00e4nnist\u00f6"
     },
     {
       "source": "Andreas Jedlitschka",
-      "target": "Ay\u015fe Ba\u015far"
+      "target": "Xavier Franch"
+    },
+    {
+      "source": "Barbara Russo",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Barbara Russo",
+      "target": "Laurie Williams"
+    },
+    {
+      "source": "Barbara Russo",
+      "target": "Martin Solari"
     },
     {
       "source": "Barbara Russo",
@@ -764,23 +940,31 @@
     },
     {
       "source": "Barbara Russo",
-      "target": "Jingyu Li"
-    },
-    {
-      "source": "Barbara Russo",
       "target": "Sandro Morasca"
     },
     {
-      "source": "Barbara Russo",
+      "source": "Qing Wang",
+      "target": "Ali Babar"
+    },
+    {
+      "source": "Qing Wang",
+      "target": "Audris Mockus"
+    },
+    {
+      "source": "Qing Wang",
+      "target": "Ay\u015fe Ba\u015far"
+    },
+    {
+      "source": "Qing Wang",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Qing Wang",
       "target": "Dan Port"
     },
     {
-      "source": "Barbara Russo",
-      "target": "Dietmar Pfahl"
-    },
-    {
-      "source": "Barbara Russo",
-      "target": "Martin Solari"
+      "source": "Qing Wang",
+      "target": "Desmond Greer"
     },
     {
       "source": "Qing Wang",
@@ -792,39 +976,7 @@
     },
     {
       "source": "Qing Wang",
-      "target": "Minghui Zhou"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Desmond Greer"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Ay\u015fe Ba\u015far"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Ali Babar"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Dan Port"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Burak Turhan"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Stefan Wagner"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Dietmar Pfahl"
-    },
-    {
-      "source": "Qing Wang",
-      "target": "Audris Mockus"
+      "target": "Laurie Williams"
     },
     {
       "source": "Qing Wang",
@@ -832,11 +984,23 @@
     },
     {
       "source": "Qing Wang",
+      "target": "Minghui Zhou"
+    },
+    {
+      "source": "Qing Wang",
+      "target": "Nils Brede Moe"
+    },
+    {
+      "source": "Qing Wang",
       "target": "Ross Jeffery"
     },
     {
+      "source": "Qing Wang",
+      "target": "Stefan Wagner"
+    },
+    {
       "source": "Per Runeson",
-      "target": "Maria Teresa Baldassarre"
+      "target": "Burak Turhan"
     },
     {
       "source": "Per Runeson",
@@ -844,19 +1008,27 @@
     },
     {
       "source": "Per Runeson",
+      "target": "Danilo Caivano"
+    },
+    {
+      "source": "Per Runeson",
       "target": "Dietmar Pfahl"
     },
     {
       "source": "Per Runeson",
-      "target": "Danilo Caivano"
+      "target": "Marcela Genero"
     },
     {
-      "source": "Maria Paasivaara",
-      "target": "Nils Brede Moe"
+      "source": "Per Runeson",
+      "target": "Maria Teresa Baldassarre"
     },
     {
       "source": "Maria Paasivaara",
       "target": "Jeffrey Carver"
+    },
+    {
+      "source": "Maria Paasivaara",
+      "target": "Nils Brede Moe"
     },
     {
       "source": "Clemente Izurieta",
@@ -864,15 +1036,27 @@
     },
     {
       "source": "Clemente Izurieta",
-      "target": "Paris Avgeriou"
-    },
-    {
-      "source": "Clemente Izurieta",
       "target": "Laurie Williams"
     },
     {
+      "source": "Clemente Izurieta",
+      "target": "Paris Avgeriou"
+    },
+    {
       "source": "He Zhang",
-      "target": "Minghui Zhou"
+      "target": "Ali Babar"
+    },
+    {
+      "source": "He Zhang",
+      "target": "Audris Mockus"
+    },
+    {
+      "source": "He Zhang",
+      "target": "Ay\u015fe Ba\u015far"
+    },
+    {
+      "source": "He Zhang",
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "He Zhang",
@@ -880,15 +1064,19 @@
     },
     {
       "source": "He Zhang",
-      "target": "Kenichi Matsumoto"
+      "target": "Laurie Williams"
     },
     {
       "source": "He Zhang",
-      "target": "Ali Babar"
+      "target": "Maya Daneva"
     },
     {
       "source": "He Zhang",
-      "target": "Paris Avgeriou"
+      "target": "Minghui Zhou"
+    },
+    {
+      "source": "He Zhang",
+      "target": "Nils Brede Moe"
     },
     {
       "source": "He Zhang",
@@ -896,31 +1084,15 @@
     },
     {
       "source": "He Zhang",
-      "target": "Dan Port"
-    },
-    {
-      "source": "He Zhang",
-      "target": "Dietmar Pfahl"
-    },
-    {
-      "source": "He Zhang",
-      "target": "Audris Mockus"
-    },
-    {
-      "source": "He Zhang",
-      "target": "Maya Daneva"
-    },
-    {
-      "source": "He Zhang",
-      "target": "Victor Basili"
+      "target": "Paris Avgeriou"
     },
     {
       "source": "He Zhang",
       "target": "Ross Jeffery"
     },
     {
-      "source": "Kenichi Matsumoto",
-      "target": "Shinji Kusumoto"
+      "source": "He Zhang",
+      "target": "Victor Basili"
     },
     {
       "source": "Kenichi Matsumoto",
@@ -928,19 +1100,19 @@
     },
     {
       "source": "Kenichi Matsumoto",
-      "target": "Takeshi Hayama"
+      "target": "Shinji Kusumoto"
     },
     {
       "source": "Jingyu Li",
-      "target": "Minghui Zhou"
+      "target": "Audris Mockus"
     },
     {
       "source": "Jingyu Li",
-      "target": "Xavier Franch"
+      "target": "Dan Port"
     },
     {
       "source": "Jingyu Li",
-      "target": "Nils Brede Moe"
+      "target": "Maria Teresa Baldassarre"
     },
     {
       "source": "Jingyu Li",
@@ -948,27 +1120,15 @@
     },
     {
       "source": "Jingyu Li",
-      "target": "Ali Babar"
-    },
-    {
-      "source": "Jingyu Li",
-      "target": "Dan Port"
-    },
-    {
-      "source": "Jingyu Li",
-      "target": "Audris Mockus"
-    },
-    {
-      "source": "Jingyu Li",
       "target": "Maya Daneva"
     },
     {
-      "source": "Laurie Williams",
+      "source": "Jingyu Li",
       "target": "Minghui Zhou"
     },
     {
       "source": "Laurie Williams",
-      "target": "Jeffrey Carver"
+      "target": "Ay\u015fe Ba\u015far"
     },
     {
       "source": "Laurie Williams",
@@ -976,15 +1136,23 @@
     },
     {
       "source": "Laurie Williams",
-      "target": "Victor Basili"
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Laurie Williams",
-      "target": "Dan Port"
+      "target": "Jeffrey Carver"
     },
     {
       "source": "Laurie Williams",
       "target": "Koji Torii"
+    },
+    {
+      "source": "Laurie Williams",
+      "target": "Minghui Zhou"
+    },
+    {
+      "source": "Laurie Williams",
+      "target": "Victor Basili"
     },
     {
       "source": "Shinji Kusumoto",
@@ -992,7 +1160,15 @@
     },
     {
       "source": "Minghui Zhou",
+      "target": "Ali Babar"
+    },
+    {
+      "source": "Minghui Zhou",
       "target": "Audris Mockus"
+    },
+    {
+      "source": "Minghui Zhou",
+      "target": "Burak Turhan"
     },
     {
       "source": "Minghui Zhou",
@@ -1000,19 +1176,7 @@
     },
     {
       "source": "Minghui Zhou",
-      "target": "Jeffrey Carver"
-    },
-    {
-      "source": "Minghui Zhou",
-      "target": "Desmond Greer"
-    },
-    {
-      "source": "Minghui Zhou",
-      "target": "Ali Babar"
-    },
-    {
-      "source": "Minghui Zhou",
-      "target": "Dan Port"
+      "target": "Nils Brede Moe"
     },
     {
       "source": "Minghui Zhou",
@@ -1020,23 +1184,11 @@
     },
     {
       "source": "Marcos Kalinowski",
-      "target": "Maria Teresa Baldassarre"
+      "target": "Burak Turhan"
     },
     {
       "source": "Marcos Kalinowski",
-      "target": "Paris Avgeriou"
-    },
-    {
-      "source": "Marcos Kalinowski",
-      "target": "Nils Brede Moe"
-    },
-    {
-      "source": "Marcos Kalinowski",
-      "target": "Stefan Biffl"
-    },
-    {
-      "source": "Marcos Kalinowski",
-      "target": "Martin Solari"
+      "target": "Desmond Greer"
     },
     {
       "source": "Marcos Kalinowski",
@@ -1044,11 +1196,23 @@
     },
     {
       "source": "Marcos Kalinowski",
-      "target": "Stefan Wagner"
+      "target": "Marcela Genero"
     },
     {
       "source": "Marcos Kalinowski",
-      "target": "Marcela Genero"
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Marcos Kalinowski",
+      "target": "Martin Solari"
+    },
+    {
+      "source": "Marcos Kalinowski",
+      "target": "Nils Brede Moe"
+    },
+    {
+      "source": "Marcos Kalinowski",
+      "target": "Paris Avgeriou"
     },
     {
       "source": "Marcos Kalinowski",
@@ -1056,11 +1220,47 @@
     },
     {
       "source": "Marcos Kalinowski",
-      "target": "Oscar Pastor"
+      "target": "Rogardt Heldal"
     },
     {
       "source": "Marcos Kalinowski",
-      "target": "Burak Turhan"
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Marcos Kalinowski",
+      "target": "Stefan Wagner"
+    },
+    {
+      "source": "Marcos Kalinowski",
+      "target": "Tomi M\u00e4nnist\u00f6"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Carolyn Seaman"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Desmond Greer"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Jeffrey Carver"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Marcela Genero"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Rafael Prikladnicki",
+      "target": "Martin Solari"
     },
     {
       "source": "Rafael Prikladnicki",
@@ -1072,11 +1272,11 @@
     },
     {
       "source": "Rafael Prikladnicki",
-      "target": "Dietmar Pfahl"
+      "target": "Rogardt Heldal"
     },
     {
       "source": "Rafael Prikladnicki",
-      "target": "Jeffrey Carver"
+      "target": "Stefan Biffl"
     },
     {
       "source": "Rafael Prikladnicki",
@@ -1084,23 +1284,7 @@
     },
     {
       "source": "Rafael Prikladnicki",
-      "target": "Martin Solari"
-    },
-    {
-      "source": "Rafael Prikladnicki",
-      "target": "Rogardt Heldal"
-    },
-    {
-      "source": "Rafael Prikladnicki",
-      "target": "Carolyn Seaman"
-    },
-    {
-      "source": "Marcus Ciolkowski",
-      "target": "Paris Avgeriou"
-    },
-    {
-      "source": "Marcus Ciolkowski",
-      "target": "Dietmar Pfahl"
+      "target": "Tomi M\u00e4nnist\u00f6"
     },
     {
       "source": "Marcus Ciolkowski",
@@ -1108,11 +1292,23 @@
     },
     {
       "source": "Marcus Ciolkowski",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Marcus Ciolkowski",
       "target": "Giovanni Cantone"
     },
     {
       "source": "Marcus Ciolkowski",
-      "target": "Stefan Biffl"
+      "target": "Paris Avgeriou"
+    },
+    {
+      "source": "Marcus Ciolkowski",
+      "target": "Ross Jeffery"
+    },
+    {
+      "source": "Marcus Ciolkowski",
+      "target": "Sandro Morasca"
     },
     {
       "source": "Marcus Ciolkowski",
@@ -1120,19 +1316,23 @@
     },
     {
       "source": "Marcus Ciolkowski",
-      "target": "Sandro Morasca"
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Desmond Greer",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Desmond Greer",
+      "target": "Nils Brede Moe"
     },
     {
       "source": "Desmond Greer",
       "target": "Stefan Wagner"
     },
     {
-      "source": "Ay\u015fe Ba\u015far",
-      "target": "Burak Turhan"
-    },
-    {
-      "source": "Ay\u015fe Ba\u015far",
-      "target": "Maria Teresa Baldassarre"
+      "source": "Desmond Greer",
+      "target": "Tomi M\u00e4nnist\u00f6"
     },
     {
       "source": "Ay\u015fe Ba\u015far",
@@ -1140,7 +1340,15 @@
     },
     {
       "source": "Ay\u015fe Ba\u015far",
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Ay\u015fe Ba\u015far",
       "target": "Jeffrey Carver"
+    },
+    {
+      "source": "Ay\u015fe Ba\u015far",
+      "target": "Maria Teresa Baldassarre"
     },
     {
       "source": "Ay\u015fe Ba\u015far",
@@ -1148,11 +1356,7 @@
     },
     {
       "source": "Ay\u015fe Ba\u015far",
-      "target": "Ali Babar"
-    },
-    {
-      "source": "Ay\u015fe Ba\u015far",
-      "target": "Oscar Pastor"
+      "target": "Stefan Biffl"
     },
     {
       "source": "Magne J\u00f8rgensen",
@@ -1160,7 +1364,15 @@
     },
     {
       "source": "Magne J\u00f8rgensen",
+      "target": "Nils Brede Moe"
+    },
+    {
+      "source": "Magne J\u00f8rgensen",
       "target": "Oscar Pastor"
+    },
+    {
+      "source": "Nils Brede Moe",
+      "target": "Dag Sj\u00f8berg"
     },
     {
       "source": "Nils Brede Moe",
@@ -1172,19 +1384,31 @@
     },
     {
       "source": "Nils Brede Moe",
-      "target": "Dag Sj\u00f8berg"
+      "target": "Stefan Wagner"
     },
     {
       "source": "Danilo Caivano",
-      "target": "Maria Teresa Baldassarre"
+      "target": "Burak Turhan"
     },
     {
       "source": "Danilo Caivano",
       "target": "Marcela Genero"
     },
     {
+      "source": "Danilo Caivano",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
       "source": "Xavier Franch",
-      "target": "Oscar Pastor"
+      "target": "Burak Turhan"
+    },
+    {
+      "source": "Xavier Franch",
+      "target": "Dan Port"
+    },
+    {
+      "source": "Xavier Franch",
+      "target": "Jeffrey Carver"
     },
     {
       "source": "Xavier Franch",
@@ -1192,15 +1416,7 @@
     },
     {
       "source": "Xavier Franch",
-      "target": "Tomi M\u00e4nnist\u00f6"
-    },
-    {
-      "source": "Xavier Franch",
-      "target": "Stefan Wagner"
-    },
-    {
-      "source": "Xavier Franch",
-      "target": "Burak Turhan"
+      "target": "Oscar Pastor"
     },
     {
       "source": "Xavier Franch",
@@ -1212,47 +1428,11 @@
     },
     {
       "source": "Xavier Franch",
-      "target": "Paris Avgeriou"
+      "target": "Stefan Wagner"
     },
     {
       "source": "Xavier Franch",
-      "target": "Dan Port"
-    },
-    {
-      "source": "Xavier Franch",
-      "target": "Ali Babar"
-    },
-    {
-      "source": "Xavier Franch",
-      "target": "Jeffrey Carver"
-    },
-    {
-      "source": "Ali Babar",
-      "target": "Oscar Pastor"
-    },
-    {
-      "source": "Ali Babar",
-      "target": "Stefan Biffl"
-    },
-    {
-      "source": "Ali Babar",
-      "target": "Paris Avgeriou"
-    },
-    {
-      "source": "Ali Babar",
-      "target": "Ross Jeffery"
-    },
-    {
-      "source": "Ali Babar",
-      "target": "Giovanni Cantone"
-    },
-    {
-      "source": "Ali Babar",
       "target": "Tomi M\u00e4nnist\u00f6"
-    },
-    {
-      "source": "Paris Avgeriou",
-      "target": "Rogardt Heldal"
     },
     {
       "source": "Paris Avgeriou",
@@ -1260,15 +1440,11 @@
     },
     {
       "source": "Paris Avgeriou",
+      "target": "Rogardt Heldal"
+    },
+    {
+      "source": "Paris Avgeriou",
       "target": "Tomi M\u00e4nnist\u00f6"
-    },
-    {
-      "source": "Sira Vegas",
-      "target": "Giovanni Cantone"
-    },
-    {
-      "source": "Sira Vegas",
-      "target": "Martin Solari"
     },
     {
       "source": "Sira Vegas",
@@ -1276,11 +1452,11 @@
     },
     {
       "source": "Sira Vegas",
-      "target": "Oscar Pastor"
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Sira Vegas",
-      "target": "Dietmar Pfahl"
+      "target": "Giovanni Cantone"
     },
     {
       "source": "Sira Vegas",
@@ -1288,15 +1464,35 @@
     },
     {
       "source": "Sira Vegas",
+      "target": "Maria Teresa Baldassarre"
+    },
+    {
+      "source": "Sira Vegas",
+      "target": "Martin Solari"
+    },
+    {
+      "source": "Sira Vegas",
+      "target": "Oscar Pastor"
+    },
+    {
+      "source": "Sira Vegas",
+      "target": "Sandro Morasca"
+    },
+    {
+      "source": "Sira Vegas",
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Sira Vegas",
       "target": "Victor Basili"
     },
     {
       "source": "Oscar Pastor",
-      "target": "Dan Port"
+      "target": "Marcela Genero"
     },
     {
       "source": "Oscar Pastor",
-      "target": "Marcela Genero"
+      "target": "Martin Solari"
     },
     {
       "source": "Oscar Pastor",
@@ -1304,6 +1500,10 @@
     },
     {
       "source": "Sandro Morasca",
+      "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Sandro Morasca",
       "target": "Jeffrey Carver"
     },
     {
@@ -1316,7 +1516,7 @@
     },
     {
       "source": "Jeffrey Carver",
-      "target": "Victor Basili"
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Jeffrey Carver",
@@ -1324,11 +1524,15 @@
     },
     {
       "source": "Jeffrey Carver",
-      "target": "Dietmar Pfahl"
+      "target": "Rogardt Heldal"
     },
     {
       "source": "Jeffrey Carver",
-      "target": "Dan Port"
+      "target": "Victor Basili"
+    },
+    {
+      "source": "Maria Teresa Baldassarre",
+      "target": "Burak Turhan"
     },
     {
       "source": "Maria Teresa Baldassarre",
@@ -1336,11 +1540,19 @@
     },
     {
       "source": "Maria Teresa Baldassarre",
-      "target": "Burak Turhan"
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Maria Teresa Baldassarre",
+      "target": "Stefan Wagner"
     },
     {
       "source": "Marcela Genero",
       "target": "Dietmar Pfahl"
+    },
+    {
+      "source": "Marcela Genero",
+      "target": "Giovanni Cantone"
     },
     {
       "source": "Marcela Genero",
@@ -1352,7 +1564,7 @@
     },
     {
       "source": "Marcela Genero",
-      "target": "Giovanni Cantone"
+      "target": "Stefan Biffl"
     },
     {
       "source": "Dan Port",
@@ -1367,8 +1579,8 @@
       "target": "Victor Basili"
     },
     {
-      "source": "Dan Port",
-      "target": "Stefan Wagner"
+      "source": "Tomi M\u00e4nnist\u00f6",
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Tomi M\u00e4nnist\u00f6",
@@ -1380,10 +1592,6 @@
     },
     {
       "source": "Carolyn Seaman",
-      "target": "Victor Basili"
-    },
-    {
-      "source": "Carolyn Seaman",
       "target": "Dieter Rombach"
     },
     {
@@ -1391,8 +1599,16 @@
       "target": "Maurizio Morisio"
     },
     {
+      "source": "Carolyn Seaman",
+      "target": "Victor Basili"
+    },
+    {
       "source": "Dag Sj\u00f8berg",
       "target": "Audris Mockus"
+    },
+    {
+      "source": "Dag Sj\u00f8berg",
+      "target": "Burak Turhan"
     },
     {
       "source": "Dag Sj\u00f8berg",
@@ -1401,6 +1617,10 @@
     {
       "source": "Dag Sj\u00f8berg",
       "target": "Victor Basili"
+    },
+    {
+      "source": "Burak Turhan",
+      "target": "Dietmar Pfahl"
     },
     {
       "source": "Burak Turhan",
@@ -1412,19 +1632,27 @@
     },
     {
       "source": "Stefan Wagner",
+      "target": "Audris Mockus"
+    },
+    {
+      "source": "Stefan Wagner",
       "target": "Dietmar Pfahl"
     },
     {
       "source": "Stefan Wagner",
-      "target": "Audris Mockus"
+      "target": "Maya Daneva"
+    },
+    {
+      "source": "Stefan Wagner",
+      "target": "Stefan Biffl"
+    },
+    {
+      "source": "Dietmar Pfahl",
+      "target": "Dieter Rombach"
     },
     {
       "source": "Dietmar Pfahl",
       "target": "Rogardt Heldal"
-    },
-    {
-      "source": "Dietmar Pfahl",
-      "target": "Victor Basili"
     },
     {
       "source": "Dietmar Pfahl",
@@ -1435,8 +1663,20 @@
       "target": "Stefan Biffl"
     },
     {
+      "source": "Dietmar Pfahl",
+      "target": "Victor Basili"
+    },
+    {
+      "source": "Maya Daneva",
+      "target": "Stefan Biffl"
+    },
+    {
       "source": "Maurizio Morisio",
       "target": "Victor Basili"
+    },
+    {
+      "source": "Stefan Biffl",
+      "target": "Rogardt Heldal"
     },
     {
       "source": "Victor Basili",
@@ -1444,11 +1684,11 @@
     },
     {
       "source": "Victor Basili",
-      "target": "Koji Torii"
+      "target": "Giovanni Cantone"
     },
     {
       "source": "Victor Basili",
-      "target": "Giovanni Cantone"
+      "target": "Koji Torii"
     },
     {
       "source": "Victor Basili",
@@ -1464,9 +1704,9 @@
     }
   ],
   "metadata": {
-    "generated": "2025-06-27 06:19:40",
+    "generated": "2025-06-27 17:19:14",
     "num_nodes": 59,
-    "num_edges": 306,
-    "connected_components": 1
+    "num_edges": 366,
+    "connected_components": 2
   }
 }
