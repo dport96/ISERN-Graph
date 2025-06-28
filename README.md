@@ -1,6 +1,6 @@
 # ISERN Collaboration Network Analysis
 
-Professional-grade analysis of ISERN (International Software Engineering Research Network) member collaborations using enhanced name normalization and DBLP data mining.
+This project provides tools for an analysis of ISERN (International Software Engineering Research Network) member collaborations using enhanced name normalization and DBLP data mining.
 
 ## 🎯 Overview
 
@@ -66,7 +66,7 @@ python enhanced_isern_graph_generator.py
 
 ### ISERN Number Distribution
 - **ISERN 0**: 6 founders (Victor Basili, Dieter Rombach, Ross Jeffery, Giovanni Cantone, Markku Oivo, Koji Torii)
-- **ISERN 1**: 36 direct collaborators (including Dan Port ✅)
+- **ISERN 1**: 36 direct collaborators
 - **ISERN 2**: 16 second-degree collaborators
 - **Unconnected**: 1 member (Takeshi Hayama)
 
