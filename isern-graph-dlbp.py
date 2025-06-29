@@ -253,8 +253,13 @@ def clean_data_for_json(data):
     else:
         return data
 
-def create_interactive_website(G):
-    """Create an interactive website with draggable nodes using vis.js"""
+def create_interactive_website(G, force_regenerate=False):
+    """Create an interactive website with draggable nodes using vis.js
+    
+    Args:
+        G: NetworkX graph
+        force_regenerate: If True, skip the prompt and regenerate the file
+    """
     
     # Load ISERN numbers for coloring
     isern_numbers = load_isern_numbers()
@@ -486,6 +491,29 @@ def create_interactive_website(G):
             background-color: #2980b9;
         }}
         
+        input[type="text"] {{
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 2px;
+            width: 200px;
+        }}
+        
+        .search-controls {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }}
+        
+        .clear-search {{
+            background-color: #e74c3c;
+        }}
+        
+        .clear-search:hover {{
+            background-color: #c0392b;
+        }}
+        
         #network {{
             width: 100%;
             height: 800px;
@@ -610,6 +638,14 @@ def create_interactive_website(G):
         
         <div class="controls">
             <h3>Controls</h3>
+            <div class="control-group">
+                <label>Search:</label>
+                <div class="search-controls">
+                    <input type="text" id="search-input" placeholder="Search for researchers..." 
+                           onkeyup="handleSearchKeyup(event)" />
+                    <button onclick="clearSearch()" class="clear-search">Clear</button>
+                </div>
+            </div>
             <div class="control-group">
                 <label>Layout:</label>
                 <button onclick="setLayout('spring')">Spring Layout</button>
@@ -773,6 +809,15 @@ def create_interactive_website(G):
             var network = new vis.Network(container, data, options);
             console.log('Network created successfully');
             
+            // Initialize original colors for search functionality
+            try {
+                initializeOriginalColors();
+            } catch (colorError) {
+                console.error('Error initializing colors:', colorError);
+                // Create a simple fallback
+                originalNodeColors = {};
+            }
+            
             // Set spring layout after creation
             setTimeout(function() {
                 console.log('Setting spring layout');
@@ -828,7 +873,7 @@ def create_interactive_website(G):
                         }
                     };
                     // Reset node positions to original spring layout
-                    nodes.forEach(function(node) {
+                    nodes.get().forEach(function(node) {
                         network.moveNode(node.id, node.x, node.y);
                     });
                     break;
@@ -868,7 +913,7 @@ def create_interactive_website(G):
                     var levels = {};
                     var maxLevel = 0;
                     
-                    nodes.forEach(function(node) {
+                    nodes.get().forEach(function(node) {
                         var level = node.isern_number;
                         if (level === null || level === undefined) {
                             level = 'unknown';
@@ -943,7 +988,7 @@ def create_interactive_website(G):
                     // Randomly position all nodes
                     var canvasWidth = 1600;
                     var canvasHeight = 1200;
-                    nodes.forEach(function(node) {
+                    nodes.get().forEach(function(node) {
                         var x = (Math.random() - 0.5) * canvasWidth;
                         var y = (Math.random() - 0.5) * canvasHeight;
                         network.moveNode(node.id, x, y);
@@ -975,6 +1020,171 @@ def create_interactive_website(G):
             });
         }
         
+        // Search functionality
+        var originalNodeColors = {};  // Store original colors with safe key handling
+        var searchActive = false;
+        
+        // Helper function to create safe keys for node IDs
+        function createSafeKey(nodeId) {
+            return 'node_' + nodeId.replace(/[^a-zA-Z0-9]/g, '_');
+        }
+        
+        // Initialize original colors
+        function initializeOriginalColors() {
+            console.log('Initializing original colors...');
+            // Ensure the object is properly initialized
+            originalNodeColors = {};
+            var nodeCount = 0;
+            var allNodes = nodes.get();
+            console.log('Retrieved nodes:', allNodes.length);
+            
+            allNodes.forEach(function(node) {
+                var safeKey = createSafeKey(node.id);
+                try {
+                    originalNodeColors[safeKey] = {
+                        nodeId: node.id,
+                        color: node.color,
+                        borderColor: node.borderColor || node.color,
+                        opacity: 1.0
+                    };
+                    nodeCount++;
+                } catch (error) {
+                    console.error('Error storing colors for node:', node.id, error);
+                }
+            });
+            console.log('Initialized colors for', nodeCount, 'nodes');
+            console.log('Sample stored keys:', Object.keys(originalNodeColors).slice(0, 3));
+            console.log('originalNodeColors object:', typeof originalNodeColors, originalNodeColors);
+        }
+        
+        function handleSearchKeyup(event) {
+            // Allow Enter key to trigger search, or search on any keystroke
+            if (event.key === 'Enter') {
+                searchNodes();
+            } else {
+                // Optional: debounce search for better performance
+                clearTimeout(window.searchTimeout);
+                window.searchTimeout = setTimeout(searchNodes, 300);
+            }
+        }
+        
+        function searchNodes() {
+            var searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
+            
+            if (searchTerm === '') {
+                clearSearch();
+                return;
+            }
+            
+            searchActive = true;
+            var matchedNodes = [];
+            var updateArray = [];
+            
+            nodes.get().forEach(function(node) {
+                var safeKey = createSafeKey(node.id);
+                var originalColors = originalNodeColors[safeKey];
+                
+                // Check if original colors exist, if not use current node colors as fallback
+                if (!originalColors) {
+                    console.warn('Original colors not found for node:', node.id, 'using current colors');
+                    originalColors = {
+                        color: node.color,
+                        borderColor: node.borderColor || node.color,
+                        opacity: 1.0
+                    };
+                }
+                
+                var nodeUpdate = {
+                    id: node.id,
+                    color: originalColors.color,
+                    borderColor: originalColors.borderColor,
+                    opacity: 0.3  // Dim non-matching nodes
+                };
+                
+                if (node.label && node.label.toLowerCase().includes(searchTerm)) {
+                    // Highlight matching nodes
+                    nodeUpdate.color = '#ff6b6b';  // Bright red for matches
+                    nodeUpdate.borderColor = '#ff0000';
+                    nodeUpdate.opacity = 1.0;
+                    matchedNodes.push(node.id);
+                }
+                
+                updateArray.push(nodeUpdate);
+            });
+            
+            // Update all nodes
+            nodes.update(updateArray);
+            
+            // Focus on matched nodes if any found
+            if (matchedNodes.length > 0) {
+                if (matchedNodes.length === 1) {
+                    // If only one match, focus on it
+                    network.focus(matchedNodes[0], {
+                        scale: 1.5,
+                        animation: true
+                    });
+                } else {
+                    // If multiple matches, fit them all in view
+                    network.fit({
+                        nodes: matchedNodes,
+                        animation: true
+                    });
+                }
+                
+                // Update info panel with search results
+                document.getElementById('node-name').textContent = 'Search Results';
+                document.getElementById('node-details').innerHTML = 
+                    'Found ' + matchedNodes.length + ' researcher(s) matching "' + searchTerm + '"<br>' +
+                    'Highlighted nodes show the matches<br>' +
+                    'Use Clear button to reset view';
+                document.getElementById('info-panel').style.display = 'block';
+            } else {
+                // No matches found
+                document.getElementById('node-name').textContent = 'No Results';
+                document.getElementById('node-details').innerHTML = 
+                    'No researchers found matching "' + searchTerm + '"<br>' +
+                    'Try a different search term or check spelling';
+                document.getElementById('info-panel').style.display = 'block';
+            }
+        }
+        
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            searchActive = false;
+            
+            // Restore original node appearances
+            var updateArray = [];
+            nodes.get().forEach(function(node) {
+                var safeKey = createSafeKey(node.id);
+                var originalColors = originalNodeColors[safeKey];
+                
+                // Check if original colors exist, if not use current node colors as fallback
+                if (!originalColors) {
+                    console.warn('Original colors not found for node:', node.id, 'using current colors');
+                    originalColors = {
+                        color: node.color,
+                        borderColor: node.borderColor || node.color,
+                        opacity: 1.0
+                    };
+                }
+                
+                updateArray.push({
+                    id: node.id,
+                    color: originalColors.color,
+                    borderColor: originalColors.borderColor,
+                    opacity: 1.0
+                });
+            });
+            
+            nodes.update(updateArray);
+            
+            // Hide info panel if it was showing search results
+            var nodeName = document.getElementById('node-name').textContent;
+            if (nodeName === 'Search Results' || nodeName === 'No Results') {
+                document.getElementById('info-panel').style.display = 'none';
+            }
+        }
+        
         // Hide info panel when clicking outside
         document.addEventListener('click', function(event) {
             if (!event.target.closest('#info-panel') && !event.target.closest('#network')) {
@@ -988,8 +1198,8 @@ def create_interactive_website(G):
     # Save the HTML file
     html_filename = "isern_network_interactive.html"
     
-    # Check if file exists and ask for confirmation
-    if os.path.exists(html_filename):
+    # Check if file exists and ask for confirmation (unless force_regenerate is True)
+    if not force_regenerate and os.path.exists(html_filename):
         if not ask_regenerate_file(html_filename, "Interactive HTML"):
             print(f"Skipping generation of {html_filename}")
             return
@@ -1193,7 +1403,7 @@ if save_edgelist:
 
 # Create interactive web visualization
 if generate_interactive:
-    create_interactive_website(G)
+    create_interactive_website(G, force_regenerate=True)
 
 # Create visualization with oval nodes that expand to fit names
 from matplotlib.patches import Ellipse
