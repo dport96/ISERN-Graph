@@ -138,13 +138,6 @@ same_person = matcher.is_likely_same_person("José García", "Jose Garcia")
 - **ISERN number calculation**: BFS shortest-path algorithm
 - **Visualization**: Spring-layout with size/color encoding
 
-## 🎯 Key Achievements
-
-1. **Resolved Dan Port Issue**: Correctly identified his collaboration with Victor Basili through "Daniel Port" name variant
-2. **Comprehensive Network**: Discovered 366 collaborations vs. previous approaches finding far fewer
-3. **High Connectivity**: 98.3% of ISERN members are connected in the collaboration network
-4. **Robust Matching**: Handles international names, initials, nicknames, and formatting variations
-
 ## 📚 Dependencies
 
 ```txt
